@@ -4,9 +4,8 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import Layout from '@/components/Layout'
 import { Providers } from '@/app/providers'
 
-
 export const metadata: Metadata = {
-    title: 'Werbooz - Home',
+    title: 'Werbooz - Portfolio',
     description:
         'Welcome to Werbooz Private Limited - Your Gateway to Exceptional Digital Solutions!',
 }
