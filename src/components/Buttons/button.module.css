@@ -1,0 +1,14 @@
+/* button.module.css */
+
+.btn {
+    background: var(--btn-primary);
+    padding: 0.625rem 1.875rem;
+    color: #000347;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    line-height: 1.5rem;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    border: none;
+    width: fit-content;
+}
