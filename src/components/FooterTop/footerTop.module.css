@@ -1,0 +1,27 @@
+.Heading {
+    color: #323232;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 52.8px */
+}
+
+.footerTopContainer {
+    margin: 1rem auto;
+    background: rgb(71, 167, 246);
+    background: linear-gradient(
+        -1deg,
+        rgba(71, 167, 246, 1) -280%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.description {
+    width: 60%;
+    text-align: center;
+}
