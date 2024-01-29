@@ -17,6 +17,7 @@
     font-weight: 500;
     color: #000;
     gap: 0.5rem;
+    font-family: 'Poppins';
 }
 
 .btn {
@@ -35,7 +36,6 @@
     background: rgba(0, 50, 116, 0.03);
     padding: 1.5rem;
     width: 100%;
-    max-width: 412px;
 }
 
 .blog_date {

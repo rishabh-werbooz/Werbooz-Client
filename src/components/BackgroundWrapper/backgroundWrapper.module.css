@@ -1,0 +1,10 @@
+.wrapper {
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 1rem;
+    }
+}

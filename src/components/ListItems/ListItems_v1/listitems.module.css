@@ -1,6 +1,7 @@
 .ListContainer {
     display: grid;
     grid-template-columns: repeat(2, 0.2fr);
+    font-family: 'Poppins';
 }
 
 .ListHead {

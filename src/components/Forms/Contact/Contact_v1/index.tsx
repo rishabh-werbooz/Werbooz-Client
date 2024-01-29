@@ -19,12 +19,17 @@ const index = () => {
             <div className={styles.FormDiv}>
                 <div className={styles.ImageDiv}>
                     <img src="/assets/logo_2.png" alt="" />
+                    <div className="text-center mt-1">
+                        <Description description="Hear from our Expertise" />
+                    </div>
                 </div>
-                <div className='text-center'>
-                    <Description />
-                </div>
+
                 <HStack spacing={10}>
-                    <FormControl variant="floating" id="name">
+                    <FormControl
+                        variant="floating"
+                        fontFamily="Poppins"
+                        id="name"
+                    >
                         <Input
                             variant="flushed"
                             placeholder=" "
@@ -32,7 +37,11 @@ const index = () => {
                         />
                         <FormLabel>First Name</FormLabel>
                     </FormControl>
-                    <FormControl variant="floating" id="name">
+                    <FormControl
+                        variant="floating"
+                        id="name"
+                        fontFamily="Poppins"
+                    >
                         <Input
                             variant="flushed"
                             placeholder=" "
@@ -42,7 +51,11 @@ const index = () => {
                     </FormControl>
                 </HStack>
                 <HStack spacing={10}>
-                    <FormControl variant="floating" id="name">
+                    <FormControl
+                        variant="floating"
+                        id="name"
+                        fontFamily="Poppins"
+                    >
                         <InputGroup>
                             <InputLeftElement pointerEvents="none">
                                 <FaPhone />
@@ -62,7 +75,11 @@ const index = () => {
                             Phone Number
                         </FormLabel>
                     </FormControl>
-                    <FormControl variant="floating" id="name">
+                    <FormControl
+                        variant="floating"
+                        id="name"
+                        fontFamily="Poppins"
+                    >
                         <Input
                             variant="flushed"
                             placeholder=" "
@@ -72,7 +89,11 @@ const index = () => {
                     </FormControl>
                 </HStack>
                 <HStack spacing={10}>
-                    <FormControl variant="floating" id="name">
+                    <FormControl
+                        variant="floating"
+                        id="name"
+                        fontFamily="Poppins"
+                    >
                         <Input
                             variant="flushed"
                             placeholder=" "
@@ -82,7 +103,11 @@ const index = () => {
                     </FormControl>
                 </HStack>
                 <HStack spacing={10}>
-                    <FormControl variant="floating" id="name">
+                    <FormControl
+                        variant="floating"
+                        id="name"
+                        fontFamily="Poppins"
+                    >
                         <Input
                             variant="flushed"
                             placeholder=" "
@@ -91,7 +116,9 @@ const index = () => {
                         <FormLabel>Budget</FormLabel>
                     </FormControl>
                 </HStack>
-                <Checkbox size="md">I consent to the conditions.</Checkbox>
+                <Checkbox size="md" fontFamily="Poppins">
+                    I consent to the conditions.
+                </Checkbox>
                 <Button variant="solid" text="Submit" rounded="md" />
             </div>
         </>
