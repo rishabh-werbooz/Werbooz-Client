@@ -1,24 +1,23 @@
-.left {
+.main{
     display: grid;
-    grid-template-areas: 'area1 area2';
     grid-template-columns: auto auto;
     align-items: center;
+}
+
+.left {
+    grid-template-areas: 'area1 area2';
     gap:3rem;
 }
 
 .right {
-    display: grid;
     grid-template-areas: 'area2 area1';
-    grid-template-columns: auto auto;
-    align-items: center;
 
 }
 
-.image {
+.imageContainer {
     grid-area: area1;
     width: 100%;
     height: auto;
-    object-fit: cover;
     margin: 0 auto;
 }
 

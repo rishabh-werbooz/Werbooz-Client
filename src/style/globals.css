@@ -408,6 +408,11 @@ body {
     align-items: center;
 }
 
+.align-items-start {
+    align-items: flex-start;
+}
+
+
 .align-items-between {
     align-items: space-between;
 }

@@ -52,7 +52,7 @@ export const BlogData = {
 }
 
 export const HeadingData = {
-    heading: 'Our Three-Step Process for Online Success',
-    topHeading: 'Navigating Your Digital Transformation Journey with Precision',
-    // subHeading: 'Our Services',
+    topHeading: 'Our Three-Step Process for Online Success',
+    heading: 'Navigating Your Digital Transformation Journey with Precision',
+    subHeading: 'Our Services',
 }

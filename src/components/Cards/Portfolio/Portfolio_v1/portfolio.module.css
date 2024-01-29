@@ -1,9 +1,7 @@
 .portfolio_v1_inner {
-    position: absolute;
     width: fit-content;
     padding: 2em;
     margin: 2em;
-    bottom: 0;
     border-radius: 1rem;
     color: #fff;
     background: rgba(0, 0, 0, 0.22);

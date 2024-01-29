@@ -33,7 +33,7 @@ export default function Home() {
                 <Portfolio_v2 data={PortfolioDataV2} />
                 <Testimonial data={TestimonialData} />
                 <Blog data={BlogData} />
-                <Heading data={HeadingData} />
+                <Heading data={HeadingData}/>
                 <Description description="Just like a sturdy building needs a solid foundation, your project needs a robust backend. We work on this simultaneously with the frontend, ensuring everything is balanced and well-structured." />
                 <Button
                     variant="solid"

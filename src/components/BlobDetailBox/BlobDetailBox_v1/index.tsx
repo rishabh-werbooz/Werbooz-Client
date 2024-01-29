@@ -16,8 +16,8 @@ interface DataProps {
 const index = ({ variant, image, details }: DataProps) => {
     return (
         <>
-            <div className={styles[variant]}>
-                <div className={styles.image}>
+            <div className={`${styles.main} ${styles[variant]}`}>
+                <div className={styles.imageContainer}>
                     <img src={image} alt="image" />
                 </div>
                 <div className={styles.details}>

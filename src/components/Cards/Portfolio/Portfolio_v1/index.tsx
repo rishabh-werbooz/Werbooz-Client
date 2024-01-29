@@ -11,7 +11,7 @@ const index = ({ data }: { data: DataProps }) => {
     return (
         <>
             <div
-                className="portfolio_v1"
+                className="d-flex align-items-end"
                 style={{
                     backgroundImage: `url(${data.bgImg})`,
                     backgroundSize: 'cover',
@@ -19,7 +19,6 @@ const index = ({ data }: { data: DataProps }) => {
                     backgroundRepeat: 'no-repeat',
                     width: '100%',
                     height: '400px',
-                    position: 'relative',
                     borderRadius: '32px',
                 }}
             >
