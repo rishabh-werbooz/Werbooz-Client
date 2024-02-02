@@ -8,6 +8,7 @@
     --border-radius-md: 1rem;
     --border-radius-lg: 2rem;
     --border-radius-xl: 3rem;
+    --border-radius-full: 100%;
 
     --font-xs: 0.75rem;
     --font-sm: 1rem;
@@ -25,9 +26,11 @@
     --break-xxxl: 1950px;
 
     --primary-color: #0e002d;
-    --secondary-color: #0e7773;
-    --background-color: #f9f9f9;
+    --secondary-color: #242331;
+    --background-primary: #ECECEC;
     --dark-gray: #686868;
+    --semi-transparent: rgba(0, 0, 0, 0.22);
+    --light-blue:rgb(215, 240, 248);
     --accent: #f4b767;
     --success: #37a855;
     --danger: #f83245;
@@ -51,10 +54,14 @@
     --padding-xxl: 3rem;
     --padding-xxxl: 4rem;
 
+    --margin-lg: 2rem;
+
     --duration-100: 0.1s;
     --duration-200: 0.2s;
     --duration-300: 0.3s;
     --duration-400: 0.4s;
+
+    --min-height-400: 400px;
 
     --tile-border: linear-gradient(45deg, #8900ff, #0e7773);
 

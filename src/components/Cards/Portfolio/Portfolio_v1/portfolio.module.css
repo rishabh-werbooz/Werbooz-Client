@@ -1,10 +1,10 @@
 .portfolio_v1_inner {
     width: fit-content;
-    padding: 2em;
-    margin: 2em;
-    border-radius: 1rem;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.22);
+    padding: var(--padding-lg);
+    margin: var(--margin-lg);
+    border-radius: var(--border-radius-md);
+    color: var(--text-white);
+    background: var(--semi-transparent);
     box-shadow:
         0px 1px 1px 0px rgba(82, 73, 73, 0.1),
         0px 33px 32px 0px rgba(50, 44, 44, 0.05),
@@ -12,9 +12,9 @@
 }
 
 .description {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    color: var(--text-white);
+}
+
+.PortfolioContainer{
+    min-height: var(--min-height-400);
 }

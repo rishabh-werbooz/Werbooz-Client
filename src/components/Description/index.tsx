@@ -3,19 +3,20 @@ import styles from './description.module.css'
 import classnames from 'classnames'
 
 interface DataProps {
-    description: string,
-    classes?: string
+    description: string
+    className?: string
 }
 
-const index = ({ description, classes="" }: DataProps) => {
-
-    const mainClass = classnames(styles.description, "font-md fw-400 lh-150", classes)
+const index = ({ description, className = '' }: DataProps) => {
+    const mainClass = classnames(
+        styles.description,
+        'font-md fw-400 lh-150',
+        className
+    )
 
     return (
         <>
-            <p className={mainClass}>
-                {description}
-            </p>
+            <p className={mainClass}>{description}</p>
         </>
     )
 }

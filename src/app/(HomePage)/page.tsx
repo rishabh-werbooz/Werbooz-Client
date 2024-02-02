@@ -33,7 +33,7 @@ export default function Home() {
                 <Portfolio_v2 data={PortfolioDataV2} />
                 <Testimonial data={TestimonialData} />
                 <Blog data={BlogData} />
-                <Heading data={HeadingData}/>
+                <Heading data={HeadingData} />
                 <Description description="Just like a sturdy building needs a solid foundation, your project needs a robust backend. We work on this simultaneously with the frontend, ensuring everything is balanced and well-structured." />
                 <Button
                     variant="solid"
@@ -48,7 +48,7 @@ export default function Home() {
                 <BackgroundWrapper backgroundColor="#F7F7F7">
                     <BlobDetailsBox_v1
                         variant="left"
-                        image="/assets/Productiteration.gif"
+                        image="/assets/sample-img.gif"
                         details={{
                             description:
                                 'Like a skilled navigator, we chart a clear course for your project. This involves careful planning, setting milestones, and establishing timelines. Think of it as creating a reliable map for a successful journey',

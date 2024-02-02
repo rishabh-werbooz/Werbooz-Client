@@ -1,18 +1,15 @@
 .topHeading{
     text-transform: uppercase;
     font-size: var(--font-lg);
-    font-weight: 600;
     line-height: var(--lh-150);
 }
 
 .heading{
     font-size: var(--font-xxl);
-    font-weight: 700;
     line-height: var(--lh-150);
 }
 
 .subHeading{
     font-size: var(--font-lg);
-    font-weight: 700;
     line-height: var(--lh-150);
 }

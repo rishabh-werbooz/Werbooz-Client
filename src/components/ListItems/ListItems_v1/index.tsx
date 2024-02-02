@@ -1,20 +1,71 @@
 import styles from './listitems.module.css'
+import Heading from '@/components/Heading'
 const index = () => {
     return (
         <div className={styles.ListContainer}>
             <div>
-                <h1 className={styles.ListHead}>Company</h1>
-                <h3 className={styles.ListItems}>About Us</h3>
-                <h3 className={styles.ListItems}>Careers</h3>
-                <h3 className={styles.ListItems}>Blog</h3>
-                <h3 className={styles.ListItems}>Pricing</h3>
+                <Heading
+                    data={{
+                        heading: 'Company',
+                    }}
+                    className={`${styles.ListHead} font-lg fw-700`}
+                />
+                <Heading
+                    data={{
+                        heading: 'About Us',
+                    }}
+                    className={styles.ListItems}
+                />
+                <Heading
+                    data={{
+                        heading: 'Careers',
+                    }}
+                    className={styles.ListItems}
+                />
+                <Heading
+                    data={{
+                        heading: 'Blog',
+                    }}
+                    className={styles.ListItems}
+                />
+                <Heading
+                    data={{
+                        heading: 'Pricing',
+                    }}
+                    className={styles.ListItems}
+                />
             </div>
             <div>
-                <h1 className={styles.ListHead}>Resources</h1>
-                <h3 className={styles.ListItems}>Templates</h3>
-                <h3 className={styles.ListItems}>Tutorials</h3>
-                <h3 className={styles.ListItems}>Free resources</h3>
-                <h3 className={styles.ListItems}>Contract templates</h3>
+                <Heading
+                    data={{
+                        heading: 'Resources',
+                    }}
+                    className={`${styles.ListHead} font-lg fw-700`}
+                />
+                <Heading
+                    data={{
+                        heading: 'Templates',
+                    }}
+                    className={styles.ListItems}
+                />
+                <Heading
+                    data={{
+                        heading: 'Tutorials',
+                    }}
+                    className={styles.ListItems}
+                />
+                <Heading
+                    data={{
+                        heading: 'Free resources',
+                    }}
+                    className={styles.ListItems}
+                />
+                <Heading
+                    data={{
+                        heading: 'Contract templates',
+                    }}
+                    className={styles.ListItems}
+                />
             </div>
         </div>
     )

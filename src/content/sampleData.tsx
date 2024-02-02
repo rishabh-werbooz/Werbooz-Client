@@ -2,11 +2,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClipboard } from '@fortawesome/free-solid-svg-icons'
 
 export const IconBoxData = {
-    Icon: <FontAwesomeIcon icon={faClipboard} size="3x" />,
+    Icon: 'assets/web-design-brush-icon.svg',
     title: 'UX/UI Design',
     description:
         'Lorem ipsum dolor sit amet consec onsectetur. Habitant in eu conse sagittis adipiscing id aliquet conv interdum.',
-    bgColor: '#9BBFEE',
+    bgColor: '#ECECEC',
 }
 
 export const PortfolioDataV1 = {
@@ -43,7 +43,7 @@ export const TestimonialData = {
 
 export const BlogData = {
     title: '10 Top tips for making your Saas product sticky',
-    date: '12th May 2021',
+    date: 'November 15, 2022',
     description:
         'It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum',
     image: '/assets/blogs/Blog_card_img_1.png',

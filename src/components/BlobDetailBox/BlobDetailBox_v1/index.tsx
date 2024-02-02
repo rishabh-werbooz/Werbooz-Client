@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './blobDetailBox.module.css'
-import Description from '@/components/Description/index'
+import Description from '@/components/Description'
+import Heading from '@/components/Heading'
+import Image from '@/components/Image'
 interface Detail {
     heading?: string
     description: string
@@ -9,7 +11,7 @@ interface Detail {
 }
 interface DataProps {
     variant: string
-    image?: string
+    image: string
     details: Detail
 }
 
@@ -18,19 +20,34 @@ const index = ({ variant, image, details }: DataProps) => {
         <>
             <div className={`${styles.main} ${styles[variant]}`}>
                 <div className={styles.imageContainer}>
-                    <img src={image} alt="image" />
+                    <Image src={image} alt="blob" className={styles.image} />
                 </div>
-                <div className={styles.details}>
-                    <div className={styles.topHeading}>
-                        <h2>{details.topHeading}</h2>
-                    </div>
-                    <div className={styles.heading}>
-                        <h1>{details.heading}</h1>
-                    </div>
-                    <div className={styles.subHeading}>
-                        <h3>{details.subHeading}</h3>
-                    </div>
-                    <Description description={details.description} />
+                <div className={`${styles.details} pl-1 pr-1`}>
+                    <Heading
+                        data={{
+                            heading: details.topHeading,
+                        }}
+                        className={`${styles.topHeading} fw-700 font-xxl`}
+                    />
+
+                    <Heading
+                        data={{
+                            heading: details.heading,
+                        }}
+                        className={`${styles.heading} fw-700 font-xxl`}
+                    />
+
+                    <Heading
+                        data={{
+                            heading: details.subHeading,
+                        }}
+                        className={`${styles.subHeading} fw-700 font-xxl`}
+                    />
+
+                    <Description
+                        description={details.description}
+                        className="mt-1"
+                    />
                 </div>
             </div>
         </>
