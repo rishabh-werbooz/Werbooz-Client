@@ -1,7 +1,7 @@
-import React from 'react'
-import styles from './button.module.css'
-import { Button, ButtonGroup } from '@chakra-ui/react'
-import classNames from 'classnames'
+import React from "react"
+import styles from "./button.module.css"
+import { Button, ButtonGroup } from "@chakra-ui/react"
+import classNames from "classnames"
 
 interface ButtonProps {
     type?: string
@@ -13,22 +13,14 @@ interface ButtonProps {
     onClick?: (e: React.MouseEvent) => void
 }
 
-const index = ({
-    type,
-    variant,
-    onClick,
-    rounded,
-    text,
-    rightIcon,
-    className,
-}: ButtonProps) => {
-    const classes = classNames(styles.btn, 'lh-150 fw-700', className)
-  console.log('classes', classes)
+const index = ({ type, variant, onClick, rounded, text, rightIcon, className }: ButtonProps) => {
+    const classes = classNames(styles.btn, "lh-150 fw-700", className)
+    console.log("classes", classes)
     return (
         <>
             <Button
                 variant={variant}
-                rounded={rounded ? rounded : 'none'}
+                rounded={rounded ? rounded : "none"}
                 bgColor="#fff"
                 className={classes}
                 color="#003274"
