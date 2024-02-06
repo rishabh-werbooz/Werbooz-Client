@@ -1,9 +1,11 @@
 import React from 'react'
-import classnames from 'classnames'
+import Image from '@/components/Image'
 import styles from './iconBox.module.css'
+import Description from '@/components/Description'
+import Heading from '@/components/Heading'
 
 interface DataProps {
-    Icon: React.ReactNode
+    Icon: string
     title: string
     description: string
     bgColor: string
@@ -13,12 +15,24 @@ const index = ({ data }: { data: DataProps }) => {
     return (
         <>
             <div
-                className={styles.iconBoxInner}
-                style={{ backgroundColor: data.bgColor }}
+                className={`${styles.iconBoxInner} `}
+                style={{ backgroundColor: data.bgColor }} // for just background color here inlined style is used
             >
-                <div className={styles.iconBoxIcon}>{data.Icon}</div>
-                <h3 className="mt-2 fw-700">{data.title}</h3>
-                <p className={`${styles.description} mt-1 fw-400`} >{data.description}</p>
+                <Image
+                    src={data.Icon}
+                    alt="IconBox__Icon"
+                    className={styles.iconBoxIcon}
+                />
+                <Heading
+                    data={{
+                        heading: data.title,
+                    }}
+                    className={`mt-2 font-xl fw-700`}
+                />
+                <Description
+                    description={data.description}
+                    className={`mt-1 fw-400 font-sm`}
+                />
             </div>
         </>
     )

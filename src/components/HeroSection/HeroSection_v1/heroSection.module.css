@@ -1,0 +1,56 @@
+.Description {
+    color: var(--text-white);
+}
+
+.button {
+    border: 0 !important;
+}
+
+/* styles/Home.module.css */
+.heroSection {
+    min-height: 855px;
+
+    position: relative;
+    color: var(--text-white);
+    padding: 0 var(--padding-xxxl);
+    text-align: center;
+    opacity: 10000;
+}
+.test {
+    z-index: 1000;
+}
+.blinkDot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: blink 0.5s infinite alternate;
+}
+
+.heroSectionBackground {
+    position: relative;
+    background: linear-gradient(180deg, #0e002d 0%, #003274 137.72%);
+    min-height: 855px;
+    width: 100%;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

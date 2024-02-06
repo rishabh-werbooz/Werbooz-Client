@@ -1,0 +1,16 @@
+.HerosectionContainer {
+    background-image: url("/assets/hero_section.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 413px;
+    background-size: cover;
+    background-position: center;
+    color: var(--text-white);
+    padding: 0 var(--padding-xxxl);
+    text-align: center;
+}
+
+
+.Description{
+    color:var(--text-white) ;
+}

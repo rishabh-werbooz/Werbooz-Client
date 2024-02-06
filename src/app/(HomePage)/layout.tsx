@@ -1,14 +1,14 @@
-import type { Metadata } from 'next'
-import '@/style/globals.css'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import Layout from '@/components/Layout'
-import { Providers } from '@/app/providers'
+import type { Metadata } from "next"
+import "@/style/globals.css"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+import Layout from "@/components/Layout"
+import { Providers } from "@/app/providers"
+import Lottie from "lottie-web"
 
 
 export const metadata: Metadata = {
-    title: 'Werbooz - Home',
-    description:
-        'Welcome to Werbooz Private Limited - Your Gateway to Exceptional Digital Solutions!',
+    title: "Werbooz - Home",
+    description: "Welcome to Werbooz Private Limited - Your Gateway to Exceptional Digital Solutions!",
 }
 
 export default function RootLayout({

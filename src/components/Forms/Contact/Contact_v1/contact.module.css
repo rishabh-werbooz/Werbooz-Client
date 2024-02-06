@@ -1,28 +1,14 @@
-.img {
-    width: '141px';
-    display: block;
-    margin: 0 auto;
-}
-
 .FormDiv {
-    border-radius: 1rem;
+    border-radius: var(--border-radius-md);
     border: 1px solid rgba(245, 245, 245, 0.8);
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 2rem;
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap:2rem;
+    padding: var(--padding-lg);
 }
 
-.ImageDiv{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    margin: 0 auto;
+
+.btn {
+    color: var(--text-white) !important;
+    background-color: #003274 !important;
+    width: 30% !important;
 }

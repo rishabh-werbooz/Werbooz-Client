@@ -2,21 +2,34 @@ import React from 'react'
 import styles from './footerTop.module.css'
 import Description from '@/components/Description'
 import Button from '@/components/Buttons'
+import Heading from '@/components/Heading'
 
 const index = () => {
     return (
         <>
             <div
-                className={`${styles.footerTopContainer} d-flex justify-content-center flex-column align-items-center gap-2`}
+                className={`${styles.footerTopContainer} d-flex justify-content-center flex-column align-items-center gap-0 pb-2 `}
             >
-                <h1 className={styles.Heading}>
-                    Are you ready to grow your <br /> business with us?
-                </h1>
-                <div className={styles.description}>
-                    <Description description="We are a team of passionate designers and developers who thrive to well plan, develop and build scalable applications and websites." />
+                <Heading
+                    data={{
+                        heading: 'Are you ready to grow your business with us?',
+                    }}
+                    className={`${styles.Heading} fw-700 font-xxl`}
+                />
+                <span>
+                    <Heading
+                        data={{
+                            heading: 'Let’s get started',
+                        }}
+                        className={`${styles.subHeading} fw-700 font-xxl`}
+                    />
+                </span>
+
+                <div className={`${styles.description} mt-1 mb-1 `}>
+                    <Description description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy." />
                 </div>
 
-                <Button variant="solid" rounded="md" text="View All" />
+                <Button variant="solid" rounded="md" text="View All" className={`${styles.btn}`} />
             </div>
         </>
     )

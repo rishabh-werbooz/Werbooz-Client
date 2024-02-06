@@ -1,16 +1,22 @@
 import React from 'react'
 import styles from './description.module.css'
+import classnames from 'classnames'
 
 interface DataProps {
     description: string
+    className?: string
 }
 
-const index = ({ description }: DataProps) => {
+const index = ({ description, className = '' }: DataProps) => {
+    const mainClass = classnames(
+        styles.description,
+        'font-md fw-400 lh-150',
+        className
+    )
+
     return (
         <>
-            <p className={`${styles.description} font-md fw-400 lh-150`}>
-                {description}
-            </p>
+            <p className={mainClass}>{description}</p>
         </>
     )
 }
