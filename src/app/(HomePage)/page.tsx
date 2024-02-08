@@ -18,7 +18,7 @@ import ProjectsDevelopment from "@/components/ProjectsDevelopment"
 import HeroSection_v1 from "@/components/HeroSection/HeroSection_v1"
 import HeroSection_v2 from "@/components/HeroSection/HeroSection_v2"
 
-import { IconBoxData, PortfolioDataV1, PortfolioDataV2, TestimonialData, BlogData, HeadingData, listDetailsData, listItemsData } from "@/content/sampleData"
+import { IconBoxData, PortfolioDataV1, PortfolioDataV2, TestimonialData, BlogData, HeadingData, listDetailsData, listItemsData, HeroSectionData_v1 } from "@/content/sampleData"
 
 export default function Home() {
     return (
@@ -53,8 +53,16 @@ export default function Home() {
                     <ProjectsDevelopment listItemsData={listItemsData} listDetailsData={listDetailsData} />
                 </BackgroundWrapper>
             </div>
-            <HeroSection_v1 />
-            {/* <HeroSection_v2 /> */}
+            <HeroSection_v1
+                heading_1={HeroSectionData_v1.heading_1}
+                heading_2={HeroSectionData_v1.heading_2}
+                description_1={HeroSectionData_v1.description_1}
+                description_2={HeroSectionData_v1.description_2}
+                buttonText={HeroSectionData_v1.buttonText}
+                lottieFile={HeroSectionData_v1.lottieFile}
+            />
+            <div className="mb-2"></div>
+            <HeroSection_v2 />
         </>
     )
 }

@@ -113,3 +113,12 @@ export const listIconsData = [
     "https://www.svgrepo.com/show/434246/rocket.svg",
     "https://www.svgrepo.com/show/525813/code-square.svg",
 ]
+
+export const HeroSectionData_v1 = {
+    heading_1: "Revolutionize Your Business With",
+    heading_2: "Werbooz's Web Expertise",
+    description_1: "Unleash Your Online Potential with Werbooz…",
+    description_2: "Transform Your Business with Cutting-Edge Web Solutions",
+    buttonText: "Schedule a Call",
+    lottieFile: "/assets/lottie/rocket-2.json",
+}

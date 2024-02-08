@@ -29,7 +29,7 @@ const index = ({ listItemsData, listDetailsData }: ProjectProps) => {
         const intervalId = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % listItemsData.length)
             console.log("currentIndex", currentIndex)
-        }, 1000)
+        }, 10000)
 
         return () => clearInterval(intervalId)
     }, [currentIndex])
