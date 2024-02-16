@@ -6,13 +6,13 @@
     color: var(--text-white);
     padding: 0 var(--padding-xxxl);
     text-align: center;
-    opacity: 10000;
+    /* opacity: 10000; */
 }
 
 .description {
     color: var(--text-white);
 }
 
-.test {
+/* .test {
     z-index: 2;
-}
+} */

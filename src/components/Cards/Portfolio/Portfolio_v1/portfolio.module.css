@@ -1,6 +1,6 @@
 .portfolio_v1_inner {
     width: fit-content;
-    padding: var(--padding-lg);
+    padding:var(--padding-sm);
     margin: var(--margin-lg);
     border-radius: var(--border-radius-md);
     color: var(--text-white);

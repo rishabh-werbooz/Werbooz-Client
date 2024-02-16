@@ -1,10 +1,13 @@
 .ProjectContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
     align-items: center;
     background-color: var(--text-white);
     border-radius: var(--border-radius-sm);
     padding-right: var(--padding-md);
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .Heading {
@@ -25,11 +28,12 @@
     font-size: var(--font-sm) !important;
     font-weight: 400 !important;
 }
-
+.animatedImg {
+    display: none;
+}
 .leftContainer {
     flex: 1;
     padding: 0px 0px;
-
     /* vertical scroller  */
     overflow-y: auto;
     position: relative;
@@ -52,8 +56,53 @@
     border-radius: 8px;
 }
 
+.leftArrow,
+.rightArrow {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .ProjectContainer {
         grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: var(--padding-md);
+    }
+
+    .leftContainer {
+        height: auto;
+        overflow-x: auto;
+        display: flex;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .leftArrow,
+    .rightArrow {
+        display: block;
+        margin-top: 1rem;
+    }
+    .leftArrow {
+        color: #003274;
+        width: 8%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .rightArrow {
+        color: #003274;
+        width: 8%;
+        height: 8%;
+        cursor: pointer;
+    }
+
+    .rightContainer {
+        justify-content: center ;
+        align-items: center;
+    }
+    .animatedImg {
+        display: block;
+    }
+    .btn {
+        width: 100%;
     }
 }

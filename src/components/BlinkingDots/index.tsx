@@ -6,7 +6,7 @@ const index = () => {
 
     useEffect(() => {
         // Generate 30 to 40 blinking dots
-        const count = Math.floor(Math.random() * (40 - 30 + 1)) + 30
+        const count = Math.floor(Math.random() * (100 - 90 + 1)) + 90
         setDotCount(count)
     }, [])
 

@@ -30,15 +30,11 @@ const index: React.FC<HeadingProps> = ({
 
     return (
         <>
-            <div className={mainClass}>
-                <h2 className={styles.topHeading + className}>
-                    {data.topHeading}
-                </h2>
-                <h1 className={styles.heading + className}>{data.heading}</h1>
-                <h3 className={styles.subHeading + className}>
-                    {data.subHeading}
-                </h3>
-            </div>
+            {/* <div className={mainClass}> */}
+            <h2 className={ mainClass + styles.topHeading}>{data.topHeading}</h2>
+            <h1 className={styles.heading + mainClass}>{data.heading}</h1>
+            <h3 className={styles.subHeading + className}>{data.subHeading}</h3>
+            {/* </div> */}
         </>
     )
 }

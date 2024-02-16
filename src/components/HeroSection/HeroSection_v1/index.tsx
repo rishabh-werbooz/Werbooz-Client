@@ -22,15 +22,9 @@ const index = ({ heading_1, heading_2, description_1, description_2, buttonText,
     return (
         <>
             <div className={styles.heroSectionBackground}>
-                <WebGLFluidSimulation />
+                {/* <WebGLFluidSimulation /> */}
 
-                <div
-                    className={`${styles.heroSection} d-flex justify-content-center flex-column  align-items-center gap-1-5 `}
-                    style={{
-                        position: "relative",
-                        overflow: "hidden",
-                    }}
-                >
+                <div className={`${styles.heroSection} d-flex justify-content-center flex-column  align-items-center gap-1-5 `}>
                     <BlinkingDots />
 
                     <div className={styles.test}>
@@ -60,12 +54,12 @@ const index = ({ heading_1, heading_2, description_1, description_2, buttonText,
                         <Player autoplay loop src={lottieFile} className={styles.lottieImg} />
                     </div>
 
-                    <div className={`${styles.test} d-flex justify-content-center flex-column align-items-center `}>
+                    <div className={`${styles.test} ${styles.scrollDown} d-flex justify-content-center flex-column align-items-center `}>
                         <Heading
                             data={{
                                 heading: "Scroll Down",
                             }}
-                            className="fw-400 font-sm"
+                            className="fw-600 font-md"
                             variant="center"
                         />
                         <FaLongArrowAltDown size={30} />
