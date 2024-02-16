@@ -8,11 +8,38 @@ export const IconBoxData = {
     bgColor: "#ECECEC",
 }
 
-export const PortfolioDataV1 = {
-    bgImg: "/assets/portfolios/PortfolioImg_1.png",
-    title: "Frieght and Marketplace",
-    description: "In Together Shaping the Future of Freight and Marketplace Excellence. Werbooz Wishes You Endless Success on Your Driven Journey.",
-}
+export const PortfolioDataV1 = [
+    {
+        bgImg: "/assets/portfolios/PortfolioImg_1.png",
+        title: "Frieght and Marketplace",
+        subTitle: "Kargoplex",
+        description: "In Together Shaping the Future of Freight and Marketplace Excellence. Werbooz Wishes You Endless Success on Your Driven Journey.",
+    },
+    {
+        bgImg: "/assets/portfolios/PortfolioImg_4.png",
+        title: "Property Leasing Made Easy",
+        subTitle: "UBZ Spaces",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        bgImg: "/assets/portfolios/PortfolioImg_5.png",
+        title: "Bridging Employers and Job Seekers",
+        subTitle: "Develup",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        bgImg: "/assets/portfolios/PortfolioImg_6.png",
+        title: "Exploring Psychological",
+        subTitle: "ProBehave",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+    {
+        bgImg: "/assets/portfolios/PortfolioImg_7.png",
+        title: "Craft Your Perfect Weekend",
+        subTitle: "Weekendo",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    },
+]
 
 export const PortfolioDataV2 = {
     bgColor: "#EDF0F9",
@@ -24,16 +51,68 @@ export const PortfolioDataV2 = {
     keywords: ["User Research", "UX Design"],
 }
 
-export const TestimonialData = {
-    title: "“Werbooz is the #1”",
-    description:
-        "I want to express my sincere gratitude for the creation of Kargoplex it is truly an amazing platform. Werbooz has been instrumental in helping us with our freight and marketplace needs",
-    userData: {
-        userImage: "/assets/testimonials/user_img.png",
-        userName: "John Doe",
-        userDesignation: "CEO, ABC Company",
+export const TestimonialData = [
+    {
+        title: "“Werbooz is the #1”",
+        description:
+            "I want to express my sincere gratitude for the creation of Kargoplex it is truly an amazing platform. Werbooz has been instrumental in helping us with our freight and marketplace needs",
+        userData: {
+            userImage: "/assets/testimonials/user_img.png",
+            userName: "John Doe",
+            userDesignation: "CEO, ABC Company",
+        },
     },
-}
+    {
+        title: "“Werbooz is the #1”",
+        description:
+            "I want to express my sincere gratitude for the creation of Kargoplex it is truly an amazing platform. Werbooz has been instrumental in helping us with our freight and marketplace needs",
+        userData: {
+            userImage: "/assets/testimonials/user_img.png",
+            userName: "John Doe",
+            userDesignation: "CEO, ABC Company",
+        },
+    },
+    {
+        title: "“Werbooz is the #1”",
+        description:
+            "I want to express my sincere gratitude for the creation of Kargoplex it is truly an amazing platform. Werbooz has been instrumental in helping us with our freight and marketplace needs",
+        userData: {
+            userImage: "/assets/testimonials/user_img.png",
+            userName: "John Doe",
+            userDesignation: "CEO, ABC Company",
+        },
+    },
+    {
+        title: "“Werbooz is the #1”",
+        description:
+            "I want to express my sincere gratitude for the creation of Kargoplex it is truly an amazing platform. Werbooz has been instrumental in helping us with our freight and marketplace needs",
+        userData: {
+            userImage: "/assets/testimonials/user_img.png",
+            userName: "John Doe",
+            userDesignation: "CEO, ABC Company",
+        },
+    },
+    {
+        title: "“Werbooz is the #1”",
+        description:
+            "I want to express my sincere gratitude for the creation of Kargoplex it is truly an amazing platform. Werbooz has been instrumental in helping us with our freight and marketplace needs",
+        userData: {
+            userImage: "/assets/testimonials/user_img.png",
+            userName: "John Doe",
+            userDesignation: "CEO, ABC Company",
+        },
+    },
+    {
+        title: "“Werbooz is the #1”",
+        description:
+            "I want to express my sincere gratitude for the creation of Kargoplex it is truly an amazing platform. Werbooz has been instrumental in helping us with our freight and marketplace needs",
+        userData: {
+            userImage: "/assets/testimonials/user_img.png",
+            userName: "John Doe",
+            userDesignation: "CEO, ABC Company",
+        },
+    },
+]
 
 export const BlogData = {
     title: "10 Top tips for making your Saas product sticky",
@@ -105,11 +184,41 @@ export const listDetailsData = [
 ]
 
 export const listIconsData = [
-    "https://www.svgrepo.com/show/223052/forms-document.svg",
-    "https://www.svgrepo.com/show/192554/telephone-call.svg",
-    "https://www.svgrepo.com/show/375483/project.svg",
-    "https://www.svgrepo.com/show/210241/invoice-bill.svg",
-    "https://www.svgrepo.com/show/261892/money-bag-money.svg",
-    "https://www.svgrepo.com/show/434246/rocket.svg",
-    "https://www.svgrepo.com/show/525813/code-square.svg",
+    "/assets/lottie/Forms.json",
+    "/assets/lottie/Call.json",
+    "/assets/lottie/Project.json",
+    "/assets/lottie/ReceiveQuotation.json",
+    "/assets/lottie/Budget.json",
+    "/assets/lottie/Forms.json",
+    "/assets/lottie/Forms.json",
+]
+
+export const HeroSectionData_v1 = {
+    heading_1: "Revolutionize Your Business With",
+    heading_2: "Werbooz's Web Expertise",
+    description_1: "Unleash Your Online Potential with Werbooz…",
+    description_2: "Transform Your Business with Cutting-Edge Web Solutions",
+    buttonText: "Schedule a Call",
+    lottieFile: "/assets/lottie/rocket-2.json",
+}
+
+export const logoImg_1 = [
+    "/assets/logos/kargo-logo.png",
+    "/assets/logos/qapp.png",
+    "/assets/logos/develup.png",
+    "/assets/logos/proBehave.png",
+    "/assets/logos/kargo-logo.png",
+    "/assets/logos/qapp.png",
+    "/assets/logos/develup.png",
+    "/assets/logos/proBehave.png",
+]
+export const logoImg_2 = [
+    "/assets/logos/ubz.png",
+    "/assets/logos/weekendo.png",
+    "/assets/logos/ipercepts.png",
+    "/assets/logos/breakfree.png",
+    "/assets/logos/ubz.png",
+    "/assets/logos/weekendo.png",
+    "/assets/logos/ipercepts.png",
+    "/assets/logos/breakfree.png",
 ]

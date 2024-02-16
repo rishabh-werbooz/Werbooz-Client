@@ -1,16 +1,18 @@
 .HerosectionContainer {
-    background-image: url("/assets/hero_section.png");
-    background-repeat: no-repeat;
+    position: relative;
+    background: linear-gradient(180deg, #0e002d 0%, #003274 137.72%);
     width: 100%;
     min-height: 413px;
-    background-size: cover;
-    background-position: center;
     color: var(--text-white);
     padding: 0 var(--padding-xxxl);
     text-align: center;
+    /* opacity: 10000; */
 }
 
-
-.Description{
-    color:var(--text-white) ;
+.description {
+    color: var(--text-white);
 }
+
+/* .test {
+    z-index: 2;
+} */

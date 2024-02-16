@@ -3,6 +3,8 @@
     border: 1px solid #eff0f6;
     box-shadow: 0px 5px 14px 0px rgba(8, 15, 52, 0.04);
     padding: var(--padding-lg) var(--padding-md);
+    background-color: #FFFFFF !important;
+    width: 500px;
 }
 
 .userImageDiv {

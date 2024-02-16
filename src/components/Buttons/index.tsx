@@ -15,7 +15,6 @@ interface ButtonProps {
 
 const index = ({ type, variant, onClick, rounded, text, rightIcon, className }: ButtonProps) => {
     const classes = classNames(styles.btn, "lh-150 fw-700", className)
-    console.log("classes", classes)
     return (
         <>
             <Button
