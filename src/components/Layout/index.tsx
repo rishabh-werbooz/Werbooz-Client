@@ -10,7 +10,7 @@ const index: React.FC<LayoutProps> = ({ children }) => {
     return (
         <>
             <Header />
-            <main className="pt-2 pb-2 main-inline-Padding">{children}</main>
+            <main className="">{children}</main>
         </>
     )
 }

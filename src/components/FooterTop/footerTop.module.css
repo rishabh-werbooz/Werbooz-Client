@@ -1,0 +1,20 @@
+.footerTopContainer {
+    margin: 1rem auto;
+    background: rgb(71, 167, 246);
+    background: linear-gradient(
+        -1deg,
+        rgba(71, 167, 246, 1) -280%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    width: 100%;
+    text-align: center;
+}
+
+.btn{
+    background-color: #003274 !important;
+    color: var(--text-white) !important;
+    font-weight: 500 !important;
+    padding: var(--padding-xs) var(--padding-lg) !important;
+}
+

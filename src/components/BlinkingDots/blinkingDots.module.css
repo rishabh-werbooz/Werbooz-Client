@@ -1,0 +1,18 @@
+.blinkDot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: blink 0.5s infinite alternate;
+    z-index: 2;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

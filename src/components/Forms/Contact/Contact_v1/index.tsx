@@ -2,9 +2,9 @@ import React from 'react'
 import styles from './contact.module.css'
 import Description from '@/components/Description'
 import Button from '@/components/Buttons'
+import Image from '@/components/Image'
 import {
     Input,
-    HStack,
     FormControl,
     FormLabel,
     InputGroup,
@@ -16,14 +16,21 @@ import { FaPhone } from 'react-icons/fa6'
 const index = () => {
     return (
         <>
-            <div className={styles.FormDiv}>
-                <div className={styles.ImageDiv}>
-                    <img src="/assets/logo_2.png" alt="" />
+            <div className={`${styles.FormDiv} d-flex flex-column  gap-2`}>
+                <div
+                    className={`${styles.ImageDiv} d-flex justify-content-center flex-column align-items-center`}
+                >
+                    <Image
+                        src="/assets/logo_2.png"
+                        alt="logo"
+                        className={styles.logo}
+                    />
+                    <div className="text-center mt-1">
+                        <Description description="Hear from our Expertise" />
+                    </div>
                 </div>
-                <div className='text-center'>
-                    <Description />
-                </div>
-                <HStack spacing={10}>
+
+                <div className="d-flex gap-4">
                     <FormControl variant="floating" id="name">
                         <Input
                             variant="flushed"
@@ -40,25 +47,20 @@ const index = () => {
                         />
                         <FormLabel>Last Name</FormLabel>
                     </FormControl>
-                </HStack>
-                <HStack spacing={10}>
+                </div>
+                <div className="d-flex gap-4">
                     <FormControl variant="floating" id="name">
                         <InputGroup>
-                            <InputLeftElement pointerEvents="none">
+                            {/* <InputLeftElement pointerEvents="none">
                                 <FaPhone />
-                            </InputLeftElement>
+                            </InputLeftElement> */}
                             <Input
                                 type="tel"
                                 variant="flushed"
-                                style={{ paddingLeft: '2.2rem' }}
                                 focusBorderColor="#003274"
                             />
                         </InputGroup>
-                        <FormLabel
-                            style={{
-                                marginLeft: '2rem',
-                            }}
-                        >
+                        <FormLabel>
                             Phone Number
                         </FormLabel>
                     </FormControl>
@@ -70,8 +72,8 @@ const index = () => {
                         />
                         <FormLabel>Email</FormLabel>
                     </FormControl>
-                </HStack>
-                <HStack spacing={10}>
+                </div>
+                <div className="d-flex gap-4">
                     <FormControl variant="floating" id="name">
                         <Input
                             variant="flushed"
@@ -80,8 +82,8 @@ const index = () => {
                         />
                         <FormLabel>Service</FormLabel>
                     </FormControl>
-                </HStack>
-                <HStack spacing={10}>
+                </div>
+                <div className="d-flex gap-4">
                     <FormControl variant="floating" id="name">
                         <Input
                             variant="flushed"
@@ -90,9 +92,16 @@ const index = () => {
                         />
                         <FormLabel>Budget</FormLabel>
                     </FormControl>
-                </HStack>
-                <Checkbox size="md">I consent to the conditions.</Checkbox>
-                <Button variant="solid" text="Submit" rounded="md" />
+                </div>
+                <Checkbox className={`${styles.checkbox} d-flex items-center`}>
+                    I consent to the conditions.
+                </Checkbox>
+                <Button
+                    variant="solid"
+                    text="Submit"
+                    rounded="md"
+                    className={`${styles.btn}`}
+                />
             </div>
         </>
     )

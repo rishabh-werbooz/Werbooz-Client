@@ -1,5 +1,8 @@
 import React from 'react'
 import styles from './testimonial.module.css'
+import Description from '@/components/Description'
+import Image from '@/components/Image'
+import Heading from '@/components/Heading'
 interface userDataProps {
     userImage: string
     userName: string
@@ -16,20 +19,34 @@ const index = ({ data }: { data: DataProps }) => {
     return (
         <>
             <div className={styles.testimonial_Box}>
-                <h1 className={styles.title}>{data.title}</h1>
-                <p className={styles.description}>{data.description}</p>
+                <Heading
+                    data={{
+                        heading: data.title,
+                    }}
+                    className="fw-600 font-xl"
+                />
+                <Description description={data.description} className="mt-1" />
                 <div
-                    className={`d-flex justify-content-start align-items-center gap-1 mt-1`}
+                    className={`d-flex justify-content-start align-items-center gap-1 mt-2`}
                 >
-                    <div className={styles.userImage}>
-                        <img className={styles.img}
+                    <div className={`${styles.userImageDiv} padding-lg`}>
+                        <Image
                             src={data.userData.userImage}
                             alt={data.userData.userName}
+                            className={styles.avatar}
                         />
                     </div>
                     <div>
-                        <h3 className='fw-700'>{data.userData.userName}</h3>
-                        <p className={styles.userDesignation}>{data.userData.userDesignation}</p>
+                        <Heading
+                            data={{
+                                heading: data.userData.userName,
+                            }}
+                            className="fw-600"
+                        />
+
+                        <Description
+                            description={data.userData.userDesignation}
+                        />
                     </div>
                 </div>
             </div>

@@ -1,18 +1,12 @@
-.heading{
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
+.topHeading{
+    text-transform: uppercase !important;
+    font-size: var(--font-lg);
 }
 
-.topHeading{
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
+.heading{
+    font-size: var(--font-xxl);
 }
 
 .subHeading{
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: var(--font-lg);
 }

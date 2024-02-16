@@ -1,79 +1,36 @@
 .portfolioCard {
-    position: relative;
-    height: auto;
-    width: 100%;
-    height: 100%;
-    border-radius: 1.5rem;
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--padding-lg);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    background: linear-gradient(95.6deg, #d7e7ff -4.48%, #7eb3ff 102.36%);
 }
 
-.img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    width: 35%;
-    height: 100%;
-}
-
-.img1 {
-    position: absolute;
-    top: 0;
-    right: 10%;
-    bottom: 0;
-    display: block;
-    width: 50%;
-    height: 100%;
-}
-
-.portfolioCard__title {
-    color: var(--Body-color, #303030);
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 40px; /* 125% */
-}
-
-.portfolioCard__content {
-    width: 50%;
-    padding: 2rem;
-    margin: 3rem 0;
-}
-
-.portfolioCard__description {
-    color: rgba(48, 48, 48, 0.7);
-    font-family: 'DM Sans';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px; /* 144.444% */
-}
-
-.btn {
-    margin-top: 1rem;
-    border-radius: 10px;
-    background: #ff774c;
-    color: #fff;
-    text-align: center;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    padding: 1rem 2rem;
-    border: 0;
-}
-
-.keywords {
-    display: flex;
-    gap: 10px;
-    margin: 2rem 0;
+.btn{
+    font-size: var(--font-sm) !important;
 }
 
 .btn_1 {
-    border-radius: 10px;
-    background: #dfdfdf;
-    width: 171px;
-    height: 45px;
-    flex-shrink: 0;
-    border: 0;
+    border-radius: var(--border-radius-xl);
+    background: #003274;
+    text-align: center;
+    color: var(--text-white);
+    padding: var(--padding-xs) var(--padding-sm);
+}
+
+.portfolioCard__image {
+    border-radius: var(--border-radius-md);
+}
+
+.description {
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolioCard {
+        grid-template-columns: 1fr;
+    }
 }

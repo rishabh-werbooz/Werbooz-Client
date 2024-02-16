@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Nunito+Sans:opsz,wght@6..12,700&family=Poppins:wght@400;600;700&family=Source+Sans+3:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Nunito+Sans:opsz,wght@6..12,700&family=Poppins:wght@400;600;700&family=Source+Sans+3:wght@700&display=swap");
 :root {
     --body-inline-space: 7rem;
     --body-block-space: 7rem;
@@ -8,6 +8,7 @@
     --border-radius-md: 1rem;
     --border-radius-lg: 2rem;
     --border-radius-xl: 3rem;
+    --border-radius-full: 100%;
 
     --font-xs: 0.75rem;
     --font-sm: 1rem;
@@ -16,6 +17,7 @@
     --font-xl: 2rem;
     --font-xxl: 2.5rem;
     --font-xxxl: 3rem;
+    --font-3_5xl: 3.5rem;
 
     --break-sm: 550px;
     --break-md: 750px;
@@ -25,9 +27,11 @@
     --break-xxxl: 1950px;
 
     --primary-color: #0e002d;
-    --secondary-color: #0e7773;
-    --background-color: #f9f9f9;
+    --secondary-color: #242331;
+    --background-primary: #ececec;
     --dark-gray: #686868;
+    --semi-transparent: rgba(0, 0, 0, 0.22);
+    --light-blue: rgb(215, 240, 248);
     --accent: #f4b767;
     --success: #37a855;
     --danger: #f83245;
@@ -51,14 +55,18 @@
     --padding-xxl: 3rem;
     --padding-xxxl: 4rem;
 
+    --margin-lg: 2rem;
+
     --duration-100: 0.1s;
     --duration-200: 0.2s;
     --duration-300: 0.3s;
     --duration-400: 0.4s;
 
+    --min-height-400: 400px;
+
     --tile-border: linear-gradient(45deg, #8900ff, #0e7773);
 
-    --main-heading-fonts: 'Lastica', sans-serif;
+    --main-heading-fonts: "Lastica", sans-serif;
 }
 
 @media screen and (max-width: 1550px) {
@@ -70,6 +78,7 @@
         --font-xl: 1.7rem;
         --font-xxl: 2.2rem;
         --font-xxxl: 2.7rem;
+        --font-3_5xl: 3.2rem;
 
         --body-block-space: 4rem;
     }
@@ -84,6 +93,7 @@
         --font-xl: 1.5rem;
         --font-xxl: 2rem;
         --font-xxxl: 2.4rem;
+        --font-3_5xl: 3rem;
 
         --body-inline-space: 5rem;
         --body-block-space: 4rem;
@@ -112,6 +122,7 @@
         --font-xl: 1.2rem;
         --font-xxl: 1.5rem;
         --font-xxxl: 1.5rem;
+        --font-3_5xl: 1.5rem;
     }
 }
 
@@ -127,7 +138,12 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     scroll-behavior: smooth;
-    font-family: 'Poppins';
+    font-family: "Poppins" !important;
+}
+/* YourComponent.module.css */
+
+.body-no-scroll {
+    overflow: hidden;
 }
 
 .heading-family {
@@ -259,62 +275,30 @@ body {
 
 .bg-primary-gradient {
     background: rgb(137, 0, 255);
-    background: -moz-linear-gradient(
-        90deg,
-        rgba(137, 0, 255, 1) 0%,
-        rgba(14, 119, 115, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-        90deg,
-        rgba(137, 0, 255, 1) 0%,
-        rgba(14, 119, 115, 1) 100%
-    );
-    background: linear-gradient(
-        90deg,
-        rgba(137, 0, 255, 1) 0%,
-        rgba(14, 119, 115, 1) 100%
-    );
+    background: -moz-linear-gradient(90deg, rgba(137, 0, 255, 1) 0%, rgba(14, 119, 115, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(137, 0, 255, 1) 0%, rgba(14, 119, 115, 1) 100%);
+    background: linear-gradient(90deg, rgba(137, 0, 255, 1) 0%, rgba(14, 119, 115, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8900ff",endColorstr="#0e7773",GradientType=1);
 }
 
 .bg-hovered-gradient:hover {
     background: rgb(137, 0, 255);
-    background: -moz-linear-gradient(
-        90deg,
-        rgba(137, 0, 255, 1) 0%,
-        rgba(14, 119, 115, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-        90deg,
-        rgba(137, 0, 255, 1) 0%,
-        rgba(14, 119, 115, 1) 100%
-    );
-    background: linear-gradient(
-        90deg,
-        rgba(137, 0, 255, 1) 0%,
-        rgba(14, 119, 115, 1) 100%
-    );
+    background: -moz-linear-gradient(90deg, rgba(137, 0, 255, 1) 0%, rgba(14, 119, 115, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(137, 0, 255, 1) 0%, rgba(14, 119, 115, 1) 100%);
+    background: linear-gradient(90deg, rgba(137, 0, 255, 1) 0%, rgba(14, 119, 115, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8900ff",endColorstr="#0e7773",GradientType=1);
     color: #fff;
 }
 
 .border-primary-gradient {
     border: 2px solid;
-    border-image: linear-gradient(
-        180deg,
-        rgba(137, 0, 255, 1) 0%,
-        rgba(14, 119, 115, 1) 100%
-    );
+    border-image: linear-gradient(180deg, rgba(137, 0, 255, 1) 0%, rgba(14, 119, 115, 1) 100%);
     border-image-slice: 1;
 }
 
 .text-primary-gradient {
     background: var(--primary-color);
-    background: linear-gradient(
-        to right,
-        var(--primary-color) 0%,
-        var(--secondary-color) 100%
-    );
+    background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -340,16 +324,24 @@ body {
     gap: 1rem;
 }
 
+.gap-1-5 {
+    gap: 1.5rem;
+}
+
 .gap-2 {
     gap: 2rem;
 }
 
-.gap-3 {
-    gap: 3rem;
+.gap-2-5 {
+    gap: 2.5rem;
 }
 
 .gap-3 {
     gap: 3rem;
+}
+
+.gap-3-5 {
+    gap: 3.5rem;
 }
 
 .gap-4 {
@@ -408,6 +400,10 @@ body {
     align-items: center;
 }
 
+.align-items-start {
+    align-items: flex-start;
+}
+
 .align-items-between {
     align-items: space-between;
 }
@@ -450,6 +446,10 @@ body {
 
 .font-xxxl {
     font-size: var(--font-xxxl);
+}
+
+.font-3_5xl {
+    font-size: var(--font-3_5xl);
 }
 
 .transition-all {

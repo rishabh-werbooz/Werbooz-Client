@@ -1,33 +1,49 @@
 import React from 'react'
 import styles from './portfolio.module.css'
-
+import Heading from '@/components/Heading'
+import Description from '@/components/Description'
+import classNames from 'classnames'
 interface DataProps {
     bgImg: string
     title: string
+    subTitle?: string
     description: string
+    className?: string
 }
 
-const index = ({ data }: { data: DataProps }) => {
+const index =({className, bgImg , title, description,subTitle}: DataProps) => {
+
+    // const PortfolioContainer = classNames(styles.PortfolioContainer, className);
+    
     return (
         <>
             <div
-                className="portfolio_v1"
+                className={` d-flex align-items-end border-radius-lg ${styles.PortfolioContainer} ${className}`}
                 style={{
-                    backgroundImage: `url(${data.bgImg})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    width: '100%',
-                    height: '400px',
-                    position: 'relative',
-                    borderRadius: '32px',
+                    backgroundImage: `url(${bgImg})`, // bgImg passing as props thats why I used inline style
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
                 }}
             >
-                <div className={styles.portfolio_v1_inner}>
-                    <h3 className="fw-600">{data.title}</h3>
-                    <h3 className="fw-600">Kargoplex</h3>
+                <div className={`${styles.portfolio_v1_inner}`}>
+                    <Heading
+                        data={{
+                            heading: title,
+                        }}
+                        className={`mt-2 font-sm fw-600`}
+                    />
+
+                    <Heading
+                        data={{
+                            subHeading: subTitle,
+                        }}
+                        className={`font-sm fw-500 lh-150`}
+                    />
+
                     <hr className="mt-1 mb-1" />
-                    <p className={styles.description}>{data.description}</p>
+
+                    <Description description={description} className={`${styles.description} mt-1 fw-400 font-sm`} />
                 </div>
             </div>
         </>
