@@ -57,7 +57,7 @@ export default function Home() {
                                 data={{
                                     heading: "Crafting Digital Success, One Pixel at a Time",
                                 }}
-                                className="fw-700 font-3_5xl"
+                                className="fw-700 font-xxl"
                             />
                         </div>
                         <div className={styles.description}>
@@ -164,7 +164,7 @@ export default function Home() {
                                 data={{
                                     heading: "Don't take our word for it",
                                 }}
-                                className="fw-700 font-xxxl"
+                                className="fw-700 font-xxl"
                             />
                         </div>
 
@@ -178,6 +178,38 @@ export default function Home() {
                     </div>
                 </BackgroundWrapper>
 
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding pt-2 pb-2 mt-2 mb-2`}>
+                        <Heading
+                            data={{
+                                topHeading: "SCULPTING YOUR PROJECTS FUTURE",
+                            }}
+                            className="fw-500 font-md text-light-blue"
+                        />
+                        <Heading
+                            data={{
+                                heading: "Methodology Crafting Digital Excellence",
+                            }}
+                            className="fw-700 font-xxl"
+                        />
+                    </div>
+                </BackgroundWrapper>
+
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding`}>
+                        <BlobDetailsBox_v1
+                            variant="right"
+                            image="/assets/lottie/testing.json"
+                            details={{
+                                description:
+                                    "Our journey begins by thoroughly understanding your project. We take the time to explore every angle and gather insights from various perspectives. This step is all about grasping the heart and soul of your concept.",
+                                subHeading: "Delving Deep into Your Vision",
+                                topHeading: "Thorough Project Understanding",
+                            }}
+                        />
+                    </div>
+                </BackgroundWrapper>
+
                 <Portfolio_v2 data={PortfolioDataV2} />
                 {/* <Testimonial data={TestimonialData} /> */}
                 <Blog data={BlogData} />
@@ -187,18 +219,6 @@ export default function Home() {
                 <Contact_v1 />
                 <NewsletterForm />
                 <ListItems_v1 />
-                <BackgroundWrapper backgroundColor="#F7F7F7">
-                    <BlobDetailsBox_v1
-                        variant="left"
-                        image="/assets/sample-img.gif"
-                        details={{
-                            description:
-                                "Like a skilled navigator, we chart a clear course for your project. This involves careful planning, setting milestones, and establishing timelines. Think of it as creating a reliable map for a successful journey",
-                            subHeading: "Creating a Roadmap",
-                            topHeading: "Strategic Project Planning",
-                        }}
-                    />
-                </BackgroundWrapper>
                 <FooterTop />
                 <BackgroundWrapper backgroundColor="#0032740D">
                     <ProjectsDevelopment listItemsData={listItemsData} listDetailsData={listDetailsData} />

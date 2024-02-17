@@ -123,6 +123,6 @@
 
 .testimonialHeading{
     color: #FFF !important;
-    margin-bottom: 1rem;
-
+    margin-bottom: var(--font-3_5xl);
+    
 }

@@ -1,8 +1,10 @@
+'use client'
 import React from 'react'
 import styles from './blobDetailBox.module.css'
 import Description from '@/components/Description'
 import Heading from '@/components/Heading'
 import Image from '@/components/Image'
+import { Player } from "@lottiefiles/react-lottie-player"
 interface Detail {
     heading?: string
     description: string
@@ -20,7 +22,8 @@ const index = ({ variant, image, details }: DataProps) => {
         <>
             <div className={`${styles.main} ${styles[variant]}`}>
                 <div className={styles.imageContainer}>
-                    <Image src={image} alt="blob" className={styles.image} />
+                    {/* <Image src={image} alt="blob" className={styles.image} /> */}
+                    <Player autoplay loop src={image} className={styles.image} />
                 </div>
                 <div className={`${styles.details} pl-1 pr-1`}>
                     <Heading
@@ -44,10 +47,7 @@ const index = ({ variant, image, details }: DataProps) => {
                         className={`${styles.subHeading} fw-700 font-xxl`}
                     />
 
-                    <Description
-                        description={details.description}
-                        className="mt-1"
-                    />
+                    <Description description={details.description} className="mt-1" />
                 </div>
             </div>
         </>

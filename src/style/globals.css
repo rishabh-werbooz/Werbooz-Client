@@ -37,6 +37,7 @@
     --danger: #f83245;
     --warning: #ff8c32;
     --light: #fff;
+    --light-blue:#003274;
 
     --primary-text-color: #191919;
     --secondary-text-color: #191919b3;
@@ -450,6 +451,13 @@ body {
 
 .font-3_5xl {
     font-size: var(--font-3_5xl);
+}
+
+.text-light-blue{
+    color: var(--light-blue);
+}
+.text-white{
+    color: #FFFFFF;
 }
 
 .transition-all {
