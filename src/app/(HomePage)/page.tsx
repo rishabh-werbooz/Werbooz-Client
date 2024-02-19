@@ -11,6 +11,7 @@ import Contact_v1 from "@/components/Forms/Contact/Contact_v1"
 import NewsletterForm from "@/components/Forms/NewsLetter/NewsLetter_v1"
 import ListItems_v1 from "@/components/ListItems/ListItems_v1"
 import Logos from "@/components/Cards/Logos/Logo_v1"
+import BlobDetailsBox_v2 from "@/components/BlobDetailBox/BlobDetailBox_v2"
 import BlobDetailsBox_v1 from "@/components/BlobDetailBox/BlobDetailBox_v1"
 import BackgroundWrapper from "@/components/BackgroundWrapper"
 import FooterTop from "@/components/FooterTop"
@@ -51,7 +52,13 @@ export default function Home() {
                             ))}
                         </Marquee>
                     </div>
-                    <div className={`main-inline-Padding pt-2 ${styles.servicesSection}`}>
+                    <Heading
+                        data={{
+                            topHeading: "Services",
+                        }}
+                        className="fw-700 font-md main-inline-Padding text-light-blue"
+                    />
+                    <div className={`main-inline-Padding  ${styles.servicesSection}`}>
                         <div className={styles.servicesHeading}>
                             <Heading
                                 data={{
@@ -95,9 +102,14 @@ export default function Home() {
                             bgColor={IconBoxData.bgColor}
                             className={styles.iconBox_4}
                         />
-
-                        <Button variant="outline" rounded="full" text="View All" className={styles.btn} />
                     </div>
+
+                    <Heading
+                        data={{
+                            topHeading: "Our Portfolio",
+                        }}
+                        className="fw-700 font-md main-inline-Padding text-light-blue"
+                    />
 
                     <div className={`main-inline-Padding  ${styles.portfolioSection}`}>
                         <div className={styles.portfolio_heading}>
@@ -113,41 +125,12 @@ export default function Home() {
                                 <Description description="In the artist's own experience, of course, art is fundamentally indefinable, unsayable; there is something sacred about its demands upon the soul" />
                             </div>
                         </div>
-                        <Portfolio_v1
-                            bgImg={PortfolioDataV1[0].bgImg}
-                            title={PortfolioDataV1[0].title}
-                            subTitle={PortfolioDataV1[0].subTitle}
-                            description={PortfolioDataV1[0].description}
-                            className={styles.portfolioItem_1}
-                        />
-                        <Portfolio_v1
-                            bgImg={PortfolioDataV1[1].bgImg}
-                            title={PortfolioDataV1[1].title}
-                            subTitle={PortfolioDataV1[1].subTitle}
-                            description={PortfolioDataV1[1].description}
-                            className={styles.portfolioItem_4}
-                        />
-                        <Portfolio_v1
-                            bgImg={PortfolioDataV1[2].bgImg}
-                            title={PortfolioDataV1[2].title}
-                            subTitle={PortfolioDataV1[2].subTitle}
-                            description={PortfolioDataV1[2].description}
-                            className={styles.portfolioItem_5}
-                        />
-                        <Portfolio_v1
-                            bgImg={PortfolioDataV1[3].bgImg}
-                            title={PortfolioDataV1[3].title}
-                            subTitle={PortfolioDataV1[3].subTitle}
-                            description={PortfolioDataV1[3].description}
-                            className={styles.portfolioItem_2}
-                        />
-                        <Portfolio_v1
-                            bgImg={PortfolioDataV1[4].bgImg}
-                            title={PortfolioDataV1[4].title}
-                            subTitle={PortfolioDataV1[4].subTitle}
-                            description={PortfolioDataV1[4].description}
-                            className={styles.portfolioItem_3}
-                        />
+                        {PortfolioDataV1.map((item, index) => (
+                            <div key={index} className={styles[`portfolioItem_${index + 1}`]}>
+                                <Portfolio_v1 bgImg={item.bgImg} title={item.title} subTitle={item.subTitle} description={item.description} />
+                            </div>
+                        ))}
+                        <Button variant="outline" rounded="full" text="View All" className={styles.btn} />
                     </div>
                 </BackgroundWrapper>
 
@@ -158,7 +141,7 @@ export default function Home() {
                                 data={{
                                     topHeading: "Testimonials",
                                 }}
-                                className="fw-500 font-md"
+                                className="fw-700 font-md"
                             />
                             <Heading
                                 data={{
@@ -184,7 +167,7 @@ export default function Home() {
                             data={{
                                 topHeading: "SCULPTING YOUR PROJECTS FUTURE",
                             }}
-                            className="fw-500 font-md text-light-blue"
+                            className="fw-700 font-md text-light-blue"
                         />
                         <Heading
                             data={{
@@ -195,9 +178,9 @@ export default function Home() {
                     </div>
                 </BackgroundWrapper>
 
-                <BackgroundWrapper backgroundColor="#FFFEFE">
+                <BackgroundWrapper backgroundColor="#222222">
                     <div className={`main-inline-Padding`}>
-                        <BlobDetailsBox_v1
+                        <BlobDetailsBox_v2
                             variant="right"
                             image="/assets/lottie/testing.json"
                             details={{
@@ -209,9 +192,111 @@ export default function Home() {
                         />
                     </div>
                 </BackgroundWrapper>
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding pt-2 pb-2`}>
+                        <BlobDetailsBox_v1
+                            variant="left"
+                            image="/assets/lottie/Project.json"
+                            details={{
+                                description:
+                                    "Like a skilled navigator, we chart a clear course for your project. This involves careful planning, setting milestones, and establishing timelines. Think of it as creating a reliable map for a successful journey",
+                                subHeading: "Creating a Roadmap",
+                                topHeading: "Strategic Project Planning",
+                            }}
+                        />
+                    </div>
+                </BackgroundWrapper>
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding pt-2 pb-2`}>
+                        <BlobDetailsBox_v1
+                            variant="right"
+                            image="/assets/lottie/uiDevelopment.json"
+                            details={{
+                                description:
+                                    "Our talented team focuses on crafting a user interface that not only looks great but also ensures a delightful user experience. Your input is crucial, and we're ready to make changes until you're satisfied.",
+                                subHeading: "Building an Inviting Experience",
+                                topHeading: "User-Friendly UI Design",
+                            }}
+                        />
+                    </div>
+                </BackgroundWrapper>
+
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding pt-2 pb-2`}>
+                        <BlobDetailsBox_v1
+                            variant="left"
+                            image="/assets/lottie/frontendDeveloper.json"
+                            details={{
+                                description:
+                                    "This is where the design takes shape and becomes a functional reality. Our developers work their magic to breathe life into the design, making it functional and visually appealing.",
+                                subHeading: "Bringing Your Vision to Life",
+                                topHeading: "Frontend Development",
+                            }}
+                        />
+                    </div>
+                </BackgroundWrapper>
+
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding pt-2 pb-2`}>
+                        <BlobDetailsBox_v1
+                            variant="right"
+                            image="/assets/lottie/backend.json"
+                            details={{
+                                description:
+                                    "Just like a sturdy building needs a solid foundation, your project needs a robust backend. We work on this simultaneously with the frontend, ensuring everything is balanced and well-structured.",
+                                subHeading: "Creating a Strong Foundation",
+                                topHeading: "Simultaneous Backend Development",
+                            }}
+                        />
+                    </div>
+                </BackgroundWrapper>
+
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding pt-2 pb-2`}>
+                        <BlobDetailsBox_v1
+                            variant="left"
+                            image="/assets/lottie/deployment.json"
+                            details={{
+                                description:
+                                    "As we work on the frontend and backend, we deploy your project on your dedicated server. This allows you to see real-time changes, so you're always in the loop.",
+                                subHeading: "Witness Progress Unfold",
+                                topHeading: "Real-Time Deployment",
+                            }}
+                        />
+                    </div>
+                </BackgroundWrapper>
+
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding pt-2 pb-2`}>
+                        <BlobDetailsBox_v1
+                            variant="right"
+                            image="/assets/lottie/softwareTesting.json"
+                            details={{
+                                description:
+                                    "Our final stages involve rigorous testing and quality checks. We evaluate the UI, code, and overall performance to ensure everything works smoothly. We also check for any glitches, bugs, and security issues.",
+                                subHeading: "Assurance Ensuring Excellence",
+                                topHeading: "Comprehensive Testing and Quality",
+                            }}
+                        />
+                    </div>
+                </BackgroundWrapper>
+
+                <BackgroundWrapper backgroundColor="#222222">
+                    <div className={`main-inline-Padding`}>
+                        <BlobDetailsBox_v2
+                            variant="left"
+                            image="/assets/lottie/satisfaction.json"
+                            details={{
+                                description:
+                                    "When you're satisfied, we consider the project complete. But our commitment to your project doesn't stop here. We're here for future support and maintenance, ensuring your digital venture continues to thrive.",
+                                subHeading: "Your Vision Comes Alive",
+                                topHeading: "Client Satisfaction and Project Completion",
+                            }}
+                        />
+                    </div>
+                </BackgroundWrapper>
 
                 <Portfolio_v2 data={PortfolioDataV2} />
-                {/* <Testimonial data={TestimonialData} /> */}
                 <Blog data={BlogData} />
                 <Heading data={HeadingData} />
                 <Description description="Just like a sturdy building needs a solid foundation, your project needs a robust backend. We work on this simultaneously with the frontend, ensuring everything is balanced and well-structured." />
