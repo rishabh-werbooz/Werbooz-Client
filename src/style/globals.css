@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Nunito+Sans:opsz,wght@6..12,700&family=Poppins:wght@400;600;700&family=Source+Sans+3:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
-    --body-inline-space: 7rem;
+    --body-inline-space: 5rem;
     --body-block-space: 7rem;
 
     --border-radius-xs: 0.25rem;
@@ -139,7 +140,7 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     scroll-behavior: smooth;
-    font-family: "Poppins" !important;
+    font-family: "Open Sans", sans-serif !important;
 }
 /* YourComponent.module.css */
 
