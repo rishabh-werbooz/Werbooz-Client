@@ -19,9 +19,22 @@ import ProjectsDevelopment from "@/components/ProjectsDevelopment"
 import HeroSection_v1 from "@/components/HeroSection/HeroSection_v1"
 import HeroSection_v2 from "@/components/HeroSection/HeroSection_v2"
 import Marquee from "react-fast-marquee"
+import IconBox_v2 from "@/components/Cards/IconBox/IconBox_v2"
+
 import { logoImg_1, logoImg_2 } from "@/content/sampleData"
 
-import { IconBoxData, PortfolioDataV1, PortfolioDataV2, TestimonialData, BlogData, HeadingData, listDetailsData, listItemsData, HeroSectionData_v1 } from "@/content/sampleData"
+import {
+    IconBoxData,
+    PortfolioDataV1,
+    PortfolioDataV2,
+    TestimonialData,
+    BlogData,
+    HeadingData,
+    listDetailsData,
+    listItemsData,
+    HeroSectionData_v1,
+    IconBox_v2Data,
+} from "@/content/sampleData"
 
 export default function Home() {
     return (
@@ -192,6 +205,7 @@ export default function Home() {
                         />
                     </div>
                 </BackgroundWrapper>
+
                 <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding pt-2 pb-2`}>
                         <BlobDetailsBox_v1
@@ -206,6 +220,7 @@ export default function Home() {
                         />
                     </div>
                 </BackgroundWrapper>
+
                 <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding pt-2 pb-2`}>
                         <BlobDetailsBox_v1
@@ -222,7 +237,7 @@ export default function Home() {
                 </BackgroundWrapper>
 
                 <BackgroundWrapper backgroundColor="#FFFEFE">
-                    <div className={`main-inline-Padding pt-2 pb-2`}>
+                    <div className={`main-inline-Padding pt-2`}>
                         <BlobDetailsBox_v1
                             variant="left"
                             image="/assets/lottie/frontendDeveloper.json"
@@ -293,6 +308,34 @@ export default function Home() {
                                 topHeading: "Client Satisfaction and Project Completion",
                             }}
                         />
+                    </div>
+                </BackgroundWrapper>
+
+                <BackgroundWrapper backgroundColor="#0032740D">
+                    <div className={`main-inline-Padding ${styles.projectDevelopmentSection}`}>
+                        <div className="pb-2">
+                            <Heading
+                                data={{
+                                    topHeading: "Client engagement and project completion",
+                                }}
+                                className="fw-700 font-md text-light-blue"
+                            />
+                            <Heading
+                                data={{
+                                    heading: "An all-encompassing view of the project's journey",
+                                }}
+                                className="fw-700 font-xxl"
+                            />
+                        </div>
+                        <ProjectsDevelopment listItemsData={listItemsData} listDetailsData={listDetailsData} />
+                    </div>
+                </BackgroundWrapper>
+
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding ${styles.IconBoxGrid} ${styles.projectDevelopmentSection}`}>
+                        {IconBox_v2Data.map((data, index) => (
+                            <IconBox_v2 key={index} image={data.image} borderRight={data?.borderRight} borderBottom={data?.borderBottom} />
+                        ))}
                     </div>
                 </BackgroundWrapper>
 
