@@ -125,3 +125,15 @@
     color: #fff !important;
     margin-bottom: var(--font-3_5xl);
 }
+
+.projectDevelopmentSection{
+    padding-top: var(--body-inline-space);
+    padding-bottom: var(--body-inline-space);
+}
+
+.IconBoxGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
