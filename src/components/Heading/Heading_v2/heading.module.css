@@ -1,0 +1,12 @@
+.topHeading{
+    text-transform: uppercase !important;
+    font-family: var(--font-roboto)
+}
+
+.subHeading{
+    font-family: var(--font-roboto);
+}
+
+.heading{
+    font-family: var(--font-roboto);
+}

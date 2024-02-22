@@ -21,7 +21,6 @@ const index = () => {
                         focusBorderColor="#003274"
                         bgColor="#EEEAEA"
                         border="none"
-                        fontFamily="Poppins"
                         _focus={{
                             outline: 'none',
                             border: 'none',
@@ -36,7 +35,6 @@ const index = () => {
                     _hover={{ bgColor: '#003274' }}
                     color="white"
                     p={7}
-                    fontFamily="Poppins"
                 >
                     Subscribe
                 </Button>

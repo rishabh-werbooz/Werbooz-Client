@@ -30,13 +30,6 @@
     grid-area: area2;
 }
 
-.topHeading {
-    color: #0f172a;
-}
-
-.subHeading {
-    color: #003274;
-}
 
 @media (max-width: 768px) {
     .left {

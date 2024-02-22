@@ -1,8 +1,8 @@
-import React from 'react'
-import styles from './portfolio.module.css'
-import Heading from '@/components/Heading'
-import Description from '@/components/Description'
-import classNames from 'classnames'
+import React from "react"
+import styles from "./portfolio.module.css"
+import Heading from "@/components/Heading/Heading_v1"
+import Description from "@/components/Description"
+import classNames from "classnames"
 interface DataProps {
     bgImg: string
     title: string
@@ -11,10 +11,9 @@ interface DataProps {
     className?: string
 }
 
-const index =({className, bgImg , title, description,subTitle}: DataProps) => {
-
+const index = ({ className, bgImg, title, description, subTitle }: DataProps) => {
     // const PortfolioContainer = classNames(styles.PortfolioContainer, className);
-    
+
     return (
         <>
             <div

@@ -222,7 +222,8 @@ export const logoImg_2 = [
     "/assets/logos/ipercepts.png",
     "/assets/logos/breakfree.png",
 ]
-{/* <div className={`main-inline-Padding ${styles.IconBoxGrid} ${styles.projectDevelopmentSection}`}>
+{
+    /* <div className={`main-inline-Padding ${styles.IconBoxGrid} ${styles.projectDevelopmentSection}`}>
                         <IconBox_v2 borderRight={true} borderBottom={true} />
                         <IconBox_v2 borderBottom={true} borderRight={true} />
                         <IconBox_v2 borderBottom={true} borderRight={true} />
@@ -232,44 +233,42 @@ export const logoImg_2 = [
                         <IconBox_v2 borderRight={true} />
                         <IconBox_v2 />
                         
-                    </div> */}
+                    </div> */
+}
 export const IconBox_v2Data = [
     {
-        image:'/assets/logos/develup.png',
+        image: "/assets/logos/develup.png",
         borderRight: true,
         borderBottom: true,
+    },
+    {
+        image: "/assets/logos/breakfree.png",
+        borderBottom: true,
+        borderRight: true,
+    },
+    {
+        image: "/assets/logos/ipercepts.png",
+        borderBottom: true,
+        borderRight: true,
+    },
+    {
+        image: "/assets/logos/weekendo.png",
+        borderBottom: true,
+    },
+    {
+        image: "/assets/logos/kargo-logo.png",
+        borderRight: true,
+    },
+    {
+        image: "/assets/logos/proBehave.png",
+        borderRight: true,
+    },
+    {
+        image: "/assets/logos/qapp.png",
+        borderRight: true,
+    },
 
-    },
     {
-        image:'/assets/logos/breakfree.png',
-        borderBottom: true,
-        borderRight: true,
+        image: "/assets/logos/ubz.png",
     },
-    {
-        image:'/assets/logos/ipercepts.png',
-        borderBottom: true,
-        borderRight: true,
-    },
-    {
-        image:'/assets/logos/ubz.png',
-        borderBottom: true,
-    },
-    {
-        image:'/assets/logos/kargo-logo.png',
-        borderRight: true,
-    },
-    {
-        image:'/assets/logos/proBehave.png',
-        borderRight: true,
-    },
-    {
-        image:'/assets/logos/qapp.png',
-        borderRight: true,
-    },
-    {
-        image:'/assets/logos/weekendo.png',
-    }
 ]
-
-
-

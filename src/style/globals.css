@@ -28,9 +28,9 @@
     --break-xxxl: 1950px;
 
     --primary-color: #0e002d;
-    --secondary-color: #242331;
+    --secondary-color: #181433;
     --background-primary: #ececec;
-    --dark-gray: #686868;
+    --dark-gray: #8D8D8D;
     --semi-transparent: rgba(0, 0, 0, 0.22);
     --light-blue: rgb(215, 240, 248);
     --accent: #f4b767;
@@ -46,6 +46,11 @@
 
     --btn-primary: rgba(255, 255, 255, 0.22);
     --btn-white: #ffffff;
+
+    --facebook:#316FF6;
+    --twitter:#000000;
+    --linkedin:#0077B5;
+    --instagram:#E4405F;
 
     --primary-box-shadow: 0px 4px 22px 0px rgba(102, 102, 102, 0.18);
 
@@ -64,6 +69,9 @@
     --duration-300: 0.3s;
     --duration-400: 0.4s;
 
+    --font-roboto:"Roboto", sans-serif !important;
+    --font-open-sans: "Open Sans", sans-serif !important;
+  
     --min-height-400: 400px;
 
     --tile-border: linear-gradient(45deg, #8900ff, #0e7773);
@@ -81,7 +89,6 @@
         --font-xxl: 2.2rem;
         --font-xxxl: 2.7rem;
         --font-3_5xl: 3.2rem;
-
         --body-block-space: 4rem;
     }
 }
@@ -463,4 +470,20 @@ body {
 
 .transition-all {
     transition: all var(--duration-300) ease-in-out;
+}
+
+.facebook{
+    color: var(--facebook);
+}
+
+.twitter{
+    color: var(--twitter);
+}
+
+.linkedin{
+    color: var(--linkedin);
+}
+
+.instagram{
+    color: var(--instagram);
 }

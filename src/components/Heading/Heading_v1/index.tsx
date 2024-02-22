@@ -27,9 +27,9 @@ const index: React.FC<HeadingProps> = ({ data, variant = "left", className = "" 
     return (
         <>
           
-            <h2 className={`${styles.topHeading} ${className}`}>{data.topHeading}</h2>
-            <h1 className={`${styles.heading} ${className}`}>{data.heading}</h1>
-            <h3 className={`${styles.subHeading} ${className}`}>{data.subHeading}</h3>
+            <h3 className={`${styles.topHeading} ${className}`}>{data.topHeading}</h3>
+            <h2 className={`${styles.heading} ${className}`}>{data.heading}</h2>
+            <h4 className={`${styles.subHeading} ${className}`}>{data.subHeading}</h4>
          
         </>
     )

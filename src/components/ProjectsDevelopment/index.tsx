@@ -3,7 +3,7 @@ import React from "react"
 import styles from "./project.module.css"
 import Button from "@/components/Buttons"
 import Description from "@/components/Description"
-import Heading from "@/components/Heading"
+import Heading_v2 from "@/components/Heading/Heading_v2"
 import ProjectSteps from "./ProjectsSteps"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -11,7 +11,6 @@ import { listIconsData } from "@/content/sampleData"
 import { Player } from "@lottiefiles/react-lottie-player"
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill, BsArrowRightCircle } from "react-icons/bs"
 import { SlArrowLeftCircle } from "react-icons/sl"
-
 
 interface ListItemDetails {
     heading: string
@@ -70,20 +69,16 @@ const index = ({ listItemsData, listDetailsData }: ProjectProps) => {
                     <AnimatePresence key={currentIndex}>
                         <motion.div initial="initial" animate="animate" exit="exit" variants={variants} transition={{ duration: 0.9, ease: "easeInOut" }}>
                             <div className={`d-flex justify-content-start flex-column align-items-start gap-0 ${styles.rightContainer} `}>
-                                <Heading
-                                    variant="left"
-                                    data={{
-                                        heading: listDetailsData[currentIndex].heading,
-                                    }}
-                                    className={`${styles.Heading} fw-700 font-xl`}
-                                />
-
-                                <Heading
-                                    variant="left"
-                                    data={{
-                                        subHeading: listDetailsData[currentIndex].subHeading,
-                                    }}
-                                    className={`${styles.subHeading} fw-700 font-xl`}
+                                <Heading_v2
+                                    headingData={[
+                                        { heading: listDetailsData[currentIndex].heading, color: "#242424" },
+                                        {
+                                            heading: listDetailsData[currentIndex].subHeading,
+                                            color: "#003274",
+                                        },
+                                    ]}
+                                    break={true}
+                                    className={`fw-700 font-xl ${styles.heading}`}
                                 />
 
                                 <div className={`mt-1 mb-1 d-flex flex-column gap-1`}>

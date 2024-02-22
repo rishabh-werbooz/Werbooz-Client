@@ -1,14 +1,17 @@
 .ListContainer {
     display: grid;
-    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    justify-content: center;
+align-items: start;
 }
 
 .ListHead {
-    color: #181433;
+    color: var(--secondary-color);
 }
 
 .ListItems {
     margin: 1rem 0;
-    color: #181433;
+    color: var(--secondary-color);
     font-size: var(--font-md);
 }
