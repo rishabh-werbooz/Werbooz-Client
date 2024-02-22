@@ -22,7 +22,7 @@ const index = ({ heading_1, heading_2, description_1, description_2, buttonText,
     return (
         <>
             <div className={styles.heroSectionBackground}>
-                {/* <WebGLFluidSimulation /> */}
+                <WebGLFluidSimulation />
 
                 <div className={`${styles.heroSection} d-flex justify-content-center flex-column  align-items-center gap-1-5 `}>
                     <BlinkingDots />
