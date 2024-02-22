@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import styles from "./heroSection.module.css"
-import Heading from "@/components/Heading"
+import Heading from "@/components/Heading/Heading_v1"
 import Description from "@/components/Description"
 import Button from "@/components/Buttons"
 import { Player } from "@lottiefiles/react-lottie-player"
@@ -22,7 +22,7 @@ const index = ({ heading_1, heading_2, description_1, description_2, buttonText,
     return (
         <>
             <div className={styles.heroSectionBackground}>
-                {/* <WebGLFluidSimulation /> */}
+                <WebGLFluidSimulation />
 
                 <div className={`${styles.heroSection} d-flex justify-content-center flex-column  align-items-center gap-1-5 `}>
                     <BlinkingDots />

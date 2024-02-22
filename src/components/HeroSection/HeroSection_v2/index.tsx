@@ -1,7 +1,7 @@
-'use client'
+"use client"
 import React from "react"
 import styles from "./heroSection.module.css"
-import Heading from "@/components/Heading"
+import Heading from "@/components/Heading/Heading_v1"
 import Description from "@/components/Description"
 import Button from "@/components/Buttons"
 import Image from "@/components/Image"

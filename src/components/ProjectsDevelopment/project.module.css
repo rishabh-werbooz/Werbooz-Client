@@ -10,12 +10,16 @@
     overflow-y: hidden;
 }
 
-.Heading {
+/* .Heading {
     color: #242424;
 }
 
 .subHeading {
     color: #003274;
+} */
+
+.heading {
+    text-align: left;
 }
 
 .description {
@@ -96,7 +100,7 @@
     }
 
     .rightContainer {
-        justify-content: center ;
+        justify-content: center;
         align-items: center;
     }
     .animatedImg {

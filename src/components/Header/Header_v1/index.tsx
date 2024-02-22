@@ -3,6 +3,7 @@ import React from "react"
 import Link from "next/link"
 import styles from "./header.module.css"
 import Button from "@/components/Buttons"
+import Image from '@/components/Image'
 
 function index() {
     return (
@@ -11,7 +12,7 @@ function index() {
                 <header className={`${styles.header} d-flex justify-content-evenly align-items-center`}>
                     <div>
                         <Link href="/">
-                            <img src="/assets/werbooz_logo.png" alt="Werbooz Logo" />
+                            <Image src="/assets/werbooz_logo.png" alt="Werbooz Logo" />
                         </Link>
                     </div>
                     <nav>

@@ -1,70 +1,68 @@
-import styles from './listitems.module.css'
-import Heading from '@/components/Heading'
+import styles from "./listitems.module.css"
+import Heading from "@/components/Heading/Heading_v1"
+import Heading_v2 from "@/components/Heading/Heading_v2"
 const index = () => {
     return (
         <div className={styles.ListContainer}>
             <div>
-                <Heading
-                    data={{
-                        heading: 'Company',
-                    }}
-                    className={`${styles.ListHead} font-lg fw-700`}
-                />
-                <Heading
-                    data={{
-                        heading: 'About Us',
-                    }}
-                    className={styles.ListItems}
-                />
-                <Heading
-                    data={{
-                        heading: 'Careers',
-                    }}
-                    className={styles.ListItems}
-                />
-                <Heading
-                    data={{
-                        heading: 'Blog',
-                    }}
-                    className={styles.ListItems}
-                />
-                <Heading
-                    data={{
-                        heading: 'Pricing',
-                    }}
-                    className={styles.ListItems}
+                <div className="mb-1">
+                    <Heading
+                        data={{
+                            heading: "Company",
+                        }}
+                        className={`fw-700 font-lg ${styles.ListHead}`}
+                        variant="center"
+                    />
+                </div>
+
+                <Heading_v2
+                    headingData={[
+                        { heading: "About Us", color: "#181433" },
+                        {
+                            heading: "Careers",
+                            color: "#181433",
+                        },
+                        {
+                            heading: "Blog",
+                            color: "#181433",
+                        },
+                        {
+                            heading: "Pricing",
+                            color: "#181433",
+                        },
+                    ]}
+                    break={true}
+                    className={`fw-400 font-md`}
                 />
             </div>
             <div>
-                <Heading
-                    data={{
-                        heading: 'Resources',
-                    }}
-                    className={`${styles.ListHead} font-lg fw-700`}
-                />
-                <Heading
-                    data={{
-                        heading: 'Templates',
-                    }}
-                    className={styles.ListItems}
-                />
-                <Heading
-                    data={{
-                        heading: 'Tutorials',
-                    }}
-                    className={styles.ListItems}
-                />
-                <Heading
-                    data={{
-                        heading: 'Free resources',
-                    }}
-                    className={styles.ListItems}
-                />
-                <Heading
-                    data={{
-                        heading: 'Contract templates',
-                    }}
-                    className={styles.ListItems}
+                <div className="mb-1">
+                    <Heading
+                        data={{
+                            heading: "Resources",
+                        }}
+                        className={`fw-700 font-lg ${styles.ListHead}`}
+                        variant="center"
+                    />
+                </div>
+                <Heading_v2
+                    headingData={[
+                        { heading: "Templates", color: "#181433" },
+                        {
+                            heading: "Tutorials",
+                            color: "#181433",
+                        },
+                        {
+                            heading: "Free resources",
+                            color: "#181433",
+                        },
+                        {
+                            heading: "Contract templates",
+                            color: "#181433",
+                        },
+                    ]}
+                    break={true}
+                    className={`fw-400 font-md mt-05`}
                 />
             </div>
         </div>

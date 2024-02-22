@@ -134,6 +134,12 @@
 .IconBoxGrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.BlogGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-bottom: 5rem;
 }

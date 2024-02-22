@@ -4,7 +4,8 @@ import Portfolio_v1 from "@/components/Cards/Portfolio/Portfolio_v1"
 import Portfolio_v2 from "@/components/Cards/Portfolio/Portfolio_v2"
 import Testimonial from "@/components/Cards/Testimonial"
 import Blog from "@/components/Cards/Blog/Blog_v1"
-import Heading from "@/components/Heading"
+import Heading_v1 from "@/components/Heading/Heading_v1"
+import Heading_v2 from "@/components/Heading/Heading_v2"
 import Description from "@/components/Description"
 import Button from "@/components/Buttons"
 import Contact_v1 from "@/components/Forms/Contact/Contact_v1"
@@ -65,7 +66,7 @@ export default function Home() {
                             ))}
                         </Marquee>
                     </div>
-                    <Heading
+                    <Heading_v1
                         data={{
                             topHeading: "Services",
                         }}
@@ -73,7 +74,7 @@ export default function Home() {
                     />
                     <div className={`main-inline-Padding  ${styles.servicesSection}`}>
                         <div className={styles.servicesHeading}>
-                            <Heading
+                            <Heading_v1
                                 data={{
                                     heading: "Crafting Digital Success, One Pixel at a Time",
                                 }}
@@ -117,7 +118,7 @@ export default function Home() {
                         />
                     </div>
 
-                    <Heading
+                    <Heading_v1
                         data={{
                             topHeading: "Our Portfolio",
                         }}
@@ -127,10 +128,23 @@ export default function Home() {
                     <div className={`main-inline-Padding  ${styles.portfolioSection}`}>
                         <div className={styles.portfolio_heading}>
                             <div className={styles.portfolioHeading}>
-                                <Heading
+                                {/* <Heading_v1
                                     data={{
                                         heading: "Showcasing Our  Works A Portfolio of Excellence",
                                     }}
+                                    className="fw-700 font-xxl"
+                                /> */}
+                                <Heading_v2
+                                    headingData={[
+                                        {
+                                            heading: "Showcasing Our  Works ",
+                                            color: "#0D0D0D",
+                                        },
+                                        {
+                                            heading: "A Portfolio of Excellence",
+                                            color: "#003274",
+                                        },
+                                    ]}
                                     className="fw-700 font-xxl"
                                 />
                             </div>
@@ -150,13 +164,13 @@ export default function Home() {
                 <BackgroundWrapper backgroundColor="#003274">
                     <div className={`${styles.testimonialContainer}`}>
                         <div className={`main-inline-Padding ${styles.testimonialHeading}`}>
-                            <Heading
+                            <Heading_v1
                                 data={{
                                     topHeading: "Testimonials",
                                 }}
                                 className="fw-700 font-md"
                             />
-                            <Heading
+                            <Heading_v1
                                 data={{
                                     heading: "Don't take our word for it",
                                 }}
@@ -176,16 +190,23 @@ export default function Home() {
 
                 <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding pt-2 pb-2 mt-2 mb-2`}>
-                        <Heading
+                        <Heading_v1
                             data={{
                                 topHeading: "SCULPTING YOUR PROJECTS FUTURE",
                             }}
                             className="fw-700 font-md text-light-blue"
                         />
-                        <Heading
-                            data={{
-                                heading: "Methodology Crafting Digital Excellence",
-                            }}
+                        <Heading_v2
+                            headingData={[
+                                {
+                                    heading: "Methodology ",
+                                    color: "#0D0D0D",
+                                },
+                                {
+                                    heading: "Crafting Digital Excellence",
+                                    color: "#003274",
+                                },
+                            ]}
                             className="fw-700 font-xxl"
                         />
                     </div>
@@ -314,16 +335,23 @@ export default function Home() {
                 <BackgroundWrapper backgroundColor="#0032740D">
                     <div className={`main-inline-Padding ${styles.projectDevelopmentSection}`}>
                         <div className="pb-2">
-                            <Heading
+                            <Heading_v1
                                 data={{
                                     topHeading: "Client engagement and project completion",
                                 }}
                                 className="fw-700 font-md text-light-blue"
                             />
-                            <Heading
-                                data={{
-                                    heading: "An all-encompassing view of the project's journey",
-                                }}
+                            <Heading_v2
+                                headingData={[
+                                    {
+                                        heading: "An all-encompassing view of the",
+                                        color: "#242424",
+                                    },
+                                    {
+                                        heading: " project's journey",
+                                        color: "#003274",
+                                    },
+                                ]}
                                 className="fw-700 font-xxl"
                             />
                         </div>
@@ -332,25 +360,62 @@ export default function Home() {
                 </BackgroundWrapper>
 
                 <BackgroundWrapper backgroundColor="#FFFEFE">
-                    <div className={`main-inline-Padding ${styles.IconBoxGrid} ${styles.projectDevelopmentSection}`}>
-                        {IconBox_v2Data.map((data, index) => (
-                            <IconBox_v2 key={index} image={data.image} borderRight={data?.borderRight} borderBottom={data?.borderBottom} />
-                        ))}
+                    <div className={`main-inline-Padding pb-2  ${styles.projectDevelopmentSection}`}>
+                        <Heading_v2
+                            headingData={[
+                                {
+                                    heading: "Showcasing Our Pinnacle Works",
+                                    color: "#242424",
+                                },
+                                {
+                                    heading: "  A Portfolio of Excellence",
+                                    color: "#003274",
+                                },
+                            ]}
+                            className="fw-700 font-xxl text-center"
+                        />
+                        <div className={`${styles.IconBoxGrid}`}>
+                            {IconBox_v2Data.map((data, index) => (
+                                <IconBox_v2 key={index} image={data.image} borderRight={data?.borderRight} borderBottom={data?.borderBottom} />
+                            ))}
+                        </div>
                     </div>
                 </BackgroundWrapper>
 
-                <Portfolio_v2 data={PortfolioDataV2} />
-                <Blog data={BlogData} />
-                <Heading data={HeadingData} />
+                <BackgroundWrapper backgroundColor="#FFFEFE">
+                    <div className={`main-inline-Padding pb-2  ${styles.projectDevelopmentSection}`}>
+                        <div className="d-flex justify-content-between align-items-center mb-2">
+                            <div>
+                                <Heading_v1
+                                    data={{
+                                        heading: "Our Recent Articles",
+                                    }}
+                                    className="fw-700 font-xxl text-light-blue "
+                                />
+                                <Description description="Here’s what we've been up to recently." />
+                            </div>
+                            <Button variant="outline" rounded="full" text="View All" className={styles.btn} />
+                        </div>
+                        <div className={`${styles.BlogGrid} mt-2`}>
+                            <Blog data={BlogData} />
+                            <Blog data={BlogData} />
+                            <Blog data={BlogData} />
+                        </div>
+                    </div>
+                </BackgroundWrapper>
+
+                {/* <Portfolio_v2 data={PortfolioDataV2} />
+
+                <Heading_v1 data={HeadingData} />
                 <Description description="Just like a sturdy building needs a solid foundation, your project needs a robust backend. We work on this simultaneously with the frontend, ensuring everything is balanced and well-structured." />
                 <Button variant="solid" rounded="full" text="Schedule a Call" onClick={() => alert("Hello World")} />
                 <Contact_v1 />
                 <NewsletterForm />
                 <ListItems_v1 />
-                <FooterTop />
-                <BackgroundWrapper backgroundColor="#0032740D">
+                <FooterTop /> */}
+                {/* <BackgroundWrapper backgroundColor="#0032740D">
                     <ProjectsDevelopment listItemsData={listItemsData} listDetailsData={listDetailsData} />
-                </BackgroundWrapper>
+                </BackgroundWrapper> */}
             </div>
         </>
     )
