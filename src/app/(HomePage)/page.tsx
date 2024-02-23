@@ -1,3 +1,4 @@
+"use client"
 import styles from "./home.module.css"
 import IconBox from "@/components/Cards/IconBox/IconBox_v1"
 import Portfolio_v1 from "@/components/Cards/Portfolio/Portfolio_v1"
@@ -21,9 +22,9 @@ import HeroSection_v1 from "@/components/HeroSection/HeroSection_v1"
 import HeroSection_v2 from "@/components/HeroSection/HeroSection_v2"
 import Marquee from "react-fast-marquee"
 import IconBox_v2 from "@/components/Cards/IconBox/IconBox_v2"
-
+import BlinkingDots from "@/components/BlinkingDots"
 import { logoImg_1, logoImg_2 } from "@/content/sampleData"
-
+import Link from "next/link"
 import {
     IconBoxData,
     PortfolioDataV1,
@@ -383,7 +384,7 @@ export default function Home() {
                 </BackgroundWrapper>
 
                 <BackgroundWrapper backgroundColor="#FFFEFE">
-                    <div className={`main-inline-Padding pb-2  ${styles.projectDevelopmentSection}`}>
+                    <div className={`main-inline-Padding`}>
                         <div className="d-flex justify-content-between align-items-center mb-2">
                             <div>
                                 <Heading_v1
@@ -394,15 +395,36 @@ export default function Home() {
                                 />
                                 <Description description="Here’s what we've been up to recently." />
                             </div>
-                            <Button variant="outline" rounded="full" text="View All" className={styles.btn} />
+                            <Link href="/blogs">
+                                <Button variant="outline" rounded="full" text="View All" className={styles.btn} />
+                            </Link>
                         </div>
-                        <div className={`${styles.BlogGrid} mt-2`}>
+                        <div className={`${styles.BlogGrid}`}>
                             <Blog data={BlogData} />
                             <Blog data={BlogData} />
                             <Blog data={BlogData} />
                         </div>
                     </div>
                 </BackgroundWrapper>
+
+                <div className={`border-radius-md ${styles.contactFormSection}`}>
+                    <BlinkingDots />
+                    <div className={`${styles.contactFormInnerSection}`}>
+                        <Contact_v1 />
+                        <div>
+                            <Heading_v1
+                                data={{
+                                    heading: "Contact our Expertise",
+                                }}
+                                className="fw-700 font-xxxl text-white"
+                            />
+                            <Description
+                                description="Initiate your journey by filling the form. Share your project goals and contact details; it's the first step to bring your vision to life."
+                                className="text-white"
+                            />
+                        </div>
+                    </div>
+                </div>
 
                 {/* <Portfolio_v2 data={PortfolioDataV2} />
 

@@ -14,7 +14,7 @@
 .navDiv {
     width: 100%;
     background-color: var(--primary-color);
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -56,4 +56,21 @@
 .btn {
     font-weight: 600 !important;
     font-size: var(--font-md) !important;
+}
+
+.sidebar{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navList , .link,.btn {
+        display: none !important;
+    }
+    .sidebar {
+        display: block;
+    }
+
+    .header{
+        justify-content: space-between;
+    }
 }

@@ -141,5 +141,26 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: var(--body-inline-space);
+}
+
+.contactFormSection{
+    position: relative;
+    margin: 0 var(--body-inline-space) var(--body-inline-space);
+    background: linear-gradient(180deg, #0e002d 0%, #003274 137.72%);
+}
+
+.contactFormInnerSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    text-align: center;
+    padding: 4rem;
+}
+
+/* responsive .BlogGrid  */
+@media (max-width: 768px) {
+    .BlogGrid{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

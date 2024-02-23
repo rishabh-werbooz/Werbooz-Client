@@ -142,7 +142,6 @@
     scroll-behavior: smooth;
 }
 
-html,
 body {
     overflow-x: hidden;
     min-height: 100vh;
@@ -465,7 +464,7 @@ body {
     color: var(--light-blue);
 }
 .text-white{
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 .transition-all {

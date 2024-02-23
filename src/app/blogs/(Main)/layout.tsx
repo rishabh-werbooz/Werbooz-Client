@@ -6,7 +6,7 @@ import { Providers } from '@/app/providers'
 
 
 export const metadata: Metadata = {
-    title: 'Werbooz - Home',
+    title: 'Werbooz - Blogs',
     description:
         'Welcome to Werbooz Private Limited - Your Gateway to Exceptional Digital Solutions!',
 }

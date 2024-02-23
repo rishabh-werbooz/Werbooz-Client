@@ -3,7 +3,8 @@ import React from "react"
 import Link from "next/link"
 import styles from "./header.module.css"
 import Button from "@/components/Buttons"
-import Image from '@/components/Image'
+import Image from "@/components/Image"
+import PlacementExample from "@/components/MobileSidebar"
 
 function index() {
     return (
@@ -43,8 +44,10 @@ function index() {
                         <Link href="/about" className={`${styles.link} font-md fw-400 transition-all`}>
                             About Us
                         </Link>
-                        {/* <button>Contact Us</button> */}
                         <Button text="Contact Us" className={`${styles.btn} font-md transition-all`} variant="solid" rounded="md" />
+                        <div className={`${styles.sidebar}`}>
+                            <PlacementExample />
+                        </div>
                     </div>
                 </header>
             </div>

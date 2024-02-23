@@ -12,14 +12,16 @@ interface DataProps {
     description: string
     btnText: string
     btnLink: string
-    image: string[]
+    image: string
     keywords: string[]
 }
-const bgImage = "https://cdn.dribbble.com/users/12604760/screenshots/19403238/media/d48fb0f343c6c02c2ccc6aa449ea8318.png?resize=1000x750&vertical=center"
+const bgImage = "https://cdn.dribbble.com/userupload/4220810/file/original-839ba1d53fa11302a582aca31498d007.png?resize=1024x768"
 
 const PortfolioCard: React.FC<{ data: DataProps }> = ({ data }) => {
     return (
-        <div className={styles.portfolioCard} style={{ backgroundColor: data.bgColor }}>
+        <div className={styles.portfolioCard}
+        style={{backgroundImage: `url(${data.image})`}}
+        >
             <div className={styles.portfolioCard__content}>
                 <Heading
                     data={{
@@ -38,9 +40,6 @@ const PortfolioCard: React.FC<{ data: DataProps }> = ({ data }) => {
                 <Description description={data.description} className={`${styles.description}`} />
 
                 <Button variant="solid" rounded="md" text={data.btnText} className={`${styles.btn} mt-1`} rightIcon={<FaExternalLinkAlt />} />
-            </div>
-            <div>
-                <Image src={bgImage} alt="portfolio" className={styles.portfolioCard__image} />
             </div>
         </div>
     )

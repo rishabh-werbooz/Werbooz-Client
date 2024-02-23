@@ -21,11 +21,11 @@ const index = () => {
                     className={`${styles.ImageDiv} d-flex justify-content-center flex-column align-items-center`}
                 >
                     <Image
-                        src="/assets/logo_2.png"
+                        src="/assets/werbooz_logo.svg"
                         alt="logo"
                         className={styles.logo}
                     />
-                    <div className="text-center mt-1">
+                    <div className="text-center">
                         <Description description="Hear from our Expertise" />
                     </div>
                 </div>
