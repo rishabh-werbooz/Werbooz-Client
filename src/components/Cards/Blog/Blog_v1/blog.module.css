@@ -13,7 +13,7 @@
     bottom: 0;
     padding: var(--padding-sm);
     border-radius: var(--border-radius-lg);
-    color: #000;
+    color: var(--twitter);
 }
 
 .btn {
@@ -21,7 +21,7 @@
     cursor: pointer;
     border-radius: var(--border-radius-lg);
     color: var(--secondary-color);
-    background-color: #ecf4ff;
+    background-color: var(--light-blue);
 }
 
 .Blog_Card {
@@ -37,11 +37,11 @@
 }
 
 .blog_link {
-    color: #003274;
+    color: var(--royal-blue);
     text-decoration-line: underline;
-    margin-top: 0.5rem;
+    margin-top: var(--padding-xs);
 }
 
 .blogTitle {
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--padding-xs);
 }

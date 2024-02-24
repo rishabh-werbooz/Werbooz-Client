@@ -2,7 +2,7 @@
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: #ffffff;
+    background-color: var(--white);
     border-radius: 50%;
     animation: blink 0.5s infinite alternate;
     z-index: 2;

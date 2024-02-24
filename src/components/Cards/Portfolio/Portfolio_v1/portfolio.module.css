@@ -3,7 +3,7 @@
     padding:var(--padding-sm);
     margin: var(--margin-lg);
     border-radius: var(--border-radius-md);
-    color: var(--text-white);
+    color: var(--white);
     background: var(--semi-transparent);
     box-shadow:
         0px 1px 1px 0px rgba(82, 73, 73, 0.1),
@@ -12,7 +12,7 @@
 }
 
 .description {
-    color: var(--text-white);
+    color: var(--white);
 }
 
 .PortfolioContainer{

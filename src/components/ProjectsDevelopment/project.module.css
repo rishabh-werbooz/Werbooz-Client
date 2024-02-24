@@ -27,8 +27,8 @@
 }
 
 .btn {
-    background-color: #003274 !important;
-    color: var(--text-white) !important;
+    background-color: var(--royal-blue) !important;
+    color: var(--white) !important;
     font-size: var(--font-sm) !important;
     font-weight: 400 !important;
 }
@@ -51,7 +51,7 @@
 }
 
 .leftContainer::-webkit-scrollbar-thumb {
-    background-color: #003274;
+    background-color: var(--royal-blue);
     border-radius: 8px; /* Adjust the radius as needed */
 }
 
@@ -86,14 +86,14 @@
         margin-top: 1rem;
     }
     .leftArrow {
-        color: #003274;
+        color: var(--royal-blue);
         width: 8%;
         height: auto;
         cursor: pointer;
     }
 
     .rightArrow {
-        color: #003274;
+        color: var(--royal-blue);
         width: 8%;
         height: 8%;
         cursor: pointer;

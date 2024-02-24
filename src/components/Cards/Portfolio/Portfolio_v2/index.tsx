@@ -4,7 +4,7 @@ import Description from "@/components/Description"
 import Button from "@/components/Buttons"
 import Heading from "@/components/Heading/Heading_v1"
 import { FaExternalLinkAlt } from "react-icons/fa"
-import Image from "@/components/Image"
+// import Image from "@/components/Image"
 
 interface DataProps {
     bgColor: string
@@ -19,9 +19,7 @@ const bgImage = "https://cdn.dribbble.com/userupload/4220810/file/original-839ba
 
 const PortfolioCard: React.FC<{ data: DataProps }> = ({ data }) => {
     return (
-        <div className={styles.portfolioCard}
-        style={{backgroundImage: `url(${data.image})`}}
-        >
+        <div className={styles.portfolioCard} style={{ backgroundImage: `url(${data.image})` }}>
             <div className={styles.portfolioCard__content}>
                 <Heading
                     data={{
@@ -39,7 +37,7 @@ const PortfolioCard: React.FC<{ data: DataProps }> = ({ data }) => {
 
                 <Description description={data.description} className={`${styles.description}`} />
 
-                <Button variant="solid" rounded="md" text={data.btnText} className={`${styles.btn} mt-1`} rightIcon={<FaExternalLinkAlt />} />
+                <Button variant="solid" rounded="lg" text={data.btnText} className={`${styles.btn} mt-1`} rightIcon={<FaExternalLinkAlt />} />
             </div>
         </div>
     )

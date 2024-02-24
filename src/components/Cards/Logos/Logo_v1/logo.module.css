@@ -1,6 +1,6 @@
 .LogoCard {
     border-radius: var(--border-radius-md);
-    background: #fefefe;
+    background: var(--extra-light-gray);
     padding: var(--padding-lg);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

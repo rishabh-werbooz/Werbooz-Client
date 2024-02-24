@@ -13,7 +13,7 @@ function index() {
                 <header className={`${styles.header} d-flex justify-content-evenly align-items-center`}>
                     <div>
                         <Link href="/">
-                            <Image src="/assets/werbooz_logo.png" alt="Werbooz Logo" />
+                            <Image src="/assets/werbooz_header_logo.svg" alt="Werbooz Logo" />
                         </Link>
                     </div>
                     <nav>

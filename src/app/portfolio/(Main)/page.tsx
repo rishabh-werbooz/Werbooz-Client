@@ -16,45 +16,45 @@ const index = () => {
                     <Portfolio_v2
                         data={{
                             bgColor: "#F5F5F5",
-                            title: "Lorem ipsum dolor sit amet",
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, etiam nunc, eget aliquam. In eget in.",
-                            btnText: "View Project",
+                            title: "Re-Design For The App Made Easy",
+                            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                            btnText: "Read Case Study",
                             btnLink: "/",
                             image: "/assets/portfolios/bgImage_1.svg",
-                            keywords: ["React", "Node", "Express", "MongoDB"],
+                            keywords: ["User Research", "UX Design"],
                         }}
                     />
                     <Portfolio_v2
                         data={{
                             bgColor: "#F5F5F5",
-                            title: "Lorem ipsum dolor sit amet",
-                            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, etiam nunc, eget aliquam. In eget in.",
-                            btnText: "View Project",
+                            title: "SaaSup Website For Unique Start Up Brands",
+                            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                            btnText: "Read Case Study",
                             btnLink: "/",
                             image: "/assets/portfolios/bgImage_2.svg",
-                            keywords: ["React", "Node", "Express", "MongoDB"],
+                            keywords: ["User Research", "UX Design"],
                         }}
                     />
                     <Portfolio_v2
                         data={{
                             bgColor: "#F5F5F5",
-                            title: "Lorem ipsum dolor sit amet",
+                            title: "SaaSup Website For Unique Start Up Brands",
                             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, etiam nunc, eget aliquam. In eget in.",
-                            btnText: "View Project",
+                            btnText: "Read Case Study",
                             btnLink: "/",
                             image: "/assets/portfolios/bgImage_3.svg",
-                            keywords: ["React", "Node", "Express", "MongoDB"],
+                            keywords: ["User Research", "UX Design"],
                         }}
                     />
                     <Portfolio_v2
                         data={{
                             bgColor: "#F5F5F5",
-                            title: "Lorem ipsum dolor sit amet",
+                            title: "AI vision technology to improve security",
                             description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-                            btnText: "View Project",
+                            btnText: "Read Case Study",
                             btnLink: "/",
                             image: "/assets/portfolios/bgImage_4.svg",
-                            keywords: ["React", "Node", "Express", "MongoDB"],
+                            keywords: ["User Research", "UX Design"],
                         }}
                     />
                 </div>

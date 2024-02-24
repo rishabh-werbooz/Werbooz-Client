@@ -1,23 +1,23 @@
 .borderLeft {
-    border-left: 1px solid #d4d4d4;
+    border-left: 1px solid var(--light-gray-2);
 }
 
 .borderRight {
-    border-right: 1px solid #d4d4d4;
+    border-right: 1px solid var(--light-gray-2);
 }
 
 .borderTop {
-    border-top: 1px solid #d4d4d4;
+    border-top: 1px solid var(--light-gray-2);
 }
 
 .borderBottom {
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid var(--light-gray-2);
 }
 
 .iconBox__icon {
     margin: auto auto;
     display: block;
     width: 200px;
-    padding: 1rem;
+    padding: var(--padding-sm);
     height: 80px;
 }

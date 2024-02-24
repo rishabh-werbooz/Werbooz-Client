@@ -6,12 +6,12 @@
 
 .Drawer{
     background: linear-gradient(180deg, #0e002d 0%, #003274 137.72%) !important;
-    color:#fff !important;
+    color:var(--white) !important;
 
 }
 
 .logo{
-    width:200px;
-    height: 200px;
-    margin: 0 auto;
+    width:150px;
+    height: 150px;
+    margin-left: 1rem;
 }

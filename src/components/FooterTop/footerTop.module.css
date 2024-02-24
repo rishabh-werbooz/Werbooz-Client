@@ -13,8 +13,8 @@
 }
 
 .btn{
-    background-color: #003274 !important;
-    color: var(--text-white) !important;
+    background-color: var(--royal-blue) !important;
+    color: var(--white) !important;
     font-weight: 500 !important;
     padding: var(--padding-xs) var(--padding-lg) !important;
 }

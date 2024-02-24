@@ -1,30 +1,33 @@
 .portfolioCard {
-    border-radius: var(--border-radius-md);
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: var(--padding-lg);
+    padding-left: var(--font-3_5xl);
     width: 100%;
-    min-height: 500px;
+    min-height: 550px;
     display: flex;
     align-items: center;
 }
 
 .btn{
     font-size: var(--font-sm) !important;
+    background-color: var(--royal-blue) !important;
+    color: var(--white) !important;
 }
+
 
 .btn_1 {
     border-radius: var(--border-radius-xl);
-    background: #003274;
+    background: var(--royal-blue);
     text-align: center;
-    color: var(--text-white);
+    color: var(--white);
     padding: var(--padding-xs) var(--padding-sm);
 }
 
 .description {
-    color: #000;
+    color: var(--twitter);
     width: 50%;
 }
 

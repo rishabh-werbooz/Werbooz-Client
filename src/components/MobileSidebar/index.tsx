@@ -18,7 +18,7 @@ function PlacementExample() {
                 <Drawer placement="left" onClose={onClose} isOpen={isOpen} preserveScrollBarGap={false}>
                     <DrawerOverlay />
                     <DrawerContent className={styles.Drawer}>
-                        <Image src="/assets/werbooz_logo.png" alt="logo" className={styles.logo} />
+                        <Image src="/assets/werbooz_header_logo.svg" alt="logo" className={styles.logo} />
                         <DrawerBody></DrawerBody>
                     </DrawerContent>
                 </Drawer>

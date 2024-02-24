@@ -7,18 +7,17 @@
 
 .navList {
     text-decoration: none;
-    color: var(--text-white);
+    color: var(--white);
     gap: 2.5rem;
 }
 
 .navDiv {
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: #0e002d;
     position: sticky;
     top: 0;
     z-index: 100;
 }
-
 
 .link:after {
     content: "";
@@ -28,7 +27,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--white);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -40,7 +39,7 @@
 
 .link {
     text-decoration: none;
-    color: var(--text-white);
+    color: var(--white);
     line-height: 1.5rem;
     display: inline-block;
     position: relative;
@@ -49,7 +48,7 @@
 .cta {
     gap: 2.5rem;
     text-decoration: none;
-    color: var(--text-white);
+    color: var(--white);
     line-height: 1.5rem;
 }
 
@@ -58,19 +57,21 @@
     font-size: var(--font-md) !important;
 }
 
-.sidebar{
+.sidebar {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .navList , .link,.btn {
+@media (max-width: 968px) {
+    .navList,
+    .link,
+    .btn {
         display: none !important;
     }
     .sidebar {
         display: block;
     }
 
-    .header{
+    .header {
         justify-content: space-between;
     }
 }

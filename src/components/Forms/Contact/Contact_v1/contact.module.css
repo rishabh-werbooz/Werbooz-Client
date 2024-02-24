@@ -1,14 +1,14 @@
 .FormDiv {
     border-radius: var(--border-radius-md);
     border: 1px solid rgba(245, 245, 245, 0.8);
-    background: #fff;
+    background: var(--white);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: var(--padding-lg);
 }
 
 
 .btn {
-    color: var(--text-white) !important;
-    background-color: #003274 !important;
+    color: var(--white) !important;
+    background-color: var(--royal-blue) !important;
     width: 30% !important;
 }
