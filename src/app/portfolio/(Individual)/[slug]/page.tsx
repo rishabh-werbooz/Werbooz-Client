@@ -4,7 +4,7 @@ import HeroSection_v2 from "@/components/HeroSection/HeroSection_v2"
 import ProjectOutline from "@/components/SinglePortfolio/ProjectOutline"
 import BackgroundWrapper from "@/components/BackgroundWrapper"
 import ProjectIntroduction from "@/components/SinglePortfolio/ProjectIntroduction"
-
+import ProjectListItems_v1 from "@/components/SinglePortfolio/ProjectListItems/ProjectListItem_v1"
 const index = () => {
     return (
         <>

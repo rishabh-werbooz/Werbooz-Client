@@ -1,10 +1,30 @@
-.ProjectIntroductionContainer{
+.ProjectIntroductionContainer {
     color: var(--white) !important;
     padding-top: var(--padding-xxxl);
     padding-bottom: var(--padding-xxxl);
 }
 
-.intro{
+.intro {
     border-left: 2px solid var(--white);
     padding-left: var(--padding-sm);
+}
+
+.PortfolioGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.PortfolioGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .PortfolioGridContainer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
