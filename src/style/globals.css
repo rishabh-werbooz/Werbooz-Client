@@ -37,6 +37,7 @@
 
     /* Secondary Colors */
     --royal-blue: #003274; /* Royal Blue (Most frequently used) */
+    --royal-blue-opacity: #0032740F; /* Royal Blue with Opacity */
     --blue: #0000ff; /* Blue */
     --black: #111111; /* Black */
     --dark-gray: #1d1d1d; /* Dark Gray */
@@ -51,6 +52,10 @@
     --extra-light-gray: #fefefe;
     --pale-lavender: #eff0f6;  /* Pale Lavender */
     --semi-transparent: rgba(0, 0, 0, 0.22);
+    --charcoal-gray: #303030B2;  /* Charcoal Gray */
+    
+    
+
  
 
     --facebook: #316ff6;
