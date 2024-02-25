@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr;
     align-items: center;
-    background-color: var(--text-white);
+    background-color: var(--white) !important;
     border-radius: var(--border-radius-sm);
     padding-right: var(--padding-md);
     width: 100%;

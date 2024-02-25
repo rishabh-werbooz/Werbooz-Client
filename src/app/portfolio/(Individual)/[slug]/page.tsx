@@ -6,6 +6,8 @@ import BackgroundWrapper from "@/components/BackgroundWrapper"
 import ProjectIntroduction from "@/components/SinglePortfolio/ProjectIntroduction"
 import ProjectOverviw from "@/components/SinglePortfolio/ProjectOverview"
 import ProjectDetails from "@/components/SinglePortfolio/ProjectDetails"
+import ProjectSolutionBox from "@/components/SinglePortfolio/ProjectSolutionBox"
+import ProjectTechStack from "@/components/SinglePortfolio/ProjectTechStack"
 
 const index = () => {
     return (
@@ -25,9 +27,18 @@ const index = () => {
                 <div className="main-inline-Padding mt-2 pt-2">
                     <ProjectOverviw />
                 </div>
-                <div >
+                <div>
                     <ProjectDetails />
                 </div>
+
+                <div className="main-inline-Padding mt-2 pt-2">
+                    <ProjectSolutionBox />
+                </div>
+
+                <div className="main-inline-Padding mt-2 pt-2">
+                    <ProjectTechStack />
+                </div>
+
                 <FooterTop />
             </div>
         </>

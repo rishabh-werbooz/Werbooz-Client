@@ -1,0 +1,39 @@
+.projectContainer {
+    padding-top: 4rem;
+}
+
+.projectContainer.reverse > *:first-child {
+    order: 2;
+    margin: 0 auto;
+}
+
+.projectContainer.reverse > *:last-child {
+    order: 1;
+    margin: 0 auto;
+}
+
+.topHeading {
+    color: var(--royal-blue);
+}
+
+.description {
+    color: #303030cc;
+}
+
+.heading {
+    color: #2c3c4d;
+}
+
+@media (max-width: 768px) {
+    .projectContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .projectContainer.reverse > *:first-child {
+        order: 1;
+    }
+    .projectContainer.reverse > *:last-child {
+        order: 2;
+    }
+}
