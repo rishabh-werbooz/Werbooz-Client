@@ -4,7 +4,9 @@ import HeroSection_v2 from "@/components/HeroSection/HeroSection_v2"
 import ProjectOutline from "@/components/SinglePortfolio/ProjectOutline"
 import BackgroundWrapper from "@/components/BackgroundWrapper"
 import ProjectIntroduction from "@/components/SinglePortfolio/ProjectIntroduction"
-import ProjectListItems_v1 from "@/components/SinglePortfolio/ProjectListItems/ProjectListItem_v1"
+import ProjectOverviw from "@/components/SinglePortfolio/ProjectOverview"
+import ProjectDetails from "@/components/SinglePortfolio/ProjectDetails"
+
 const index = () => {
     return (
         <>
@@ -19,6 +21,12 @@ const index = () => {
                             <ProjectIntroduction />
                         </div>
                     </BackgroundWrapper>
+                </div>
+                <div className="main-inline-Padding mt-2 pt-2">
+                    <ProjectOverviw />
+                </div>
+                <div >
+                    <ProjectDetails />
                 </div>
                 <FooterTop />
             </div>
