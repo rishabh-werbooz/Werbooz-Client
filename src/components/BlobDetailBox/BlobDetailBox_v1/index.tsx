@@ -23,7 +23,7 @@ const index = ({ variant, image, details }: DataProps) => {
             <div className={`${styles.main} ${styles[variant]}`}>
                 <div className={styles.imageContainer}>
                     {/* <Image src={image} alt="blob" className={styles.image} /> */}
-                    {/* <Player autoplay loop src={image} className={styles.image} /> */}
+                    <Player autoplay loop src={image} className={styles.image} />
                 </div>
                 <div className={`${styles.details} pl-1 pr-1`}>
                     <Heading_v2

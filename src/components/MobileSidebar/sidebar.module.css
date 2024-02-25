@@ -1,0 +1,17 @@
+.sidebarIcon{
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.Drawer{
+    background: linear-gradient(180deg, #0e002d 0%, #003274 137.72%) !important;
+    color:var(--white) !important;
+
+}
+
+.logo{
+    width:150px;
+    height: 150px;
+    margin-left: 1rem;
+}

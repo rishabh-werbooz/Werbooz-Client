@@ -1,0 +1,30 @@
+.itemContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.projectItems {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.heading{
+    color:#23242A;
+}
+
+.description{
+    color:#23242ACC;
+}
+
+@media (max-width: 768px) {
+    .itemContainer {
+        grid-template-columns: 1fr;
+    }
+}

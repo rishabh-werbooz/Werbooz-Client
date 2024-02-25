@@ -1,0 +1,9 @@
+.icons{
+    width: 25px;
+    height: 25px;
+}
+.bulletPointContainer{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+}

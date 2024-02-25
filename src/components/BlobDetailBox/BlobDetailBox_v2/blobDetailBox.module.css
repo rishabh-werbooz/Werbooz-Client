@@ -30,7 +30,7 @@
 }
 
 .description {
-    color: #ffffff;
+    color: var(--white);
 }
 
 @media (max-width: 768px) {
@@ -51,6 +51,6 @@
     }
 
     .details {
-        margin-top: 1.5rem;
+        margin-top: var(--padding-md);
     }
 }

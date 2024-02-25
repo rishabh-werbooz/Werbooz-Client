@@ -3,7 +3,7 @@ import styles from './description.module.css'
 import classnames from 'classnames'
 
 interface DataProps {
-    description: string
+    description: string | any
     className?: string
 }
 

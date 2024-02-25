@@ -3,6 +3,6 @@
 .btn {
     background: var(--btn-primary);
     padding: var(--padding-sm);
-    color: #000347;
+    color: var(--dark-blue);
     cursor: pointer;
 }

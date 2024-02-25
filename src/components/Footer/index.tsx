@@ -10,7 +10,7 @@ const index = () => {
     return (
         <>
             <div>
-                <div className={`main-inline-Padding ${styles.footerSection} pb-2`}>
+                <div className={`main-inline-Padding ${styles.footerSection} pb-2 pt-2`}>
                     <div>
                         <Image src="/assets/werbooz_logo.svg" alt="logo" className={styles.logo} />
                         <Description

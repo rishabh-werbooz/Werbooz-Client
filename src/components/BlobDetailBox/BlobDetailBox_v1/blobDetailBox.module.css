@@ -16,7 +16,6 @@
 
 .image{
     width: 80%;
-    
 }
 
 .imageContainer {
@@ -49,6 +48,6 @@
     }
 
     .details{
-        margin-top: 1.5rem;
+        margin-top: var(--padding-md);
     }
 }

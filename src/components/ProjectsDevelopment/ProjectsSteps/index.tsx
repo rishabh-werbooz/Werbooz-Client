@@ -35,7 +35,7 @@ const index = ({ index, text, isActive, onClick, icon }: ListProps) => {
             <div onClick={handleClick} className={`${styles.listItem} ${isActive ? styles.active : ""}`}>
                 <div className={`${styles.lineDiv} ${isActive ? styles.active : ""}`}></div>
                 <div className={`${isActive ? styles.active : ""} d-flex  align-items-center gap-1 font-md`}>
-                    {/* <Player autoplay loop src={icon} className={styles.icons} /> */}
+                    <Player autoplay loop src={icon} className={styles.icons} />
                     <span className={styles.stepName}> {text}</span>
                 </div>
             </div>

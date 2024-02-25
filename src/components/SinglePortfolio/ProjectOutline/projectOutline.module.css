@@ -1,0 +1,32 @@
+.ProjectContainer{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.description{
+    color: var(--charcoal-gray);
+}
+
+.btn_1 {
+    border-radius: var(--border-radius-sm);
+    background: var(--royal-blue);
+    text-align: center;
+    color: var(--white);
+    padding: var(--padding-xs) var(--padding-sm);
+}
+
+.ProjectDetailsContainer{
+    background-color: var(--royal-blue-opacity);
+    padding: var(--padding-md);
+    border-radius: var(--border-radius-md);
+}
+
+@media (max-width: 768px){
+    .ProjectContainer{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}

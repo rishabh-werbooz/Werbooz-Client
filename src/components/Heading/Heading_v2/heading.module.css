@@ -1,6 +1,8 @@
 .topHeading{
     text-transform: uppercase !important;
-    font-family: var(--font-roboto)
+    font-family: var(--font-roboto);
+    font-size: var(--font-lg) !important;
+    font-weight: 700 !important;
 }
 
 .subHeading{

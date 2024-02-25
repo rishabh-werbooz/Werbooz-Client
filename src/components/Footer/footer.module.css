@@ -1,11 +1,11 @@
 .footerSection{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-bottom: 2px solid #E5E5EA;
+    border-bottom: 2px solid var(--off-white);
 }
 
 .heading{
-    color: var(--secondary-color);
+    color: var(--dark-purple);
 }
 
 .description{
@@ -19,7 +19,7 @@
 }
 
 .copyRight{
-    color: var(--secondary-color) !important;
+    color: var(--dark-purple) !important;
 }
 
 .gridListItems{

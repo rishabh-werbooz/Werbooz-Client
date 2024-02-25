@@ -3,15 +3,15 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     justify-content: center;
-align-items: start;
+    align-items: start;
 }
 
 .ListHead {
-    color: var(--secondary-color);
+    color: var(--dark-purple);
 }
 
 .ListItems {
     margin: 1rem 0;
-    color: var(--secondary-color);
+    color: var(--dark-purple);
     font-size: var(--font-md);
 }

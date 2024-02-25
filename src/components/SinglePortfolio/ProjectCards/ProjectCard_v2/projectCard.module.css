@@ -1,0 +1,38 @@
+.projectContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4rem;
+}
+
+.projectContainer.reverse > *:first-child {
+    order: 2;
+}
+
+.projectContainer.reverse > *:last-child {
+    order: 1;
+}
+
+
+.topHeading {
+    color: var(--royal-blue);
+}
+
+.description {
+    color: #303030CC;
+}
+
+.heading{
+   color: #2C3C4D;
+}
+
+@media (max-width: 768px) {
+    .projectContainer {
+        grid-template-columns: 1fr;
+    }
+    .projectContainer.reverse > *:first-child {
+        order: 1;
+    }
+    .projectContainer.reverse > *:last-child {
+        order: 2;
+    }
+}

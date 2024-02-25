@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
     --body-inline-space: 5rem;
@@ -27,30 +27,37 @@
     --break-xxl: 1550px;
     --break-xxxl: 1950px;
 
-    --primary-color: #0e002d;
-    --secondary-color: #181433;
-    --background-primary: #ececec;
-    --dark-gray: #8D8D8D;
+    /* Primary Colors */
+    --gray: #929292; /* Gray */
+    --light-blue: #ecf4ff; /* Light Blue */
+    --sky-blue: #9bbfee; /* Sky Blue */
+    --navy-blue: #0248a4; /* Navy Blue */
+    --white: #ffffff; /* White */
+    --dark-blue: #000347; /* Dark Blue */
+
+    /* Secondary Colors */
+    --royal-blue: #003274; /* Royal Blue (Most frequently used) */
+    --royal-blue-opacity: #0032740f; /* Royal Blue with Opacity */
+    --blue: #0000ff; /* Blue */
+    --black: #111111; /* Black */
+    --dark-gray: #1d1d1d; /* Dark Gray */
+    --light-gray: #eaeaea; /* Light Gray */
+    --green: #4dba87; /* Green */
+    --slate-gray: #3e424a; /* Slate Gray */
+    --dark-purple: #181433; /* Dark Purple */
+
+    /* Miscellaneous */
+    --off-white: #e5e5ea; /* Off White */
+    --light-gray-2: #d4d4d4;
+    --extra-light-gray: #fefefe;
+    --pale-lavender: #eff0f6; /* Pale Lavender */
     --semi-transparent: rgba(0, 0, 0, 0.22);
-    --light-blue: rgb(215, 240, 248);
-    --accent: #f4b767;
-    --success: #37a855;
-    --danger: #f83245;
-    --warning: #ff8c32;
-    --light: #fff;
-    --light-blue:#003274;
+    --charcoal-gray: #303030b2; /* Charcoal Gray */
 
-    --primary-text-color: #191919;
-    --secondary-text-color: #191919b3;
-    --text-white: #ffffff;
-
-    --btn-primary: rgba(255, 255, 255, 0.22);
-    --btn-white: #ffffff;
-
-    --facebook:#316FF6;
-    --twitter:#000000;
-    --linkedin:#0077B5;
-    --instagram:#E4405F;
+    --facebook: #316ff6;
+    --twitter: #000000;
+    --linkedin: #0077b5;
+    --instagram: #e4405f;
 
     --primary-box-shadow: 0px 4px 22px 0px rgba(102, 102, 102, 0.18);
 
@@ -69,9 +76,9 @@
     --duration-300: 0.3s;
     --duration-400: 0.4s;
 
-    --font-roboto:"Roboto", sans-serif !important;
+    --font-roboto: "Roboto", sans-serif !important;
     --font-open-sans: "Open Sans", sans-serif !important;
-  
+
     --min-height-400: 400px;
 
     --tile-border: linear-gradient(45deg, #8900ff, #0e7773);
@@ -142,14 +149,21 @@
     scroll-behavior: smooth;
 }
 
-html,
 body {
     overflow-x: hidden;
     min-height: 100vh;
     scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif !important;
 }
-/* YourComponent.module.css */
+
+body::-webkit-scrollbar {
+    /* Hide scrollbars for Chrome, Safari, and Opera */
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+}
 
 .body-no-scroll {
     overflow: hidden;
@@ -233,6 +247,14 @@ body {
 
 .opacity-7 {
     opacity: 0.7;
+}
+
+.mt-05 {
+    margin-top: 0.5rem;
+}
+
+.mb-05 {
+    margin-bottom: 0.5rem;
 }
 
 .mb-1 {
@@ -461,29 +483,29 @@ body {
     font-size: var(--font-3_5xl);
 }
 
-.text-light-blue{
-    color: var(--light-blue);
+.text-light-blue {
+    color: var(--navy-blue);
 }
-.text-white{
-    color: #FFFFFF;
+.text-white {
+    color: #ffffff !important;
 }
 
 .transition-all {
     transition: all var(--duration-300) ease-in-out;
 }
 
-.facebook{
+.facebook {
     color: var(--facebook);
 }
 
-.twitter{
+.twitter {
     color: var(--twitter);
 }
 
-.linkedin{
+.linkedin {
     color: var(--linkedin);
 }
 
-.instagram{
+.instagram {
     color: var(--instagram);
 }
