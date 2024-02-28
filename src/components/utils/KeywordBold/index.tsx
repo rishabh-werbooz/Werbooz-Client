@@ -16,7 +16,7 @@ const index: React.FC<Props> = ({ keyword, text, breakLine = false }) => {
         <>
             {" "}
             {text.map((t, i) => (
-                <p key={i} className={`${styles.description} font-md`} dangerouslySetInnerHTML={{ __html: highlightKeywords(t, keyword) }} />
+                <p key={i} className={`${styles.description} font-lg`} dangerouslySetInnerHTML={{ __html: highlightKeywords(t, keyword) }} />
             ))}
             {breakLine && <br />}
         </>

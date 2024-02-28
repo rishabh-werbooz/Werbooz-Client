@@ -3,8 +3,12 @@ import ProjectCard_v2 from "@/components/SinglePortfolio/ProjectCards/ProjectCar
 import BackgroundWrapper from "@/components/BackgroundWrapper"
 import Heading_v2 from "@/components/Heading/Heading_v2"
 import styles from "./projectDetails.module.css"
-
-const index = () => {
+interface Props {
+    topHeading: string
+    heading: string[]
+    img: string
+}
+const index = ({ topHeading, heading, img }: Props) => {
     return (
         <div>
             <BackgroundWrapper backgroundColor="#00327408">

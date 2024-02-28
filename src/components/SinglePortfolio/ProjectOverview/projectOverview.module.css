@@ -1,3 +1,11 @@
 .topHeading{
     color: var(--royal-blue);
 }
+
+
+@media (max-width: 768px) {
+    .projectContent{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

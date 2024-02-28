@@ -48,7 +48,7 @@ const index = () => {
                     />
                     <Description
                         description="To make sure the front end and back-end work together smoothly, we crafted a reliable set of flexible APIs and Our skilled in-house programming team did a fantastic job, making it easy for us to collaborate seamlessly on both the front and back ends. What's more, we managed to integrate the APIs into both sides at the same time by breaking down the system into smart, manageable pieces."
-                        className={`font-md fw-400 mt-1 ${styles.description}`}
+                        className={`font-md fw-600 mt-1 text-primary text-italic`}
                     />
                 </div>
             </div>

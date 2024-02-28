@@ -1,0 +1,10 @@
+.ProjectConclusionContainer{
+    color: var(--white) !important;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .imgContainer{
+       display:none;
+    }
+}

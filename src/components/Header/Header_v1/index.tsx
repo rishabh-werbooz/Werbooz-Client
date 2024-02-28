@@ -5,11 +5,32 @@ import styles from "./header.module.css"
 import Button from "@/components/Buttons"
 import Image from "@/components/Image"
 import PlacementExample from "@/components/MobileSidebar"
+import { motion, useScroll } from "framer-motion"
+import { useEffect, useState } from "react"
 
 function index() {
+    const [isScrolled, setIsScrolled] = useState(true)
+    const [prevScrollPos, setPrevScrollPos] = useState(0)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset
+            const isScrollingUp = prevScrollPos > currentScrollPos
+
+            setIsScrolled(currentScrollPos === 0 || isScrollingUp)
+            setPrevScrollPos(currentScrollPos)
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [prevScrollPos])
+
     return (
         <>
-            <div className={styles.navDiv}>
+            <motion.div  animate={{ y: isScrolled ? 0 : -100 }} transition={{ duration: 0.5 }} className={styles.navDiv}>
                 <header className={`${styles.header} d-flex justify-content-evenly align-items-center`}>
                     <div>
                         <Link href="/">
@@ -50,7 +71,7 @@ function index() {
                         </div>
                     </div>
                 </header>
-            </div>
+            </motion.div>
         </>
     )
 }

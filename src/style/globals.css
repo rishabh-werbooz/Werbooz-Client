@@ -9,6 +9,7 @@
     --border-radius-md: 1rem;
     --border-radius-lg: 2rem;
     --border-radius-xl: 3rem;
+    --border-radius-50: 50%;
     --border-radius-full: 100%;
 
     --font-xs: 0.75rem;
@@ -264,6 +265,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.mb-4{
+    margin-bottom: 4rem;
+}
+
 .mt-1 {
     margin-top: 1rem;
 }
@@ -508,4 +513,12 @@ body {
 
 .instagram {
     color: var(--instagram);
+}
+
+.text-primary{
+    color: var(--royal-blue);
+}
+
+.text-italic {
+    font-style: italic;
 }

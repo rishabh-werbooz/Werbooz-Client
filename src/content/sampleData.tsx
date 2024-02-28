@@ -184,13 +184,13 @@ export const listDetailsData = [
 ]
 
 export const listIconsData = [
-    "/assets/lottie/Forms.json",
-    "/assets/lottie/Call.json",
-    "/assets/lottie/Project.json",
-    "/assets/lottie/ReceiveQuotation.json",
-    "/assets/lottie/Budget.json",
-    "/assets/lottie/Forms.json",
-    "/assets/lottie/Forms.json",
+    "/assets/lottie/Forms.lottie",
+    "/assets/lottie/Call.lottie",
+    "/assets/lottie/Project.lottie",
+    "/assets/lottie/ReceiveQuotation.lottie",
+    "/assets/lottie/Budget.lottie",
+    "/assets/lottie/Forms.lottie",
+    "/assets/lottie/Forms.lottie",
 ]
 
 export const HeroSectionData_v1 = {
@@ -199,7 +199,7 @@ export const HeroSectionData_v1 = {
     description_1: "Unleash Your Online Potential with Werbooz…",
     description_2: "Transform Your Business with Cutting-Edge Web Solutions",
     buttonText: "Schedule a Call",
-    lottieFile: "/assets/lottie/rocket-2.json",
+    lottieFile: "/assets/lottie/Rocket.lottie",
 }
 
 export const logoImg_1 = [

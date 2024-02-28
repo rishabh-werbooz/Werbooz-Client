@@ -18,7 +18,7 @@ const index = ({ heading, description_1, description_2 }: Props) => {
     return (
         <>
             <div className={`${styles.HerosectionContainer} d-flex justify-content-center flex-column  align-items-center gap-1-5`}>
-                <WebGLFluidSimulation />
+                {/* <WebGLFluidSimulation /> */}
                 <BlinkingDots />
                 <div className={styles.test}>
                     <Heading

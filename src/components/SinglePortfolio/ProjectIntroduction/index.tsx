@@ -6,7 +6,14 @@ import ProjectListItems_v1 from "@/components/SinglePortfolio/ProjectListItems/P
 import Image from "@/components/Image"
 import ProjectCard_v1 from "@/components/SinglePortfolio/ProjectCards/ProjectCard_v1"
 
-const index = () => {
+interface Props {
+    topHeading: string[]
+    heading: string[]
+    img: string[]
+    description: string
+}
+
+const index = ({ topHeading, heading, img, description }: Props) => {
     return (
         <div className={`${styles.ProjectIntroductionContainer}`}>
             <div>

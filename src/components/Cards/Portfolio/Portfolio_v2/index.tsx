@@ -5,6 +5,7 @@ import Button from "@/components/Buttons"
 import Heading from "@/components/Heading/Heading_v1"
 import { FaExternalLinkAlt } from "react-icons/fa"
 // import Image from "@/components/Image"
+import Link from "next/link"
 
 interface DataProps {
     bgColor: string
@@ -37,7 +38,10 @@ const PortfolioCard: React.FC<{ data: DataProps }> = ({ data }) => {
 
                 <Description description={data.description} className={`${styles.description}`} />
 
+                <Link href={`/portfolio/weekendo`}>
                 <Button variant="solid" rounded="lg" text={data.btnText} className={`${styles.btn} mt-1`} rightIcon={<FaExternalLinkAlt />} />
+                </Link>
+                
             </div>
         </div>
     )

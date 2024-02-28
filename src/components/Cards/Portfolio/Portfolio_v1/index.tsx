@@ -30,14 +30,14 @@ const index = ({ className, bgImg, title, description, subTitle }: DataProps) =>
                         data={{
                             heading: title,
                         }}
-                        className={`font-sm fw-600`}
+                        className={`font-lg fw-600`}
                     />
 
                     <Heading
                         data={{
                             subHeading: subTitle,
                         }}
-                        className={`font-sm fw-600 lh-150`}
+                        className={`font-lg fw-600 lh-150`}
                     />
 
                     <hr className="mt-1 mb-1" />

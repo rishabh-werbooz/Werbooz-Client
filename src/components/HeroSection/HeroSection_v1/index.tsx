@@ -4,10 +4,11 @@ import styles from "./heroSection.module.css"
 import Heading from "@/components/Heading/Heading_v1"
 import Description from "@/components/Description"
 import Button from "@/components/Buttons"
-import { Player } from "@lottiefiles/react-lottie-player"
 import WebGLFluidSimulation from "@/components/FluildSimulation"
 import BlinkingDots from "@/components/BlinkingDots"
 import { FaLongArrowAltDown } from "react-icons/fa"
+import { AnimatePresence, motion } from "framer-motion"
+import DotLottiePlayer from "@/components/DotLottiePlayer"
 
 interface HeroProps {
     heading_1: string
@@ -22,7 +23,7 @@ const index = ({ heading_1, heading_2, description_1, description_2, buttonText,
     return (
         <>
             <div className={styles.heroSectionBackground}>
-                <WebGLFluidSimulation />
+                {/* <WebGLFluidSimulation /> */}
 
                 <div className={`${styles.heroSection} d-flex justify-content-center flex-column  align-items-center gap-1-5 `}>
                     <BlinkingDots />
@@ -47,11 +48,11 @@ const index = ({ heading_1, heading_2, description_1, description_2, buttonText,
                         <Description description={description_1} className={styles.description} />
                         <Description description={description_2} className={styles.description} />
                     </div>
-                    <div className={`${styles.test} d-flex justify-content-center gap-1`}>
+                    <motion.div className={`${styles.test} d-flex justify-content-center gap-1`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                         <Button variant="solid" text={buttonText ? buttonText : "Get Started"} rounded="full" className={`${styles.button} fw-700 mt-1`} />
-                    </div>
+                    </motion.div>
                     <div className={`d-flex justify-content-end align-items-end ${styles.test}`}>
-                        <Player autoplay loop src={lottieFile} className={styles.lottieImg} />
+                        <DotLottiePlayer src={lottieFile} className={styles.lottieImg} />
                     </div>
 
                     <div className={`${styles.test} ${styles.scrollDown} d-flex justify-content-center flex-column align-items-center `}>

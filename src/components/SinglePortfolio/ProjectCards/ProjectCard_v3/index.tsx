@@ -7,9 +7,11 @@ import Heading_v1 from "@/components/Heading/Heading_v1"
 import ProjectListItem_v3 from "@/components/SinglePortfolio/ProjectListItems/ProjectListItem_v3"
 interface Props {
     variant: string
+    img: string
+    heading: string
 }
 
-const index = ({ variant = "left" }: Props) => {
+const index = ({ variant = "left", img, heading }: Props) => {
     const isReversed = variant === "left" ? false : true
 
     return (

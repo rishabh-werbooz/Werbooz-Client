@@ -3,7 +3,13 @@ import styles from "./projectOutline.module.css"
 import Heading_v1 from "@/components/Heading/Heading_v1"
 import Description from "@/components/Description"
 
-const index = () => {
+interface Props {
+    description: string[]
+    keywords: string[]
+    heading: string[]
+}
+
+const index = ({ description, keywords, heading }: Props) => {
     return (
         <>
             <div className={`${styles.ProjectContainer}`}>

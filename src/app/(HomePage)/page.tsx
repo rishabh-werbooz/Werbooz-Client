@@ -217,7 +217,7 @@ export default function Home() {
                     <div className={`main-inline-Padding`}>
                         <BlobDetailsBox_v2
                             variant="right"
-                            image="/assets/lottie/testing.json"
+                            image="/assets/lottie/testing.lottie"
                             details={{
                                 description:
                                     "Our journey begins by thoroughly understanding your project. We take the time to explore every angle and gather insights from various perspectives. This step is all about grasping the heart and soul of your concept.",
@@ -232,7 +232,7 @@ export default function Home() {
                     <div className={`main-inline-Padding pt-2 pb-2`}>
                         <BlobDetailsBox_v1
                             variant="left"
-                            image="/assets/lottie/Project.json"
+                            image="/assets/lottie/Project.lottie"
                             details={{
                                 description:
                                     "Like a skilled navigator, we chart a clear course for your project. This involves careful planning, setting milestones, and establishing timelines. Think of it as creating a reliable map for a successful journey",
@@ -247,7 +247,7 @@ export default function Home() {
                     <div className={`main-inline-Padding pt-2 pb-2`}>
                         <BlobDetailsBox_v1
                             variant="right"
-                            image="/assets/lottie/uiDevelopment.json"
+                            image="/assets/lottie/uiDevelopment.lottie"
                             details={{
                                 description:
                                     "Our talented team focuses on crafting a user interface that not only looks great but also ensures a delightful user experience. Your input is crucial, and we're ready to make changes until you're satisfied.",
@@ -262,7 +262,7 @@ export default function Home() {
                     <div className={`main-inline-Padding pt-2`}>
                         <BlobDetailsBox_v1
                             variant="left"
-                            image="/assets/lottie/frontendDeveloper.json"
+                            image="/assets/lottie/frontendDevelopment.lottie"
                             details={{
                                 description:
                                     "This is where the design takes shape and becomes a functional reality. Our developers work their magic to breathe life into the design, making it functional and visually appealing.",
@@ -277,7 +277,7 @@ export default function Home() {
                     <div className={`main-inline-Padding pt-2 pb-2`}>
                         <BlobDetailsBox_v1
                             variant="right"
-                            image="/assets/lottie/backend.json"
+                            image="/assets/lottie/backend.lottie"
                             details={{
                                 description:
                                     "Just like a sturdy building needs a solid foundation, your project needs a robust backend. We work on this simultaneously with the frontend, ensuring everything is balanced and well-structured.",
@@ -292,7 +292,7 @@ export default function Home() {
                     <div className={`main-inline-Padding pt-2 pb-2`}>
                         <BlobDetailsBox_v1
                             variant="left"
-                            image="/assets/lottie/deployment.json"
+                            image="/assets/lottie/deployment.lottie"
                             details={{
                                 description:
                                     "As we work on the frontend and backend, we deploy your project on your dedicated server. This allows you to see real-time changes, so you're always in the loop.",
@@ -322,7 +322,7 @@ export default function Home() {
                     <div className={`main-inline-Padding`}>
                         <BlobDetailsBox_v2
                             variant="left"
-                            image="/assets/lottie/satisfaction.json"
+                            image="/assets/lottie/satisfaction.lottie"
                             details={{
                                 description:
                                     "When you're satisfied, we consider the project complete. But our commitment to your project doesn't stop here. We're here for future support and maintenance, ensuring your digital venture continues to thrive.",

@@ -2,7 +2,14 @@ import React from "react"
 import styles from "./projectCard.module.css"
 import Image from "@/components/Image"
 import Description from "@/components/Description"
-const index = () => {
+
+interface ProjectCardProps {
+    description_1: string
+    description_2: string
+    img: string
+}
+
+const index = ({ description_1, description_2, img }: ProjectCardProps) => {
     return (
         <>
             <div className={`align-items-start ${styles.CardContainer}`}>

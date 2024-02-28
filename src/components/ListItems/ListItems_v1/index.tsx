@@ -32,7 +32,7 @@ const index = () => {
                         },
                     ]}
                     break={true}
-                    className={`fw-400 font-md`}
+                    className={`fw-400 font-lg`}
                 />
             </div>
             <div>
@@ -62,7 +62,7 @@ const index = () => {
                         },
                     ]}
                     break={true}
-                    className={`fw-400 font-md mt-05`}
+                    className={`fw-400 font-lg mt-05`}
                 />
             </div>
         </div>
