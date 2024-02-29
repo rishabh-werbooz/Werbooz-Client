@@ -4,11 +4,16 @@ import Stepper from "@/components/Stepper"
 import Image from "@/components/Image"
 import Description from "@/components/Description"
 import Heading_v2 from "@/components/Heading/Heading_v2"
-const index = () => {
+interface Props {
+    topHeading: string
+    img: string
+}
+
+const index = ({ topHeading, img }: Props) => {
     return (
         <div>
             <Heading_v2
-                topHeading="Technology Used | Version 1"
+                topHeading={topHeading}
                 headingData={[
                     { heading: "We purposefully curated a selection of advanced technologies", color: "#303030" },
                     {
@@ -20,7 +25,7 @@ const index = () => {
             />
             <div className={`${styles.TechContainer} mt-2`}>
                 <div>
-                    <Image src="/assets/portfolios/weekendo-techstack.png" alt="weekendo-tech-stack" className={styles.techStack} />
+                    <Image src={img} alt="weekendo-tech-stack" className={styles.techStack} />
                 </div>
                 <Stepper />
             </div>

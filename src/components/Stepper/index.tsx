@@ -41,17 +41,24 @@ const steps = [
 
 const index = () => {
     const { activeStep } = useSteps({
-        index: -1,
+        index: steps.length,
         count: steps.length,
     })
     return (
         <>
             <div>
-                <Stepper index={activeStep} orientation="vertical" gap="0">
+                <Stepper index={activeStep} orientation="vertical" gap="0" colorScheme="black">
                     {steps.map((step, index) => (
-                        <Step key={index}>
-                            <StepIndicator p={1} rounded={"lg"} background={"#E8EAEB"} border="none">
-                                <StepStatus incomplete={<Image src={step.icon} alt="check" />} />
+                        <Step>
+                            <StepIndicator
+                                p={1}
+                                rounded={"lg"}
+                                border="none"
+                                style={{
+                                    backgroundColor: "#E8EAEB",
+                                }}
+                            >
+                                <StepStatus complete={<Image src={step.icon} alt="check" />} />
                             </StepIndicator>
 
                             <div>

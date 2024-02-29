@@ -17,14 +17,14 @@ const index = ({ variant = "left", img, heading }: Props) => {
     return (
         <>
             <div>
-                <div className={`${styles.projectContainer} d-flex justify-content-between align-items-center ${isReversed ? styles.reverse : ""}`}>
+                <div className={`${styles.projectContainer} d-flex justify-content-start gap-4 align-items-center ${isReversed ? styles.reverse : ""}`}>
                     <div className={`${styles.imgDiv}`}>
-                        <Image src="/assets/portfolios/Picture-9.svg" alt="Weekendo" className={`${styles.image}`} />
+                        <Image src={img} alt="Weekendo" className={`${styles.image}`} />
                     </div>
                     <div className={`${styles.projectDetails}`}>
                         <Heading_v1
                             data={{
-                                heading: "The Weekendo proprietary Software ",
+                                heading: heading,
                             }}
                             className={`font-xl fw-600 ${styles.heading}`}
                         />

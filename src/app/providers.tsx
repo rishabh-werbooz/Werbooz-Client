@@ -5,10 +5,12 @@ const activeLabelStyles = {
     transform: "scale(0.85) translateY(-24px)",
 }
 
-
-
-
 const theme = extendTheme({
+    colors: {
+        black: {
+            500: "#000000", // Your desired black color
+        },
+    },
     components: {
         Form: {
             variants: {
@@ -39,14 +41,11 @@ const theme = extendTheme({
             },
         },
         Stepper: {
-        
-       
             baseStyle: {
                 connector: {
                     bg: "red",
                 },
             },
-          
         },
     },
 })

@@ -38,10 +38,7 @@ const PortfolioCard: React.FC<{ data: DataProps }> = ({ data }) => {
 
                 <Description description={data.description} className={`${styles.description}`} />
 
-                <Link href={`/portfolio/weekendo`}>
                 <Button variant="solid" rounded="lg" text={data.btnText} className={`${styles.btn} mt-1`} rightIcon={<FaExternalLinkAlt />} />
-                </Link>
-                
             </div>
         </div>
     )

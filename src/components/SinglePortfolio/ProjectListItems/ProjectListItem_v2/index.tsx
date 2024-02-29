@@ -2,6 +2,8 @@ import React from "react"
 import styles from "./projectItems.module.css"
 import { TbSquareRoundedFilled } from "react-icons/tb"
 import { IoCheckmarkDoneOutline } from "react-icons/io5"
+import { HiCheck } from "react-icons/hi"
+
 
 import Heading_v1 from "@/components/Heading/Heading_v1"
 import Description from "@/components/Description"
@@ -40,11 +42,11 @@ const index = ({ data_1 }: Props) => {
     return (
         <>
             <div className={`${styles.itemContainer}`}>
-                {data.map((item, index) => {
+                {data_1.map((item, index) => {
                     return (
                         <div key={index} className={styles.projectItems}>
                             <div>
-                                <IoCheckmarkDoneOutline className={styles.icon} />
+                                <HiCheck className={styles.icon} />
                             </div>
                             <div>
                                 <Heading_v1

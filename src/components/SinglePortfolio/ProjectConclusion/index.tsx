@@ -8,9 +8,13 @@ import Image from "@/components/Image"
 interface Props {
     heading: string
     img: string[]
+    ProjectCard: {
+        description: string[]
+        img: string
+    }
 }
 
-const index = ({ heading, img }: Props) => {
+const index = ({ heading, img, ProjectCard }: Props) => {
     return (
         <div className={`${styles.ProjectConclusionContainer}`}>
             <div>
@@ -18,7 +22,7 @@ const index = ({ heading, img }: Props) => {
                     topHeading="Conclusion"
                     headingData={[
                         {
-                            heading: "The Entire Narrative and Upcoming Phase Two",
+                            heading: heading,
                             color: "#FFFFFF",
                         },
                     ]}
@@ -26,13 +30,21 @@ const index = ({ heading, img }: Props) => {
                 />
             </div>
             <div className="mt-2">
-                <ProjectCard_v1 />
+                <ProjectCard_v1
+                    description={ProjectCard.description}
+                    img={ProjectCard.img}
+                 />
             </div>
             <div className={`d-flex gap-05 mt-2 flex-wrap ${styles.imgContainer}`}>
-                <Image src="/assets/portfolios/SampleImg/Picture-1.svg" alt="Project Conclusion" />
+                {/* <Image src="/assets/portfolios/SampleImg/Picture-1.svg" alt="Project Conclusion" />
                 <Image src="/assets/portfolios/SampleImg/Picture-2.svg" alt="Project Conclusion" />
                 <Image src="/assets/portfolios/SampleImg/Picture-3.svg" alt="Project Conclusion" />
-                <Image src="/assets/portfolios/SampleImg/Picture-4.svg" alt="Project Conclusion" />
+                <Image src="/assets/portfolios/SampleImg/Picture-4.svg" alt="Project Conclusion" /> */}
+                {
+                    img.map((img, index) => (
+                        <Image src={img} alt="Project Conclusion" key={index} />
+                    ))
+                }
             </div>
         </div>
     )
