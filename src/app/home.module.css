@@ -126,31 +126,31 @@
     margin-bottom: var(--font-3_5xl);
 }
 
-.projectDevelopmentSection{
+.projectDevelopmentSection {
     padding-top: var(--body-inline-space);
     padding-bottom: var(--body-inline-space);
 }
 
-.IconBoxGrid{
+.IconBoxGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: var(--padding-xxxl);
 }
 
-.BlogGrid{
+.BlogGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding-bottom: var(--body-inline-space);
 }
 
-.contactFormSection{
+.contactFormSection {
     position: relative;
     margin: 0 var(--body-inline-space) var(--body-inline-space);
     background: linear-gradient(180deg, #0e002d 0%, #003274 137.72%);
 }
 
-.contactFormInnerSection{
+.contactFormInnerSection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -158,9 +158,55 @@
     padding: var(--padding-xxxl);
 }
 
+@media screen and (max-width: 1250px) {
+    .servicesSection {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .servicesHeading {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .description {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+    }
+
+    .iconBox_1 {
+        grid-row-start: 4 !important;
+        grid-row-end: 5 !important;
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+    }
+
+    .iconBox_2 {
+        grid-row-start: 4 !important;
+        grid-row-end: 5 !important;
+        grid-column-start: 2 !important;
+        grid-column-end: 4 !important;
+    }
+
+    .iconBox_3 {
+        grid-row-start: 5 !important;
+        grid-row-end: 6 !important;
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+    }
+
+    .iconBox_4 {
+        grid-row-start: 5 !important;
+        grid-row-end: 6 !important;
+        grid-column-start: 2 !important;
+        grid-column-end: 4 !important;
+    }
+}
+
 /* responsive .BlogGrid  */
 @media (max-width: 768px) {
-    .BlogGrid{
+    .BlogGrid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
