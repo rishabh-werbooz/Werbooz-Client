@@ -8,10 +8,9 @@ import ProjectSteps from "./ProjectsSteps"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { listIconsData } from "@/content/sampleData"
-import { Player } from "@lottiefiles/react-lottie-player"
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill, BsArrowRightCircle } from "react-icons/bs"
 import { SlArrowLeftCircle } from "react-icons/sl"
-
+import DotLottiePlayer from "@/components/DotLottiePlayer"
 interface ListItemDetails {
     heading: string
     subHeading: string
@@ -61,7 +60,7 @@ const index = ({ listItemsData, listDetailsData }: ProjectProps) => {
 
                 <div>
                     <div className={styles.animatedImg}>
-                        <Player autoplay loop src="/assets/lottie/Project.json" style={{ height: "auto", width: "40%" }} />
+                        <DotLottiePlayer src={listIconsData[currentIndex]} className={styles.animatedImg} />
                     </div>
                 </div>
 

@@ -5,51 +5,52 @@ import Heading_v1 from "@/components/Heading/Heading_v1"
 import Description from "@/components/Description"
 import ProjectCard_v3 from "@/components/SinglePortfolio/ProjectCards/ProjectCard_v3"
 
-const index = () => {
+interface Props {
+    topHeading: string
+    description: string[]
+    headingData: { heading: string; color: string }[]
+    heading: string
+    ProjectCard: {
+        variant: string
+        img: string
+        heading: string
+        ListItem: string[]
+    }[]
+}
+
+const index = ({ topHeading, description, headingData, heading, ProjectCard}: Props) => {
     return (
         <>
             <div className={styles.projectSolutionBox}>
                 <div>
-                    <Heading_v2
-                        topHeading="Solution"
-                        headingData={[{ heading: "Aiming for more than usual ", color: "#303030" }]}
-                        className={`font-xxl fw-600 ${styles.topHeading}`}
-                    />
+                    <Heading_v2 topHeading={topHeading} headingData={headingData} className={`font-xxl fw-600 ${styles.topHeading}`} />
                     <div className="mt-1">
-                        <Description
-                            description="Weekendo had a vision of what they wanted and they chose Werbooz to help them build their own proprietary software and website. The client came to us with a detailed list of what they exactly want and after getting an understanding of the client requirements we started following our standard process such as creating wireframes, Figma designs, and prototypes. Once the client approved the prototypes, we started working on both the weekendo tool and their website."
-                            className={`font-md fw-400 mt-1 ${styles.description}`}
-                        />
+                        <Description description={description[0]} className={`font-md fw-400 mt-1 ${styles.description}`} />
 
-                        <Description
-                            description="we wanted to create a fully-fledged system that isn’t dependent on other tools but a custom tool that is built from scratch catering all requirements for preparing a newsletter and managing platform."
-                            className={`font-md fw-400 mt-1 ${styles.description}`}
-                        />
+                        <Description description={description[1]} className={`font-md fw-400 mt-1 ${styles.description}`} />
                     </div>
                     <div className="mt-1">
                         <Heading_v1
                             data={{
-                                heading: "The prototypes were built for 2 things :",
+                                heading: heading,
                             }}
                             className={`font-lg fw-600 ${styles.heading}`}
                         />
                     </div>
                 </div>
                 <div>
-                    <ProjectCard_v3 variant="right" />
+                    <ProjectCard_v3 variant={ProjectCard[0].variant} img={ProjectCard[0].img} heading={ProjectCard[0].heading}
+                        ListItem={ProjectCard[0].ListItem}
+                     />
                 </div>
                 <div>
-                    <ProjectCard_v3 variant="left" />
+                    <ProjectCard_v3 variant={ProjectCard[1].variant} img={ProjectCard[1].img} heading={ProjectCard[1].heading}
+                        ListItem={ProjectCard[1].ListItem}
+                     />
                 </div>
                 <div>
-                    <Description
-                        description="After building the prototypes and after getting clients approval we broke the entire Weekendo tool into smaller modules and after that we started designing weekendo’s website"
-                        className={`font-md fw-400 mt-2 ${styles.description}`}
-                    />
-                    <Description
-                        description="To make sure the front end and back-end work together smoothly, we crafted a reliable set of flexible APIs and Our skilled in-house programming team did a fantastic job, making it easy for us to collaborate seamlessly on both the front and back ends. What's more, we managed to integrate the APIs into both sides at the same time by breaking down the system into smart, manageable pieces."
-                        className={`font-md fw-400 mt-1 ${styles.description}`}
-                    />
+                    <Description description={description[2]} className={`font-md fw-400 mt-2 ${styles.description}`} />
+                    <Description description={description[3]} className={`font-md fw-600 mt-1 text-primary text-italic`} />
                 </div>
             </div>
         </>

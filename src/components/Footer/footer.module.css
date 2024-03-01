@@ -26,3 +26,13 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 768px) {
+    .footerSection{
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+    .gridListItems{
+        margin-left: 0;
+    }
+}

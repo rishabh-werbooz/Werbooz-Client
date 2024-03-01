@@ -9,8 +9,18 @@
     color: var(--charcoal-gray);
 }
 
+.webLink{
+    color: var(--royal-blue);
+    text-decoration: none;
+}
+
+.webLink:hover{
+    text-decoration: underline;
+}
+
+
 .btn_1 {
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--border-radius-xl);
     background: var(--royal-blue);
     text-align: center;
     color: var(--white);

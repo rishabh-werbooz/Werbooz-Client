@@ -3,7 +3,8 @@ import React from "react"
 import styles from "./steps.module.css"
 import Image from "@/components/Image"
 import { useEffect, useRef } from "react"
-import { Player } from "@lottiefiles/react-lottie-player"
+import DotLottiePlayer from "@/components/DotLottiePlayer"
+
 interface ListProps {
     index: number
     text: string
@@ -22,20 +23,19 @@ const index = ({ index, text, isActive, onClick, icon }: ListProps) => {
 
     useEffect(() => {
         if (isActive && containerRef.current) {
-            containerRef.current.scrollIntoView({block: "nearest"
-        })
+            containerRef.current.scrollIntoView({ block: "nearest" })
         }
     }, [isActive])
 
     return (
         <div
-            // ref={containerRef}
-            // className={`${styles.listItemContainer} ${isActive ? styles.active : ""}`}
+        // ref={containerRef}
+        // className={`${styles.listItemContainer} ${isActive ? styles.active : ""}`}
         >
             <div onClick={handleClick} className={`${styles.listItem} ${isActive ? styles.active : ""}`}>
                 <div className={`${styles.lineDiv} ${isActive ? styles.active : ""}`}></div>
                 <div className={`${isActive ? styles.active : ""} d-flex  align-items-center gap-1 font-md`}>
-                    <Player autoplay loop src={icon} className={styles.icons} />
+                    <DotLottiePlayer src={icon} className={styles.icons} />
                     <span className={styles.stepName}> {text}</span>
                 </div>
             </div>

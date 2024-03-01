@@ -10,7 +10,7 @@ interface DataProps {
 const index = ({ description, className = '' }: DataProps) => {
     const mainClass = classnames(
         styles.description,
-        'font-md fw-400 lh-150',
+        'font-lg fw-400 lh-150',
         className
     )
 

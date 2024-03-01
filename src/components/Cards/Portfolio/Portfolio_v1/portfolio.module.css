@@ -1,6 +1,6 @@
 .portfolio_v1_inner {
     width: fit-content;
-    padding:var(--padding-sm);
+    padding: var(--padding-sm);
     margin: var(--margin-lg);
     border-radius: var(--border-radius-md);
     color: var(--white);
@@ -15,6 +15,25 @@
     color: var(--white);
 }
 
-.PortfolioContainer{
+.PortfolioContainer {
     min-height: var(--min-height-400);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-lg);
+}
+
+.icon {
+    color: white; /* Adjust color as needed */
+    width: 50px;
+    height: 50px;
 }

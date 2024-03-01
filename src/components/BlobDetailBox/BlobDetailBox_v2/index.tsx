@@ -4,7 +4,7 @@ import styles from "./blobDetailBox.module.css"
 import Description from "@/components/Description"
 import Heading from "@/components/Heading/Heading_v1"
 import Image from "@/components/Image"
-import { Player } from "@lottiefiles/react-lottie-player"
+import DottLottiePlayer from "@/components/DotLottiePlayer"
 import Heading_v2 from "@/components/Heading/Heading_v2"
 
 interface Detail {
@@ -25,7 +25,7 @@ const index = ({ variant, image, details }: DataProps) => {
             <div className={`${styles.main} ${styles[variant]}`}>
                 <div className={styles.imageContainer}>
                     {/* <Image src={image} alt="blob" className={styles.image} /> */}
-                    <Player autoplay loop src={image} className={styles.image} />
+                    <DottLottiePlayer src={image} className={styles.image} />
                 </div>
                 <div className={`${styles.details} pl-1 pr-1`}>
                     <Heading_v2

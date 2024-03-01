@@ -16,3 +16,12 @@
 .test {
     z-index: 2;
 }
+
+
+@media (max-width: 768px) {
+    .HerosectionContainer {
+        padding: 0 1rem !important;
+        gap:0.5rem !important;
+        min-height: 380px;
+    }
+}

@@ -1,6 +1,10 @@
 import React from "react"
 import styles from "./projectItems.module.css"
-import { BiSolidMessageSquareCheck } from "react-icons/bi"
+import { TbSquareRoundedFilled } from "react-icons/tb"
+import { IoCheckmarkDoneOutline } from "react-icons/io5"
+import { HiCheck } from "react-icons/hi"
+
+
 import Heading_v1 from "@/components/Heading/Heading_v1"
 import Description from "@/components/Description"
 
@@ -25,15 +29,24 @@ const data = [
     },
 ]
 
-const index = () => {
+interface DataTypes {
+    heading: string
+    description: string
+}
+
+interface Props {
+    data_1: DataTypes[]
+}
+
+const index = ({ data_1 }: Props) => {
     return (
         <>
             <div className={`${styles.itemContainer}`}>
-                {data.map((item, index) => {
+                {data_1.map((item, index) => {
                     return (
                         <div key={index} className={styles.projectItems}>
                             <div>
-                                <BiSolidMessageSquareCheck className={styles.icon} />
+                                <HiCheck className={styles.icon} />
                             </div>
                             <div>
                                 <Heading_v1

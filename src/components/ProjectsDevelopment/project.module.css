@@ -33,7 +33,7 @@
     font-weight: 400 !important;
 }
 .animatedImg {
-    display: none;
+    /* display: none; */
 }
 .leftContainer {
     flex: 1;

@@ -1,0 +1,28 @@
+.TechContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.techStack{
+    display: block;
+    object-fit: cover;
+}
+
+.description {
+    color: #303030CC;
+}
+
+.topHeading{
+    color: var(--royal-blue);
+}
+
+
+@media (max-width: 768px) {
+    .TechContainer{
+        grid-template-columns: 1fr;
+    }
+    .techStack{
+        width: 100%;
+    }
+}

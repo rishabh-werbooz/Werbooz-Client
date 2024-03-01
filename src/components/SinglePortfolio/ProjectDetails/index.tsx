@@ -3,38 +3,53 @@ import ProjectCard_v2 from "@/components/SinglePortfolio/ProjectCards/ProjectCar
 import BackgroundWrapper from "@/components/BackgroundWrapper"
 import Heading_v2 from "@/components/Heading/Heading_v2"
 import styles from "./projectDetails.module.css"
-
-const index = () => {
+interface Props {
+    topHeading: string
+    headingData: { heading: string; color: string }[]
+    ProjectCard: {
+        variant: string
+        topHeading: string
+        heading: string[]
+        description: string[]
+        img: string
+    }[]
+}
+const index = ({ topHeading, headingData, ProjectCard }: Props) => {
     return (
         <div>
             <BackgroundWrapper backgroundColor="#00327408">
-                <div className={`main-inline-Padding mt-2 pt-2`}>
-                    <Heading_v2
-                        topHeading="Project Details"
-                        headingData={[
-                            {
-                                heading: "This Undertaking Comprises of multiple,",
-                                color: "#303030",
-                            },
-                            {
-                                heading: " Systems tailored to meet client needs",
-                                color: "#003274",
-                            },
-                        ]}
-                        className={`font-xxl fw-600  ${styles.topHeading}`}
-                    />
+                <div className={`main-inline-Padding py-5`}>
+                    <Heading_v2 topHeading={topHeading} headingData={headingData} className={`font-xxl fw-600  ${styles.topHeading}`} />
 
-                    <ProjectCard_v2 variant="left" />
+                    <ProjectCard_v2
+                        variant={ProjectCard[0].variant}
+                        topHeading={ProjectCard[0].topHeading}
+                        heading={ProjectCard[0].heading}
+                        description={ProjectCard[0].description}
+                        img={ProjectCard[0].img}
+                    />
                 </div>
             </BackgroundWrapper>
             <BackgroundWrapper backgroundColor="#FFFFFF">
-                <div className="main-inline-Padding mt-2 pt-2">
-                    <ProjectCard_v2 variant="right" />
+                <div className="main-inline-Padding py-5">
+                    <ProjectCard_v2
+                        variant={ProjectCard[1].variant}
+                        topHeading={ProjectCard[1].topHeading}
+                        heading={ProjectCard[1].heading}
+                        description={ProjectCard[1].description}
+                        img={ProjectCard[1].img}
+                    />
                 </div>
             </BackgroundWrapper>
             <BackgroundWrapper backgroundColor="#00327408">
-                <div className="main-inline-Padding mt-2 pt-2">
-                    <ProjectCard_v2 variant="left" />
+                <div className="main-inline-Padding py-5">
+                    <ProjectCard_v2
+                        variant={ProjectCard[2].variant}
+                        topHeading={ProjectCard[2].topHeading}
+                        heading={ProjectCard[2].heading}
+                        description={ProjectCard[2].description}
+                        img={ProjectCard[2].img}
+                    />
                 </div>
             </BackgroundWrapper>
         </div>

@@ -5,6 +5,7 @@ import Button from "@/components/Buttons"
 import Heading from "@/components/Heading/Heading_v1"
 import { FaExternalLinkAlt } from "react-icons/fa"
 // import Image from "@/components/Image"
+import Link from "next/link"
 
 interface DataProps {
     bgColor: string
