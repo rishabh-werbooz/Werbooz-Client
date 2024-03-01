@@ -14,10 +14,11 @@ interface Props {
         variant: string
         img: string
         heading: string
+        ListItem: string[]
     }[]
 }
 
-const index = ({ topHeading, description, headingData, heading, ProjectCard }: Props) => {
+const index = ({ topHeading, description, headingData, heading, ProjectCard}: Props) => {
     return (
         <>
             <div className={styles.projectSolutionBox}>
@@ -38,10 +39,14 @@ const index = ({ topHeading, description, headingData, heading, ProjectCard }: P
                     </div>
                 </div>
                 <div>
-                    <ProjectCard_v3 variant={ProjectCard[0].variant} img={ProjectCard[0].img} heading={ProjectCard[0].heading} />
+                    <ProjectCard_v3 variant={ProjectCard[0].variant} img={ProjectCard[0].img} heading={ProjectCard[0].heading}
+                        ListItem={ProjectCard[0].ListItem}
+                     />
                 </div>
                 <div>
-                    <ProjectCard_v3 variant={ProjectCard[1].variant} img={ProjectCard[1].img} heading={ProjectCard[1].heading} />
+                    <ProjectCard_v3 variant={ProjectCard[1].variant} img={ProjectCard[1].img} heading={ProjectCard[1].heading}
+                        ListItem={ProjectCard[1].ListItem}
+                     />
                 </div>
                 <div>
                     <Description description={description[2]} className={`font-md fw-400 mt-2 ${styles.description}`} />

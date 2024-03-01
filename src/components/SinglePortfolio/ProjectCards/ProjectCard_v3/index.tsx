@@ -9,9 +9,10 @@ interface Props {
     variant: string
     img: string
     heading: string
+    ListItem: string[]
 }
 
-const index = ({ variant = "left", img, heading }: Props) => {
+const index = ({ variant = "left", img, heading , ListItem}: Props) => {
     const isReversed = variant === "left" ? false : true
 
     return (
@@ -28,7 +29,9 @@ const index = ({ variant = "left", img, heading }: Props) => {
                             }}
                             className={`font-xl fw-600 ${styles.heading}`}
                         />
-                        <ProjectListItem_v3 />
+                        <ProjectListItem_v3 
+                            data={ListItem}
+                        />
                     </div>
                 </div>
             </div>

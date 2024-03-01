@@ -7,19 +7,17 @@ import Heading_v2 from "@/components/Heading/Heading_v2"
 interface Props {
     topHeading: string
     img: string
+    headingData: { heading: string; color: string }[]
 }
 
-const index = ({ topHeading, img }: Props) => {
+const index = ({ topHeading, img,headingData }: Props) => {
     return (
         <div>
             <Heading_v2
                 topHeading={topHeading}
                 headingData={[
-                    { heading: "We purposefully curated a selection of advanced technologies", color: "#303030" },
-                    {
-                        heading: " designed to enhance performance and foster collaboration.",
-                        color: "#003274",
-                    },
+                  headingData[0],
+                    headingData[1],
                 ]}
                 className={`font-xxl fw-600  ${styles.topHeading}`}
             />

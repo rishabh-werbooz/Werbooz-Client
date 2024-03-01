@@ -24,6 +24,7 @@ import Marquee from "react-fast-marquee"
 import IconBox_v2 from "@/components/Cards/IconBox/IconBox_v2"
 import BlinkingDots from "@/components/BlinkingDots"
 import { logoImg_1, logoImg_2 } from "@/content/sampleData"
+import { motion } from "framer-motion"
 import Link from "next/link"
 import {
     IconBoxData,
@@ -86,37 +87,85 @@ export default function Home() {
                             <Description description="Fueling digital evolution with our creative prowess. From captivating UX/UI designs to robust web and mobile development, we're your digital partners. Elevate your online presence with our SEO wizardry. Welcome to a world of digital success, one click at a time. " />
                         </div>
 
-                        <IconBox
-                            Icon={IconBoxData.Icon}
-                            title={IconBoxData.title}
-                            description={IconBoxData.description}
-                            bgColor={IconBoxData.bgColor}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.4,
+                                delay: 2 * 0.05,
+                                ease: "easeInOut",
+                            }}
                             className={styles.iconBox_1}
-                        />
+                        >
+                            <IconBox
+                                Icon={IconBoxData.Icon}
+                                title={IconBoxData.title}
+                                description={IconBoxData.description}
+                                bgColor={IconBoxData.bgColor}
+                                className={styles.iconBox_1}
+                            />
+                        </motion.div>
 
-                        <IconBox
-                            Icon={IconBoxData.Icon}
-                            title={IconBoxData.title}
-                            description={IconBoxData.description}
-                            bgColor={IconBoxData.bgColor}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.4,
+                                delay: 3 * 0.05,
+                                ease: "easeInOut",
+                            }}
                             className={styles.iconBox_2}
-                        />
+                        >
+                            <IconBox
+                                Icon={IconBoxData.Icon}
+                                title={IconBoxData.title}
+                                description={IconBoxData.description}
+                                bgColor={IconBoxData.bgColor}
+                                className={styles.iconBox_2}
+                            />
+                        </motion.div>
 
-                        <IconBox
-                            Icon={IconBoxData.Icon}
-                            title={IconBoxData.title}
-                            description={IconBoxData.description}
-                            bgColor={IconBoxData.bgColor}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.4,
+                                delay: 4 * 0.05,
+                                ease: "easeInOut",
+                            }}
                             className={styles.iconBox_3}
-                        />
+                        >
+                            <IconBox
+                                Icon={IconBoxData.Icon}
+                                title={IconBoxData.title}
+                                description={IconBoxData.description}
+                                bgColor={IconBoxData.bgColor}
+                                className={styles.iconBox_3}
+                            />
+                        </motion.div>
 
-                        <IconBox
-                            Icon={IconBoxData.Icon}
-                            title={IconBoxData.title}
-                            description={IconBoxData.description}
-                            bgColor={IconBoxData.bgColor}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.4,
+                                delay: 5 * 0.05,
+                                ease: "easeInOut",
+                            }}
                             className={styles.iconBox_4}
-                        />
+                        >
+                            <IconBox
+                                Icon={IconBoxData.Icon}
+                                title={IconBoxData.title}
+                                description={IconBoxData.description}
+                                bgColor={IconBoxData.bgColor}
+                                className={styles.iconBox_4}
+                            />
+                        </motion.div>
                     </div>
 
                     <Heading_v1
@@ -154,9 +203,20 @@ export default function Home() {
                             </div>
                         </div>
                         {PortfolioDataV1.map((item, index) => (
-                            <div key={index} className={styles[`portfolioItem_${index + 1}`]}>
+                            <motion.div
+                                key={index}
+                                className={styles[`portfolioItem_${index + 1}`]}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.4,
+                                    delay: (index + 2) * 0.05,
+                                    ease: "easeInOut",
+                                }}
+                            >
                                 <Portfolio_v1 bgImg={item.bgImg} title={item.title} subTitle={item.subTitle} description={item.description} />
-                            </div>
+                            </motion.div>
                         ))}
                         <Button variant="outline" rounded="full" text="View All" className={styles.btn} />
                     </div>

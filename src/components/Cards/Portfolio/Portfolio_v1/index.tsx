@@ -33,7 +33,7 @@ const index = ({ className, bgImg, title, description, subTitle }: DataProps) =>
                     }}
                     onHoverStart={() => setIsHovered(true)}
                     onHoverEnd={() => setIsHovered(false)}
-                    whileHover={{ opacity: 1 }} // Adjust opacity as needed
+                    whileHover={{ opacity: 1, scale: 1.05 }} // Adjust opacity as needed
                 >
                     {isHovered && (
                         <motion.div className={styles.overlay} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0.5 }}>

@@ -71,7 +71,7 @@ const index = ({ variant = "left", topHeading, heading, description, img }: Prop
                 />
                 <Description
                     description={description[3]}
-                    className={`font-md fw-600 mb-2 pb-2 text-primary text-italic`}
+                    className={`font-md fw-600  text-primary text-italic`}
                 />
             </div>
         </>

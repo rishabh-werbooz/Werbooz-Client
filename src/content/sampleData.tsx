@@ -419,11 +419,25 @@ export const SinglePortfolioData = {
                     variant: "right",
                     img: "/assets/portfolios/Picture-9.svg",
                     heading: "The Weekendo proprietary Software ",
+                    ListItem: [
+                        "Automated Newsletter Creation System",
+                        "Ad Creation System",
+                        "Employee Management System",
+                        "Tag Creation System",
+                        "Category Creation System",
+                        "Location Creation System",
+                    ],
                 },
                 {
                     variant: "left",
                     img: "/assets/portfolios/Picture-13.svg",
                     heading: "The Weekendo website was built to.",
+                    ListItem: [
+                        "Brings Crowd to Weekendo",
+                        "Provide Exposure to Website",
+                        "To Collaborate with the Companies",
+                        "To Join Weekendo Newsletters According to Their Respective City",
+                    ],
                 },
             ],
         },
@@ -452,6 +466,17 @@ export const SinglePortfolioData = {
         ProjectTechStack: {
             img_1: "/assets/portfolios/weekendo-techstack.png",
             img_2: "/assets/portfolios/weekendo-techstack-2.svg",
+            headingData: [
+                { heading: "We purposefully curated a selection of advanced technologies", color: "#303030" },
+                {
+                    heading: " designed to enhance performance and foster collaboration.",
+                    color: "#003274",
+                },{ heading: "We purposefully curated a selection of advanced technologies", color: "#303030" },
+                {
+                    heading: " designed to enhance performance and foster collaboration.",
+                    color: "#003274",
+                },
+            ],
         },
     },
     develup: {
@@ -594,11 +619,21 @@ export const SinglePortfolioData = {
                     variant: "right",
                     img: "/assets/Develup/Picture-5.svg",
                     heading: "The Employer Dashboard has its own capabilities like ",
+                    ListItem: ["Develup Candidate Database", "Job Posting Capabilities", "Candidate Hiring System", "Team Creation System", "Platform Analytics"],
                 },
                 {
                     variant: "left",
                     img: "/assets/Develup/Picture-7.svg",
                     heading: "The Admin Dashboard has its own capabilities like ",
+                    ListItem: [
+                        "Manage Employers",
+                        "Manage Candidates",
+                        "Verify Employers",
+                        "Verify Companies",
+                        "Add Relationship Managers",
+                        "Add Relationship Managers",
+                        "And Many More",
+                    ],
                 },
             ],
         },
@@ -623,6 +658,21 @@ export const SinglePortfolioData = {
         ProjectTechStack: {
             img_1: "/assets/Develup/Picture-10.svg",
             img_2: "/assets/Develup/Picture-10.svg",
+            headingData: [
+                { heading: "We created something that’s easy to navigate as well ", color: "#303030" },
+                {
+                    heading: "  made user-friendly experience",
+                    color: "#003274",
+                },
+                {
+                    heading: "We created something that’s easy to navigate as well as",
+                    color: "#003274",
+                },
+                {
+                    heading: " user-friendly experience ",
+                    color: "#003274",
+                },
+            ],
         },
     },
 }

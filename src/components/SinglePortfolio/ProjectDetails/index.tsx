@@ -18,7 +18,7 @@ const index = ({ topHeading, headingData, ProjectCard }: Props) => {
     return (
         <div>
             <BackgroundWrapper backgroundColor="#00327408">
-                <div className={`main-inline-Padding mt-2 pt-2`}>
+                <div className={`main-inline-Padding py-5`}>
                     <Heading_v2 topHeading={topHeading} headingData={headingData} className={`font-xxl fw-600  ${styles.topHeading}`} />
 
                     <ProjectCard_v2
@@ -31,7 +31,7 @@ const index = ({ topHeading, headingData, ProjectCard }: Props) => {
                 </div>
             </BackgroundWrapper>
             <BackgroundWrapper backgroundColor="#FFFFFF">
-                <div className="main-inline-Padding mt-2 pt-2">
+                <div className="main-inline-Padding py-5">
                     <ProjectCard_v2
                         variant={ProjectCard[1].variant}
                         topHeading={ProjectCard[1].topHeading}
@@ -42,7 +42,7 @@ const index = ({ topHeading, headingData, ProjectCard }: Props) => {
                 </div>
             </BackgroundWrapper>
             <BackgroundWrapper backgroundColor="#00327408">
-                <div className="main-inline-Padding mt-2 pt-2">
+                <div className="main-inline-Padding py-5">
                     <ProjectCard_v2
                         variant={ProjectCard[2].variant}
                         topHeading={ProjectCard[2].topHeading}

@@ -1,7 +1,7 @@
 .ProjectIntroductionContainer {
     color: var(--white) !important;
-    padding-top: var(--padding-xxxl);
-    padding-bottom: var(--padding-xxxl);
+    padding-top: var(--body-inline-space);
+    padding-bottom: var(--body-inline-space);
 }
 
 .intro {

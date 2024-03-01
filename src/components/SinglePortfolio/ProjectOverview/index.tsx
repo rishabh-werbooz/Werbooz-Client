@@ -20,7 +20,7 @@ interface Props {
 const index = ({ topHeading, headingData, keyWordsBold, img, ProjectItems }: Props) => {
     return (
         <div>
-            <div className="mb-2">
+            <div className="mb-1">
                 <Heading_v2
                     topHeading={topHeading}
                     headingData={[
@@ -38,17 +38,13 @@ const index = ({ topHeading, headingData, keyWordsBold, img, ProjectItems }: Pro
             </div>
             <div className={`${styles.projectContent} d-flex gap-4 mb-2`}>
                 <div>
-                    <KeywordBold
-                        keyword={keyWordsBold[0].keyword}
-                        text={keyWordsBold[0].text}
-                        breakLine={true}
-                    />
+                    <KeywordBold keyword={keyWordsBold[0].keyword} text={keyWordsBold[0].text} breakLine={true} />
                 </div>
                 <Image src={img} alt="Project Overview" />
             </div>
-            <ProjectListItems_v2 
-                data_1={ProjectItems}
-            />
+            <div className="mb-2">
+                <ProjectListItems_v2 data_1={ProjectItems} />
+            </div>
         </div>
     )
 }

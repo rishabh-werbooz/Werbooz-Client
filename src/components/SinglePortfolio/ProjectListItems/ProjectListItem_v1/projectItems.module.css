@@ -1,9 +1,16 @@
-.icons{
+.icons {
     width: 25px;
     height: 25px;
 }
-.bulletPointContainer{
+.bulletPointContainer {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .icons {
+        width: 18px;
+        height: 18px;
+    }
 }

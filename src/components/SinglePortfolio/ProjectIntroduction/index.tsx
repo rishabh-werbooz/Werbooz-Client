@@ -33,8 +33,8 @@ const index = ({ topHeading, heading, img, description, ProjectListItems, Projec
                     className="font-xxl fw-800"
                 />
 
-                <div className={`${styles.intro} mt-2`}>
-                    <Description description={description} className={`fw-400 font-sm mb-2`} />
+                <div className={`${styles.intro} mt-1`}>
+                    <Description description={description} className={`fw-400 font-sm `} />
                 </div>
 
                 <div className={`${styles.PortfolioGridContainer} mt-2`}>
@@ -48,7 +48,7 @@ const index = ({ topHeading, heading, img, description, ProjectListItems, Projec
                         <ProjectListItems_v1 description={ProjectListItems} />
                     </div>
                 </div>
-                <div className="mt-2 pt-2">
+                <div className="mt-2">
                     <Heading_v2
                         topHeading={topHeading[1]}
                         headingData={[

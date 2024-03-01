@@ -49,7 +49,7 @@ const index = () => {
             <div>
                 <Stepper index={activeStep} orientation="vertical" gap="0" colorScheme="black">
                     {steps.map((step, index) => (
-                        <Step>
+                        <Step key={index}>
                             <StepIndicator
                                 p={1}
                                 rounded={"lg"}

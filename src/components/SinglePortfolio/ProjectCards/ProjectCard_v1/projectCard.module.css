@@ -16,6 +16,7 @@
     .CardContainer {
         display: flex;
         flex-direction: column;
+        gap:0rem;
     }
     .img {
         display: none;

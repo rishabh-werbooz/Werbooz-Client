@@ -31,7 +31,10 @@ function index() {
 
     return (
         <>
-            <motion.div  animate={{ y: isScrolled ? 0 : -100 }} transition={{ duration: 0.5 }} className={styles.navDiv}>
+            <motion.div  animate={{ 
+               
+                opacity: isScrolled ? 1 : 0,
+            }} transition={{ duration: 0.5 }} className={styles.navDiv}>
                 <header className={`${styles.header} d-flex justify-content-evenly align-items-center`}>
                     <div>
                         <Link href="/">

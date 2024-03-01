@@ -8,7 +8,7 @@ interface Props {
     keywords: string[]
 }
 
-const index = ({ description, keywords}: Props) => {
+const index = ({ description, keywords }: Props) => {
     return (
         <>
             <div className={`${styles.ProjectContainer}`}>
@@ -49,14 +49,18 @@ const index = ({ description, keywords}: Props) => {
                             />
                             <Description description={description[1]} className={`${styles.description} fw-400  mb-2`} />
                         </div>
-                        <div>
+                        <div className="mb-2">
                             <Heading_v1
                                 data={{
                                     heading: "Website :",
                                 }}
                                 className="font-lg fw-600"
                             />
-                            <Description description={description[2]} className={`${styles.description} fw-400  mb-2`} />
+
+                            <a href={description[2]} target="_blank" className={`${styles.webLink} fw-400  mb-2 font-lg`}>
+                                {description[2]}
+                            </a>
+
                         </div>
                         <div>
                             <Heading_v1
@@ -74,7 +78,7 @@ const index = ({ description, keywords}: Props) => {
                                 }}
                                 className="font-lg fw-600"
                             />
-                            <Description description={description[4]} className={`${styles.description} fw-400  mb-2`} />
+                            <Description description={description[4]} className={`${styles.description} fw-400 `} />
                         </div>
                     </div>
                 </div>

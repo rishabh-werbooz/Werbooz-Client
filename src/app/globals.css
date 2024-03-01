@@ -96,8 +96,9 @@
         --font-xl: 1.7rem;
         --font-xxl: 2.2rem;
         --font-xxxl: 2.7rem;
-        --font-3_5xl: 3.2rem;
+        --font-3_5xl: 3.5rem;
         --body-block-space: 4rem;
+        
     }
 }
 
@@ -139,7 +140,7 @@
         --font-xl: 1.2rem;
         --font-xxl: 1.5rem;
         --font-xxxl: 1.5rem;
-        --font-3_5xl: 1.5rem;
+        --font-3_5xl: 3rem;
     }
 }
 
@@ -291,6 +292,11 @@ body {
 
 .pt-2 {
     padding-top: 2rem;
+}
+
+.py-5 {
+    padding-top: var(--body-inline-space);
+    padding-bottom: var(--body-inline-space);
 }
 
 .border-radius-sm {

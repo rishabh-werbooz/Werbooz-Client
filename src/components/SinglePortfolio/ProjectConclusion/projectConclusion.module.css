@@ -1,6 +1,7 @@
 .ProjectConclusionContainer{
     color: var(--white) !important;
-    padding-bottom: 2rem;
+    padding-bottom: var(--body-inline-space);
+    padding-top: var(--body-inline-space);
 }
 
 @media (max-width: 768px) {

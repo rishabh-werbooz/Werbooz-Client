@@ -30,7 +30,7 @@ const index = () => {
                 <div className="main-inline-Padding">
                     <ProjectOutline description={projectData?.ProjectOutline?.description} keywords={projectData?.ProjectOutline?.keywords} />
                 </div>
-                <div className="mt-2 pt-2">
+                <div className="mt-2">
                     <BackgroundWrapper backgroundColor="#003274">
                         <div className="main-inline-Padding">
                             <ProjectIntroduction
@@ -44,7 +44,7 @@ const index = () => {
                         </div>
                     </BackgroundWrapper>
                 </div>
-                <div className="main-inline-Padding mt-2 pt-2">
+                <div className="main-inline-Padding mt-2">
                     <ProjectOverviw
                         topHeading={projectData?.ProjectOverview?.topHeading}
                         headingData={projectData?.ProjectOverview?.headingData}
@@ -61,7 +61,7 @@ const index = () => {
                     />
                 </div>
 
-                <div className="main-inline-Padding mt-2 pt-2">
+                <div className="main-inline-Padding mt-2">
                     <ProjectSolutionBox
                         topHeading={projectData?.ProjectSolutionBox?.topHeading}
                         headingData={projectData?.ProjectSolutionBox?.headingData}
@@ -74,17 +74,21 @@ const index = () => {
                 <div className="mb-4">
                     <BackgroundWrapper backgroundColor="#FCFDFE">
                         <div className="main-inline-Padding mt-2 pt-2">
-                            <ProjectTechStack topHeading="Technologies used | Version 1" img={projectData?.ProjectTechStack?.img_1} />
+                            <ProjectTechStack topHeading="Technologies used | Version 1" img={projectData?.ProjectTechStack?.img_1}
+                            headingData={projectData?.ProjectTechStack?.headingData}
+                            />
                         </div>
 
                         <div className="main-inline-Padding mt-2 pt-2">
-                            <ProjectTechStack topHeading="Technologies used | Version 2" img={projectData?.ProjectTechStack?.img_2} />
+                            <ProjectTechStack topHeading="Technologies used | Version 2" img={projectData?.ProjectTechStack?.img_2}
+                            headingData={projectData?.ProjectTechStack?.headingData}
+                             />
                         </div>
                     </BackgroundWrapper>
                 </div>
 
                 <BackgroundWrapper backgroundColor="#003274">
-                    <div className="main-inline-Padding mt-2 pt-2">
+                    <div className="main-inline-Padding">
                         <ProjectConclusion
                             heading={projectData?.ProjectConclusion?.heading}
                             img={projectData?.ProjectConclusion?.img}

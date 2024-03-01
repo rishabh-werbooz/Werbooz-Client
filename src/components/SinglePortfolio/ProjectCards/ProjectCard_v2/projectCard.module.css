@@ -57,3 +57,9 @@
         color: var(--royal-blue);
     }
 }
+
+@media (max-width: 768px) {
+    .projectContainer {
+        padding-top: 2rem;
+    }
+}
