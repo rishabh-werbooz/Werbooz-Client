@@ -34,6 +34,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .main{
+        justify-content: center;
+    }
     .left {
         display: grid;
         grid-template-areas: "area1" "area2";
@@ -52,5 +56,10 @@
 
     .details {
         margin-top: var(--padding-md);
+    }
+
+    .image {
+        width: 100%;
+        margin: 0 auto;
     }
 }

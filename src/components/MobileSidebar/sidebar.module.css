@@ -10,6 +10,16 @@
 
 }
 
+.btn{
+    background-color: transparent !important;
+    outline: none !important;
+    border: none !important;
+    color: var(--white) !important;
+    text-align: left !important;
+    font-size: var(--font-xl) !important;
+    text-decoration: none !important;
+}
+
 .logo{
     width:150px;
     height: 150px;

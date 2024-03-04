@@ -74,15 +74,9 @@ const index = () => {
                 <div className="mb-4">
                     <BackgroundWrapper backgroundColor="#FCFDFE">
                         <div className="main-inline-Padding mt-2 pt-2">
-                            <ProjectTechStack topHeading="Technologies used | Version 1" img={projectData?.ProjectTechStack?.img_1}
+                            <ProjectTechStack topHeading="Technologies used" img={projectData?.ProjectTechStack?.img_1}
                             headingData={projectData?.ProjectTechStack?.headingData}
                             />
-                        </div>
-
-                        <div className="main-inline-Padding mt-2 pt-2">
-                            <ProjectTechStack topHeading="Technologies used | Version 2" img={projectData?.ProjectTechStack?.img_2}
-                            headingData={projectData?.ProjectTechStack?.headingData}
-                             />
                         </div>
                     </BackgroundWrapper>
                 </div>

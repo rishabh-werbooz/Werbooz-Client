@@ -11,20 +11,22 @@
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
+    outline-color: var(--royal-blue) !important;
 }
 
-.heading{
-    color:#23242A;
+.heading {
+    color: #23242a;
 }
 
-.description{
-    color:#23242ACC;
+.description {
+    color: #23242acc;
 }
 
 @media (max-width: 768px) {
     .itemContainer {
         grid-template-columns: 1fr;
+    }
+    .icon {
+        margin-top: 0.3rem;
     }
 }

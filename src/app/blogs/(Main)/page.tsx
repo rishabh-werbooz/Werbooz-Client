@@ -2,7 +2,7 @@ import React from 'react'
 import HeroSection_v2 from '@/components/HeroSection/HeroSection_v2'
 import Blog from '@/components/Cards/Blog/Blog_v1'
 import { BlogData } from '@/content/sampleData'
-import styles from '@/app/(HomePage)/home.module.css'
+import styles from '@/app/home.module.css'
 import FooterTop from "@/components/FooterTop"
 
 const index = () => {

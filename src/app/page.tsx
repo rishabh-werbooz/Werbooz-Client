@@ -24,6 +24,7 @@ import Marquee from "react-fast-marquee"
 import IconBox_v2 from "@/components/Cards/IconBox/IconBox_v2"
 import BlinkingDots from "@/components/BlinkingDots"
 import { logoImg_1, logoImg_2 } from "@/content/sampleData"
+import DotLottiePlayer from "@/components/DotLottiePlayer"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import {
@@ -420,7 +421,7 @@ export default function Home() {
                     </div>
                 </BackgroundWrapper>
 
-                <BackgroundWrapper backgroundColor="#FFFEFE">
+                {/* <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding pb-2  ${styles.projectDevelopmentSection}`}>
                         <Heading_v2
                             headingData={[
@@ -441,7 +442,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                </BackgroundWrapper>
+                </BackgroundWrapper> */}
 
                 <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding`}>
@@ -482,6 +483,7 @@ export default function Home() {
                                 description="Initiate your journey by filling the form. Share your project goals and contact details; it's the first step to bring your vision to life."
                                 className="text-white"
                             />
+                            <DotLottiePlayer src="/assets/lottie/Rocket.lottie" className={`${styles.ContactImg}`} />
                         </div>
                     </div>
                 </div>

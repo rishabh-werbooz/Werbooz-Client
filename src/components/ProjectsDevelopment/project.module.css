@@ -104,7 +104,7 @@
         align-items: center;
     }
     .animatedImg {
-        display: block;
+        display: none;
     }
     .btn {
         width: 100%;

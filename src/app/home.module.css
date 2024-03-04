@@ -158,6 +158,12 @@
     padding: var(--padding-xxxl);
 }
 
+.ContactImg {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 1250px) {
     .servicesSection {
         grid-template-columns: repeat(2, 1fr);
@@ -173,6 +179,18 @@
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 2;
+    }
+
+    .contactFormInnerSection {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        justify-content: center;
+        padding: var(--padding-xl) var(--padding-sm);
+    }
+
+    .ContactImg {
+        display: none;
     }
 
     .iconBox_1 {
@@ -202,11 +220,154 @@
         grid-column-start: 2 !important;
         grid-column-end: 4 !important;
     }
+
+    .portfolioSection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio_heading {
+        grid-column-start: 1 !important;
+        grid-column-end: 3 !important;
+    }
+    .btn {
+        display: none !important;
+    }
+
+    .portfolioItem_1 {
+        grid-column-start: 1 !important;
+        grid-column-end: 3 !important;
+        grid-row-start: 2 !important;
+        grid-row-end: 3 !important;
+    }
+
+    .portfolioItem_2 {
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+        grid-row-start: 3 !important;
+        grid-row-end: 4 !important;
+    }
+
+    .portfolioItem_3 {
+        grid-column-start: 2 !important;
+        grid-column-end: 3 !important;
+        grid-row-start: 3 !important;
+        grid-row-end: 4 !important;
+    }
+
+    .portfolioItem_4 {
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+        grid-row-start: 4 !important;
+        grid-row-end: 5 !important;
+    }
+
+    .portfolioItem_5 {
+        grid-column-start: 2 !important;
+        grid-column-end: 3 !important;
+        grid-row-start: 4 !important;
+        grid-row-end: 5 !important;
+    }
+
+    .iconBox_1,
+    .iconBox_2,
+    .iconBox_3,
+    .iconBox_4 {
+        height: 100% !important;
+        border-radius: var(--border-radius-md) !important;
+    }
 }
 
 /* responsive .BlogGrid  */
 @media (max-width: 768px) {
     .BlogGrid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .servicesSection {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .servicesHeading {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .description {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .iconBox_1 {
+        grid-row-start: 3 !important;
+        grid-row-end: 4 !important;
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+    }
+
+    .iconBox_2 {
+        grid-row-start: 4 !important;
+        grid-row-end: 5 !important;
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+    }
+
+    .iconBox_3 {
+        grid-row-start: 5 !important;
+        grid-row-end: 6 !important;
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+    }
+
+    .iconBox_4 {
+        grid-row-start: 6 !important;
+        grid-row-end: 7 !important;
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+    }
+
+    .portfolioSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio_heading {
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+    }
+
+    .portfolioItem_1 {
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+        grid-row-start: 2 !important;
+        grid-row-end: 3 !important;
+    }
+
+    .portfolioItem_2 {
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+        grid-row-start: 3 !important;
+        grid-row-end: 4 !important;
+    }
+
+    .portfolioItem_3 {
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+        grid-row-start: 4 !important;
+        grid-row-end: 5 !important;
+    }
+
+    .portfolioItem_4 {
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+        grid-row-start: 5 !important;
+        grid-row-end: 6 !important;
+    }
+
+    .portfolioItem_5 {
+        grid-column-start: 1 !important;
+        grid-column-end: 2 !important;
+        grid-row-start: 6 !important;
+        grid-row-end: 7 !important;
     }
 }

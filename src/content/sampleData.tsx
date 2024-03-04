@@ -1,5 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClipboard } from "@fortawesome/free-solid-svg-icons"
+import { IoHome } from "react-icons/io5"
+import { RiServiceFill } from "react-icons/ri"
+import { AiOutlineCodeSandbox } from "react-icons/ai"
+import { TbTargetArrow } from "react-icons/tb"
+import { GrCycle } from "react-icons/gr"
+import { TbPhotoShare } from "react-icons/tb"
 
 export const IconBoxData = {
     Icon: "assets/web-design-brush-icon.svg",
@@ -10,31 +16,31 @@ export const IconBoxData = {
 
 export const PortfolioDataV1 = [
     {
-        bgImg: "/assets/portfolios/PortfolioImg_1.png",
+        bgImg: "/assets/portfolios/PortfolioImg_1.svg",
         title: "Frieght and Marketplace",
         subTitle: "Kargoplex",
         description: "In Together Shaping the Future of Freight and Marketplace Excellence. Werbooz Wishes You Endless Success on Your Driven Journey.",
     },
     {
-        bgImg: "/assets/portfolios/PortfolioImg_4.png",
+        bgImg: "/assets/portfolios/PortfolioImg_4.svg",
         title: "Property Leasing Made Easy",
         subTitle: "UBZ Spaces",
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
-        bgImg: "/assets/portfolios/PortfolioImg_5.png",
+        bgImg: "/assets/portfolios/PortfolioImg_5.svg",
         title: "Bridging Employers and Job Seekers",
         subTitle: "Develup",
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
-        bgImg: "/assets/portfolios/PortfolioImg_6.png",
+        bgImg: "/assets/portfolios/PortfolioImg_6.svg",
         title: "Exploring Psychological",
         subTitle: "ProBehave",
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     },
     {
-        bgImg: "/assets/portfolios/PortfolioImg_7.png",
+        bgImg: "/assets/portfolios/PortfolioImg_7.svg",
         title: "Craft Your Perfect Weekend",
         subTitle: "Weekendo",
         description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -129,7 +135,7 @@ export const HeadingData = {
     subHeading: "Our Services",
 }
 
-export const listItemsData = ["Fill Form", "Schedule a Call", "Project Discussion", "Receive Quotation", "Budget Discussion", "Project Kickoff", "Project Delivery"]
+export const listItemsData = ["Fill Form", "Schedule a Call", "Project Discussion", "Receive Quotation", "Budget Discussion"]
 
 export const listDetailsData = [
     {
@@ -167,20 +173,6 @@ export const listDetailsData = [
         description_2: "We'll also provide you with a detailed project plan.",
         btnText: "Discuss Budget",
     },
-    {
-        heading: "Project Kickoff",
-        subHeading: "Let's get started",
-        description_1: "Once everything is finalized, we'll start working on your project. We'll keep you updated on the project progress.",
-        description_2: "We'll also provide you with a detailed project plan.",
-        btnText: "Start Project",
-    },
-    {
-        heading: "Project Delivery",
-        subHeading: "Your project is ready",
-        description_1: "We'll deliver your project as per the agreed timeline. We'll also provide you with any necessary support after the project delivery.",
-        description_2: "We'll also provide you with a detailed project plan.",
-        btnText: "Project Delivery",
-    },
 ]
 
 export const listIconsData = [
@@ -189,8 +181,6 @@ export const listIconsData = [
     "/assets/lottie/Project.lottie",
     "/assets/lottie/ReceiveQuotation.lottie",
     "/assets/lottie/Budget.lottie",
-    "/assets/lottie/Forms.lottie",
-    "/assets/lottie/Forms.lottie",
 ]
 
 export const HeroSectionData_v1 = {
@@ -471,7 +461,8 @@ export const SinglePortfolioData = {
                 {
                     heading: " designed to enhance performance and foster collaboration.",
                     color: "#003274",
-                },{ heading: "We purposefully curated a selection of advanced technologies", color: "#303030" },
+                },
+                { heading: "We purposefully curated a selection of advanced technologies", color: "#303030" },
                 {
                     heading: " designed to enhance performance and foster collaboration.",
                     color: "#003274",
@@ -676,3 +667,12 @@ export const SinglePortfolioData = {
         },
     },
 }
+
+export const LinkSidebarData = [
+    { href: "/", text: "Home", icon: <IoHome /> },
+    { href: "/services", text: "Services", icon: <RiServiceFill /> },
+    { href: "/portfolio", text: "Portfolios", icon: <AiOutlineCodeSandbox /> },
+    { href: "/approach", text: "Approach", icon: <TbTargetArrow /> },
+    { href: "/process", text: "Process", icon: <GrCycle /> },
+    { href: "/article", text: "Article", icon: <TbPhotoShare /> },
+]
