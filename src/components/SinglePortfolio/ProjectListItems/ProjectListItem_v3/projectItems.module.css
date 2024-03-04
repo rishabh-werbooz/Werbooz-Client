@@ -4,3 +4,8 @@
 .ListContainer{
     margin: 0 auto;
 }
+
+.icon {
+    outline-color: var(--royal-blue) !important;
+    margin-top: 0rem;
+}

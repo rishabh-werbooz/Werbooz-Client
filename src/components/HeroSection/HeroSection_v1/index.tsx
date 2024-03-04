@@ -4,11 +4,11 @@ import styles from "./heroSection.module.css"
 import Heading from "@/components/Heading/Heading_v1"
 import Description from "@/components/Description"
 import Button from "@/components/Buttons"
-import WebGLFluidSimulation from "@/components/FluildSimulation"
 import BlinkingDots from "@/components/BlinkingDots"
 import { FaLongArrowAltDown } from "react-icons/fa"
 import { AnimatePresence, motion } from "framer-motion"
 import DotLottiePlayer from "@/components/DotLottiePlayer"
+import { BiSolidPhoneCall } from "react-icons/bi"
 
 interface HeroProps {
     heading_1: string
@@ -23,39 +23,43 @@ const index = ({ heading_1, heading_2, description_1, description_2, buttonText,
     return (
         <>
             <div className={styles.heroSectionBackground}>
-                {/* <WebGLFluidSimulation /> */}
-
                 <div className={`${styles.heroSection} d-flex justify-content-center flex-column  align-items-center gap-1-5 `}>
                     <BlinkingDots />
 
-                    <div className={styles.test}>
+                    <div>
                         <Heading
                             data={{
                                 heading: heading_1,
                             }}
-                            className="fw-700 font-3_5xl"
+                            className={`fw-800 font-3_5xl ${styles.heading}`}
                             variant="center"
                         />
                         <Heading
                             data={{
                                 heading: heading_2,
                             }}
-                            className="fw-700 font-3_5xl"
+                            className={`fw-800 font-3_5xl ${styles.heading}`}
                             variant="center"
                         />
                     </div>
-                    <div className={styles.test}>
+                    <div>
                         <Description description={description_1} className={styles.description} />
                         <Description description={description_2} className={styles.description} />
                     </div>
-                    <motion.div className={`${styles.test} d-flex justify-content-center gap-1`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                        <Button variant="solid" text={buttonText ? buttonText : "Get Started"} rounded="full" className={`${styles.button} fw-700 mt-1`} />
+                    <motion.div className={`d-flex justify-content-center gap-1`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                        <Button
+                            variant="solid"
+                            text={buttonText ? buttonText : "Get Started"}
+                            rounded="full"
+                            className={`${styles.button} fw-700 mt-1`}
+                            leftIcon={<BiSolidPhoneCall size={20}/>}
+                        />
                     </motion.div>
-                    <div className={`d-flex justify-content-end align-items-end ${styles.test}`}>
+                    <div className={`d-flex justify-content-end align-items-end`}>
                         <DotLottiePlayer src={lottieFile} className={styles.lottieImg} />
                     </div>
 
-                    <div className={`${styles.test} ${styles.scrollDown} d-flex justify-content-center flex-column align-items-center `}>
+                    <div className={`${styles.scrollDown} d-flex justify-content-center flex-column align-items-center `}>
                         <Heading
                             data={{
                                 heading: "Scroll Down",

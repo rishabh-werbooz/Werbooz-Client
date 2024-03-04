@@ -10,10 +10,11 @@ interface ButtonProps {
     className?: string
     text: string
     rightIcon?: any
+    leftIcon?: any
     onClick?: (e: React.MouseEvent) => void
 }
 
-const index = ({ type, variant, onClick, rounded, text, rightIcon, className }: ButtonProps) => {
+const index = ({ type, variant, onClick, rounded, text, rightIcon,leftIcon, className }: ButtonProps) => {
     const classes = classNames(styles.btn, "lh-150 fw-700", className)
     return (
         <>
@@ -25,7 +26,9 @@ const index = ({ type, variant, onClick, rounded, text, rightIcon, className }: 
                 color="#003274"
                 border="2px"
                 borderColor="#003274"
+                leftIcon={leftIcon}
                 rightIcon={rightIcon}
+                onClick={onClick}
             >
                 {text}
             </Button>

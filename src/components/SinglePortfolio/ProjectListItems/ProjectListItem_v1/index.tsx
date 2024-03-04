@@ -5,7 +5,7 @@ import Description from "@/components/Description"
 import { TbSquareRoundedPlusFilled } from "react-icons/tb"
 import { IoCheckmarkDoneOutline } from "react-icons/io5"
 import Image from "@/components/Image"
-
+import ListIcon from "@/components/ListIcon"
 interface Props {
     description: string[]
 }
@@ -16,7 +16,7 @@ const index = ({ description }: Props) => {
             <div className="mt-2">
                 {description.map((point, index) => (
                     <div key={index} className={`${styles.bulletPointContainer} mb-1`}>
-                        <Image src="/assets/squarIcon.svg" alt="checkmark" className={`${styles.icons}`}/>
+                        <ListIcon />
                         <Description description={point} className="fw-400 font-sm" />
                     </div>
                 ))}

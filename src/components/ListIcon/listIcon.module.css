@@ -1,0 +1,10 @@
+.outer {
+    border: 8px solid;
+    border-radius: 10px;
+}
+
+.inner {
+    border-radius: 6px;
+    margin: 0;
+    padding: 0.5rem;
+}
