@@ -6,17 +6,17 @@ import styles from "./projectDetails.module.css"
 
 interface Props {
     data: {
-        topHeading: string
-        headingData: { heading: string; color: string }[]
-        ProjectCard: {
-            bgColor: string
-            variant: string
-            img: string
-            cardContent: {
-                topHeading: string
-                headingData: { heading: string; color: string }[]
-                heading: string
-                description: string | JSX.Element | string[] | JSX.Element[]
+        topHeading?: string
+        headingData?: { heading: string; color: string }[]
+        ProjectCard?: {
+            bgColor?: string
+            variant?: string
+            img?: string
+            cardContent?: {
+                topHeading?: string
+                headingData?: { heading: string; color: string }[]
+                heading?: string
+                description?: string | JSX.Element | string[] | JSX.Element[]
             }[]
         }[]
     }
@@ -25,10 +25,10 @@ interface Props {
 const index = ({ data }: Props) => {
     return (
         <div>
-            {data.ProjectCard.map((content, index) => (
+            {data?.ProjectCard?.map((content, index) => (
                 <BackgroundWrapper backgroundColor={content.bgColor} key={index}>
                     <div className={`main-inline-Padding py-5`}>
-                        {index == 0 && <Heading_v2 topHeading={data.topHeading} headingData={data.headingData} className={`font-xxl fw-600  ${styles.topHeading}`} />}
+                        {index == 0 && <Heading_v2 topHeading={data?.topHeading} headingData={data?.headingData} className={`font-xxl fw-600  ${styles.topHeading}`} />}
 
                         <ProjectCard_v2 content={content} />
                     </div>
