@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: auto auto;
     padding-top: 4rem;
-    align-items: center;
+    align-items:  start;
 }
 
 .projectContainer .imgDiv {

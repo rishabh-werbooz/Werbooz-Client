@@ -6,73 +6,65 @@ import Image from "@/components/Image"
 import Heading_v1 from "@/components/Heading/Heading_v1"
 
 interface Props {
-    variant: string
-    topHeading: string
-    heading: string[]
-    description: string[]
-    img: string
+    content: {
+        variant: string
+        img: string
+        cardContent: {
+            topHeading: string
+            headingData: { heading: string; color: string }[]
+            heading: string
+            description: string | JSX.Element | string[] | JSX.Element[]
+        }[]
+    }
 }
 
-const index = ({ variant = "left", topHeading, heading, description, img }: Props) => {
+const index = ({ content }: Props) => {
+  
+    const { variant, img, cardContent } = content
     const isReversed = variant === "left" ? false : true
 
     return (
         <>
             <div>
-                <div className={`${styles.projectContainer} ${isReversed ? styles.reverse : ""}`}>
+                <div className={`${styles.projectContainer} ${isReversed ? styles.reverse : ""} mb-1`}>
                     <div className={`${styles.imgDiv}`}>
                         <div className="mb-1">
-                            <Heading_v2
-                                topHeading={topHeading}
-                                headingData={[
-                                    {
-                                        heading: heading[0],
-                                        color: "#0F172A",
-                                    },
-                                ]}
-                                className={`font-xxl fw-600 ${styles.topHeading_1}`}
-                            />
+                            <Heading_v2 topHeading={cardContent[0].topHeading} headingData={cardContent[0].headingData} className={`font-xxl fw-600 ${styles.topHeading_1}`} />
                         </div>
 
                         <Image src={img} alt="Weekendo" className={`${styles.image}`} />
                     </div>
                     <div className={`${styles.projectDetails}`}>
-                        <Heading_v2
-                            topHeading={topHeading}
-                            headingData={[
-                                {
-                                    heading: heading[0],
-                                    color: "#0F172A",
-                                },
-                            ]}
-                            className={`font-xxl fw-600 ${styles.topHeading}`}
-                        />
+                        {/* Only first 2 objects of cardContent are being used */}
+                        <Heading_v2 topHeading={cardContent[0].topHeading} headingData={cardContent[0].headingData} className={`font-xxl fw-600 ${styles.topHeading}`} />
 
-                        <Description
-                            description={description[0]}
-                            className={`font-md fw-400 mt-1 mb-2 ${styles.description}`}
-                        />
+                        <Description description={cardContent[0].description} className={`font-md fw-400 mt-1 mb-2 ${styles.description}`} />
 
                         <Heading_v1
                             data={{
-                                heading: heading[1],
+                                heading: cardContent[1].heading,
                             }}
                             className={`font-xl fw-600 ${styles.heading}`}
                         />
-                        <Description
-                            description={description[1]}
-                            className={`font-md fw-400 mt-1 ${styles.description}`}
-                        />
+                        {cardContent[1]?.description && <Description description={cardContent[1].description} className={`font-md fw-400 mt-1 ${styles.description}`} />}
                     </div>
                 </div>
-                <Description
-                    description={description[2]}
-                    className={`font-md fw-400 mb-2 ${styles.description}`}
-                />
-                <Description
-                    description={description[3]}
-                    className={`font-md fw-600  text-primary text-italic`}
-                />
+                {/*  rest of the cardContent Objects are being used here */}
+                {cardContent.slice(2).map((content, index) =>
+                    content.heading ? (
+                        <div key={index} className={`${styles.projectDetails} ${styles.projectDetails_2} mb-2`}>
+                            <Heading_v1
+                                data={{
+                                    heading: content.heading,
+                                }}
+                                className={`font-xl fw-600 ${styles.heading}`}
+                            />
+                            <Description description={content.description} className={`font-md fw-400 mt-1 ${styles.description}`} />
+                        </div>
+                    ) : (
+                        content.description && <Description key={index} description={content.description} breakLine={false} className={`font-md fw-600  text-primary text-italic`} />
+                    )
+                )}
             </div>
         </>
     )

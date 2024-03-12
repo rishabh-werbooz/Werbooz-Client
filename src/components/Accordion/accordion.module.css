@@ -1,0 +1,21 @@
+.accordionItem {
+    border: none !important;
+    background-color: var(--white) !important;
+    border-radius: var(--border-radius-sm) !important;
+}
+
+.accordionBtn {
+    padding: var(--padding-lg) var(--padding-md) !important;
+    color: var(--pale-blue) !important;
+    border-radius: var(--border-radius-sm) !important;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.description{
+    text-align: left !important;
+}

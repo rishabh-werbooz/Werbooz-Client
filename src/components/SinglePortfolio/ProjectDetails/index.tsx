@@ -3,34 +3,39 @@ import ProjectCard_v2 from "@/components/SinglePortfolio/ProjectCards/ProjectCar
 import BackgroundWrapper from "@/components/BackgroundWrapper"
 import Heading_v2 from "@/components/Heading/Heading_v2"
 import styles from "./projectDetails.module.css"
+
 interface Props {
-    topHeading: string
-    headingData: { heading: string; color: string }[]
-    ProjectCard: {
-        variant: string
+    data: {
         topHeading: string
-        heading: string[]
-        description: string[]
-        img: string
-    }[]
+        headingData: { heading: string; color: string }[]
+        ProjectCard: {
+            bgColor: string
+            variant: string
+            img: string
+            cardContent: {
+                topHeading: string
+                headingData: { heading: string; color: string }[]
+                heading: string
+                description: string | JSX.Element | string[] | JSX.Element[]
+            }[]
+        }[]
+    }
 }
-const index = ({ topHeading, headingData, ProjectCard }: Props) => {
+
+const index = ({ data }: Props) => {
     return (
         <div>
-            <BackgroundWrapper backgroundColor="#00327408">
-                <div className={`main-inline-Padding py-5`}>
-                    <Heading_v2 topHeading={topHeading} headingData={headingData} className={`font-xxl fw-600  ${styles.topHeading}`} />
+            {data.ProjectCard.map((content, index) => (
+                <BackgroundWrapper backgroundColor={content.bgColor} key={index}>
+                    <div className={`main-inline-Padding py-5`}>
+                        {index == 0 && <Heading_v2 topHeading={data.topHeading} headingData={data.headingData} className={`font-xxl fw-600  ${styles.topHeading}`} />}
 
-                    <ProjectCard_v2
-                        variant={ProjectCard[0].variant}
-                        topHeading={ProjectCard[0].topHeading}
-                        heading={ProjectCard[0].heading}
-                        description={ProjectCard[0].description}
-                        img={ProjectCard[0].img}
-                    />
-                </div>
-            </BackgroundWrapper>
-            <BackgroundWrapper backgroundColor="#FFFFFF">
+                        <ProjectCard_v2 content={content} />
+                    </div>
+                </BackgroundWrapper>
+            ))}
+
+            {/* <BackgroundWrapper backgroundColor="#FFFFFF">
                 <div className="main-inline-Padding py-5">
                     <ProjectCard_v2
                         variant={ProjectCard[1].variant}
@@ -51,7 +56,7 @@ const index = ({ topHeading, headingData, ProjectCard }: Props) => {
                         img={ProjectCard[2].img}
                     />
                 </div>
-            </BackgroundWrapper>
+            </BackgroundWrapper> */}
         </div>
     )
 }

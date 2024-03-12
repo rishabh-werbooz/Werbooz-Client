@@ -1,0 +1,7 @@
+.aboutSection{
+    padding:var(--padding-xxl) 0;
+}
+
+.aboutSectionImage{
+    translate: 0px -120px;
+}

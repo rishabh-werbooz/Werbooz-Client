@@ -7,6 +7,7 @@ interface DataProps {
     subHeading?: string
     topHeading?: string
 }
+
 interface HeadingProps {
     data: DataProps
     variant?: string
@@ -25,13 +26,11 @@ const index: React.FC<HeadingProps> = ({ data, variant = "left", className = "" 
     )
 
     return (
-        <>
-          
-            <h3 className={`${styles.topHeading} ${className}`}>{data.topHeading}</h3>
-            <h2 className={`${styles.heading} ${className}`}>{data.heading}</h2>
-            <h4 className={`${styles.subHeading} ${className}`}>{data.subHeading}</h4>
-         
-        </>
+        <div className={mainClass}>
+            {data.topHeading && <h3 className={`${styles.topHeading} ${className}`}>{data.topHeading}</h3>}
+            {data.heading && <h2 className={`${styles.heading} ${className}`}>{data.heading}</h2>}
+            {data.subHeading && <h4 className={`${styles.subHeading} ${className}`}>{data.subHeading}</h4>}
+        </div>
     )
 }
 

@@ -4,6 +4,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import Layout from "@/components/Layout"
 import { Providers } from "@/app/providers"
 import Lottie from "lottie-web"
+import styles from './home.module.css'
 
 export const metadata: Metadata = {
     title: "Werbooz - Home",

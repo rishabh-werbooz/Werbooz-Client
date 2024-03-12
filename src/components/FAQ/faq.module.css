@@ -1,0 +1,12 @@
+.AccordionContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: var(--padding-xxl) 0;
+}
+
+@media (max-width: 768px){
+    .AccordionContainer{
+        grid-template-columns: 1fr;
+    }
+}

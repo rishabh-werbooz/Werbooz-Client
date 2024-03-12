@@ -35,11 +35,11 @@ const index = ({ className, bgImg, title, description, subTitle }: DataProps) =>
                     onHoverEnd={() => setIsHovered(false)}
                     whileHover={{ opacity: 1, scale: 1.05 }} // Adjust opacity as needed
                 >
-                    {isHovered && (
+                    {/* {isHovered && (
                         <motion.div className={styles.overlay} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0.5 }}>
                             <TbExternalLink className={styles.icon} />
                         </motion.div>
-                    )}
+                    )} */}
                     <div className={`${styles.portfolio_v1_inner}`}>
                         <Heading
                             data={{

@@ -97,22 +97,23 @@
 }
 
 .portfolioItem_3 {
-    grid-column-start: 3 !important;
-    grid-row-start: 4 !important;
-    grid-row-end: 5 !important;
-}
-
-.portfolioItem_4 {
     grid-column-start: 1 !important;
     grid-row-start: 4 !important;
     grid-row-end: 5 !important;
 }
 
-.portfolioItem_5 {
+.portfolioItem_4 {
     grid-column-start: 2 !important;
     grid-row-start: 4 !important;
     grid-row-end: 5 !important;
 }
+
+.portfolioItem_5 {
+    grid-column-start: 3 !important;
+    grid-row-start: 4 !important;
+    grid-row-end: 5 !important;
+}
+
 .testimonialContainer {
     padding: 6rem 0;
 }
@@ -142,6 +143,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding-bottom: var(--body-inline-space);
+    /* stetch the grid to the bottom of the container */
+    align-items: stretch !important;
 }
 
 .contactFormSection {

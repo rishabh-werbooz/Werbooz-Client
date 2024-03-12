@@ -1,14 +1,15 @@
-.topHeading{
+.topHeading {
     text-transform: uppercase !important;
     font-family: var(--font-roboto);
     font-size: var(--font-lg) !important;
     font-weight: 700 !important;
+    color: var(--royal-blue);
 }
 
-.subHeading{
+.subHeading {
     font-family: var(--font-roboto);
 }
 
-.heading{
+.heading {
     font-family: var(--font-roboto);
 }
