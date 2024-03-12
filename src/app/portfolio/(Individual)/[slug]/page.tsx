@@ -22,25 +22,14 @@ const index = () => {
     return (
         <>
             <div>
-                <HeroSection_v2
-                    heading={projectData?.HeroSection?.heading}
-                    description_1={projectData?.HeroSection?.description_1}
-                    description_2={projectData?.HeroSection?.description_2}
-                />
+                <HeroSection_v2 heading={projectData?.HeroSection?.heading} description={projectData?.HeroSection?.description} />
                 <div className="main-inline-Padding">
-                    <ProjectOutline description={projectData?.ProjectOutline?.description} keywords={projectData?.ProjectOutline?.keywords} />
+                    <ProjectOutline data={projectData.ProjectOutline} />
                 </div>
                 <div className="mt-2">
                     <BackgroundWrapper backgroundColor="#003274">
                         <div className="main-inline-Padding">
-                            <ProjectIntroduction
-                                topHeading={projectData?.ProjectIntroduction?.topHeading}
-                                description={projectData?.ProjectIntroduction?.description}
-                                heading={projectData?.ProjectIntroduction?.heading}
-                                img={projectData?.ProjectIntroduction?.img}
-                                ProjectListItems={projectData?.ProjectIntroduction?.ProjectListItems}
-                                ProjectCards={projectData?.ProjectIntroduction?.ProjectCards}
-                            />
+                            <ProjectIntroduction data={projectData.ProjectIntroduction} />
                         </div>
                     </BackgroundWrapper>
                 </div>
@@ -48,35 +37,24 @@ const index = () => {
                     <ProjectOverviw
                         topHeading={projectData?.ProjectOverview?.topHeading}
                         headingData={projectData?.ProjectOverview?.headingData}
-                        keyWordsBold={projectData?.ProjectOverview?.keyWordsBold}
+                        description={projectData?.ProjectOverview?.description} // Add a default value of an empty array for the description property
                         img={projectData?.ProjectOverview?.img}
                         ProjectItems={projectData?.ProjectOverview?.ProjectItems}
                     />
                 </div>
-                <div>
-                    <ProjectDetails
-                        topHeading={projectData?.ProjectDetails?.topHeading}
-                        headingData={projectData?.ProjectDetails?.headingData}
-                        ProjectCard={projectData?.ProjectDetails?.ProjectCard}
-                    />
-                </div>
 
                 <div className="main-inline-Padding mt-2">
-                    <ProjectSolutionBox
-                        topHeading={projectData?.ProjectSolutionBox?.topHeading}
-                        headingData={projectData?.ProjectSolutionBox?.headingData}
-                        ProjectCard={projectData?.ProjectSolutionBox?.ProjectCard}
-                        description={projectData?.ProjectSolutionBox?.description}
-                        heading={projectData?.ProjectSolutionBox?.heading}
-                    />
+                    <ProjectSolutionBox data={projectData.ProjectSolutionBox} />
+                </div>
+
+                <div>
+                    <ProjectDetails data={projectData.ProjectDetails} />
                 </div>
 
                 <div className="mb-4">
                     <BackgroundWrapper backgroundColor="#FCFDFE">
                         <div className="main-inline-Padding mt-2 pt-2">
-                            <ProjectTechStack topHeading="Technologies used" img={projectData?.ProjectTechStack?.img_1}
-                            headingData={projectData?.ProjectTechStack?.headingData}
-                            />
+                            <ProjectTechStack topHeading="Technologies used" img={projectData?.ProjectTechStack?.img_1} headingData={projectData?.ProjectTechStack?.headingData} />
                         </div>
                     </BackgroundWrapper>
                 </div>
@@ -84,7 +62,7 @@ const index = () => {
                 <BackgroundWrapper backgroundColor="#003274">
                     <div className="main-inline-Padding">
                         <ProjectConclusion
-                            heading={projectData?.ProjectConclusion?.heading}
+                            heading={projectData?.ProjectConclusion?.headingData}
                             img={projectData?.ProjectConclusion?.img}
                             ProjectCard={projectData?.ProjectConclusion?.ProjectCard}
                         />

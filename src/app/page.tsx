@@ -69,17 +69,12 @@ export default function Home() {
                             ))}
                         </Marquee>
                     </div>
-                    <Heading_v1
-                        data={{
-                            topHeading: "Services",
-                        }}
-                        className="fw-700 font-md main-inline-Padding text-light-blue"
-                    />
                     <div className={`main-inline-Padding  ${styles.servicesSection}`}>
                         <div className={styles.servicesHeading}>
                             <Heading_v1
                                 data={{
-                                    heading: "Crafting Digital Success, One Pixel at a Time",
+                                    topHeading: "Services",
+                                    heading: "Crafting Digital Success, One Pixel at a Time ",
                                 }}
                                 className="fw-700 font-xxl"
                             />
@@ -88,104 +83,35 @@ export default function Home() {
                             <Description description="Fueling digital evolution with our creative prowess. From captivating UX/UI designs to robust web and mobile development, we're your digital partners. Elevate your online presence with our SEO wizardry. Welcome to a world of digital success, one click at a time. " />
                         </div>
 
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{
-                                duration: 0.4,
-                                delay: 2 * 0.05,
-                                ease: "easeInOut",
-                            }}
-                            className={styles.iconBox_1}
-                        >
-                            <IconBox
-                                Icon={IconBoxData.Icon}
-                                title={IconBoxData.title}
-                                description={IconBoxData.description}
-                                bgColor={IconBoxData.bgColor}
-                                className={styles.iconBox_1}
-                            />
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{
-                                duration: 0.4,
-                                delay: 3 * 0.05,
-                                ease: "easeInOut",
-                            }}
-                            className={styles.iconBox_2}
-                        >
-                            <IconBox
-                                Icon={IconBoxData.Icon}
-                                title={IconBoxData.title}
-                                description={IconBoxData.description}
-                                bgColor={IconBoxData.bgColor}
-                                className={styles.iconBox_2}
-                            />
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{
-                                duration: 0.4,
-                                delay: 4 * 0.05,
-                                ease: "easeInOut",
-                            }}
-                            className={styles.iconBox_3}
-                        >
-                            <IconBox
-                                Icon={IconBoxData.Icon}
-                                title={IconBoxData.title}
-                                description={IconBoxData.description}
-                                bgColor={IconBoxData.bgColor}
-                                className={styles.iconBox_3}
-                            />
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{
-                                duration: 0.4,
-                                delay: 5 * 0.05,
-                                ease: "easeInOut",
-                            }}
-                            className={styles.iconBox_4}
-                        >
-                            <IconBox
-                                Icon={IconBoxData.Icon}
-                                title={IconBoxData.title}
-                                description={IconBoxData.description}
-                                bgColor={IconBoxData.bgColor}
-                                className={styles.iconBox_4}
-                            />
-                        </motion.div>
+                        {IconBoxData.map((item, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.4,
+                                    delay: (index + 2) * 0.05, // Adjusted delay calculation based on index
+                                    ease: "easeInOut",
+                                }}
+                                className={styles[`iconBox_${index + 1}`]} // Dynamically selecting className
+                            >
+                                <IconBox
+                                    Icon={item.Icon}
+                                    title={item.title}
+                                    description={item.description}
+                                    bgColor={item.bgColor}
+                                    className={styles[`iconBox_${index + 1}`]} // Passing className to IconBox
+                                />
+                            </motion.div>
+                        ))}
                     </div>
-
-                    <Heading_v1
-                        data={{
-                            topHeading: "Our Portfolio",
-                        }}
-                        className="fw-700 font-md main-inline-Padding text-light-blue"
-                    />
 
                     <div className={`main-inline-Padding  ${styles.portfolioSection}`}>
                         <div className={styles.portfolio_heading}>
                             <div className={styles.portfolioHeading}>
-                                {/* <Heading_v1
-                                    data={{
-                                        heading: "Showcasing Our  Works A Portfolio of Excellence",
-                                    }}
-                                    className="fw-700 font-xxl"
-                                /> */}
                                 <Heading_v2
+                                    topHeading="Our Portfolio"
                                     headingData={[
                                         {
                                             heading: "Showcasing Our  Works ",
@@ -212,7 +138,7 @@ export default function Home() {
                                 viewport={{ once: true }}
                                 transition={{
                                     duration: 0.4,
-                                    delay: (index + 2) * 0.05,
+                                    delay: (index + 2) * 0.2,
                                     ease: "easeInOut",
                                 }}
                             >
@@ -229,18 +155,13 @@ export default function Home() {
                             <Heading_v1
                                 data={{
                                     topHeading: "Testimonials",
-                                }}
-                                className="fw-700 font-md"
-                            />
-                            <Heading_v1
-                                data={{
                                     heading: "Don't take our word for it",
                                 }}
-                                className="fw-700 font-xxl"
+                                className="fw-700 font-xxl text-white"
                             />
                         </div>
 
-                        <Marquee gradient={false} speed={80} direction="right" pauseOnHover={true}>
+                        <Marquee gradient={false} speed={80} direction="left" pauseOnHover={true}>
                             {TestimonialData.map((data, index) => (
                                 <div key={index} className={styles.testimonialCard}>
                                     <Testimonial data={data} />
@@ -252,13 +173,8 @@ export default function Home() {
 
                 <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding pt-2 pb-2 mt-2 mb-2`}>
-                        <Heading_v1
-                            data={{
-                                topHeading: "SCULPTING YOUR PROJECTS FUTURE",
-                            }}
-                            className="fw-700 font-md text-light-blue"
-                        />
                         <Heading_v2
+                            topHeading="SCULPTING YOUR PROJECTS FUTURE"
                             headingData={[
                                 {
                                     heading: "Methodology ",
@@ -461,9 +377,21 @@ export default function Home() {
                             </Link>
                         </div>
                         <div className={`${styles.BlogGrid}`}>
-                            <Blog data={BlogData} />
-                            <Blog data={BlogData} />
-                            <Blog data={BlogData} />
+                            {BlogData.map((blog, index) => (
+                                <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        duration: 0.4,
+                                        delay: (index + 2) * 0.2,
+                                        ease: "easeInOut",
+                                    }}
+                                >
+                                    <Blog data={blog} />
+                                </motion.div>
+                            ))}
                         </div>
                     </div>
                 </BackgroundWrapper>
@@ -478,6 +406,7 @@ export default function Home() {
                                     heading: "Contact our Expertise",
                                 }}
                                 className="fw-700 font-xxxl text-white"
+                                variant="center"
                             />
                             <Description
                                 description="Initiate your journey by filling the form. Share your project goals and contact details; it's the first step to bring your vision to life."

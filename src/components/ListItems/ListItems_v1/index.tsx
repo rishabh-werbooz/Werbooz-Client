@@ -11,7 +11,7 @@ const index = () => {
                             heading: "Company",
                         }}
                         className={`fw-700 font-lg ${styles.ListHead}`}
-                        variant="center"
+                        variant="left"
                     />
                 </div>
 
@@ -42,7 +42,7 @@ const index = () => {
                             heading: "Resources",
                         }}
                         className={`fw-700 font-lg ${styles.ListHead}`}
-                        variant="center"
+                        variant="left"
                     />
                 </div>
                 <Heading_v2

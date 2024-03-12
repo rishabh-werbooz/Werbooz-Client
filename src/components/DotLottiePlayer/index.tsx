@@ -8,9 +8,11 @@ interface LottieProps {
 }
 
 const index = ({ src, className }: LottieProps) => {
+    
+
     return (
         <div>
-            <DotLottiePlayer src={src} autoplay loop className={className} key={src} />
+            <DotLottiePlayer  src={src} autoplay={true} loop className={className} key={src} />
         </div>
     )
 }

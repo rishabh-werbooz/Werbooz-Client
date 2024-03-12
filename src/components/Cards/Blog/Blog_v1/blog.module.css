@@ -1,11 +1,31 @@
 .BlogImg {
+    margin: var(--padding-md);
+    margin-bottom: 0rem;
+    border-radius: 2rem;
+    cursor: pointer;
     position: relative;
+}
+
+/* [1] The container */
+.BlogImg {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    border-radius: var(--border-radius-md);
+}
+
+/* [2] Transition property for smooth transformation of images */
+.BlogImg .img {
+    transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.BlogImg .img:hover {
+    transform: scale(1.3);
 }
 
 .img {
     width: 100%;
+    height: 280px;
     object-fit: cover;
-    border-radius: var(--border-radius-lg);
 }
 
 .keywords {
@@ -25,23 +45,68 @@
 }
 
 .Blog_Card {
-    border-radius: var(--border-radius-lg);
+    border-radius: var(--border-radius-md);
     background: rgba(0, 50, 116, 0.03);
-    padding: var(--padding-md);
+    height: 100%;
+    box-shadow:
+        rgba(17, 17, 26, 0.05) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
 .blog_date {
     color: rgba(50, 50, 50, 0.6);
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--border-radius-xs);
+    font-size: var(--font-md) !important;
 }
 
-.blog_link {
+.link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--royal-blue);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.link {
+    text-decoration: none;
     color: var(--royal-blue);
-    text-decoration-line: underline;
-    margin-top: var(--padding-xs);
+    line-height: 1.5rem;
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+     margin-left: var(--padding-md);
+     margin-bottom: var(--padding-sm);
 }
 
 .blogTitle {
-    margin-bottom: var(--padding-xs);
+    margin-bottom: var(--border-radius-xs);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.description {
+    font-size: var(--font-md) !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.BlogContent {
+    padding: 0 var(--padding-md);
+    padding-top: 1rem;
 }

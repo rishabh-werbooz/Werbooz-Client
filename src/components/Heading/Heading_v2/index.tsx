@@ -15,19 +15,21 @@ interface Props {
     break?: boolean
 }
 
-const index = ({ headingData,subHeading, topHeading, className, break: breakLine = false }: Props) => {
+const index = ({ headingData, subHeading, topHeading, className, break: breakLine = false }: Props) => {
     return (
         <>
-            <h3 className={`${styles.topHeading} ${className}`}>{topHeading}</h3>
-            <h2 className={`${styles.heading} ${className}`}>
-                {headingData.map((data, index) => (
-                    <span key={index} style={{ color: data.color }}>
-                        {data.heading}
-                        {breakLine && <br />}
-                    </span>
-                ))}
-            </h2>
-            <h4 className={`${styles.subHeading} ${className}`}>{subHeading}</h4>
+            {topHeading && <h3 className={`${styles.topHeading} ${className}`}>{topHeading}</h3>}
+            {headingData.length > 0 && (
+                <h2 className={`${styles.heading} ${className}`}>
+                    {headingData.map((data, index) => (
+                        <span key={index} style={{ color: data.color }}>
+                            {data.heading}
+                            {breakLine && <br />}
+                        </span>
+                    ))}
+                </h2>
+            )}
+            {subHeading && <h4 className={`${styles.subHeading} ${className}`}>{subHeading}</h4>}
         </>
     )
 }

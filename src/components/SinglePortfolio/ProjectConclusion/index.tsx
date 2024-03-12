@@ -6,7 +6,10 @@ import Description from "@/components/Description"
 import Image from "@/components/Image"
 
 interface Props {
-    heading: string
+    heading: {
+        heading: string
+        color: string
+    }[]
     img: string[]
     ProjectCard: {
         description: string[]
@@ -20,13 +23,8 @@ const index = ({ heading, img, ProjectCard }: Props) => {
             <div>
                 <Heading_v2
                     topHeading="Conclusion"
-                    headingData={[
-                        {
-                            heading: heading,
-                            color: "#FFFFFF",
-                        },
-                    ]}
-                    className={`font-xxl fw-600  ${styles.topHeading}`}
+                    headingData={heading}
+                    className={`font-xxl fw-600 text-white  ${styles.topHeading}`}
                 />
             </div>
             <div className="mt-2">
@@ -36,13 +34,9 @@ const index = ({ heading, img, ProjectCard }: Props) => {
                  />
             </div>
             <div className={`d-flex gap-05 mt-2 flex-wrap ${styles.imgContainer}`}>
-                {/* <Image src="/assets/portfolios/SampleImg/Picture-1.svg" alt="Project Conclusion" />
-                <Image src="/assets/portfolios/SampleImg/Picture-2.svg" alt="Project Conclusion" />
-                <Image src="/assets/portfolios/SampleImg/Picture-3.svg" alt="Project Conclusion" />
-                <Image src="/assets/portfolios/SampleImg/Picture-4.svg" alt="Project Conclusion" /> */}
                 {
                     img.map((img, index) => (
-                        <Image src={img} alt="Project Conclusion" key={index} />
+                        <Image src={img} alt="Project Conclusion" key={index} className={styles.img} />
                     ))
                 }
             </div>

@@ -3,7 +3,9 @@
     padding-bottom: var(--body-inline-space);
     padding-top: var(--body-inline-space);
 }
-
+.img{
+    border-radius: var(--border-radius-md);
+}
 @media (max-width: 768px) {
     .imgContainer{
        display:none;

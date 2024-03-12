@@ -49,7 +49,7 @@ function PlacementExample() {
             <div>
                 <HiOutlineMenu onClick={onOpen} className={styles.sidebarIcon} />
                 <Drawer placement="left" onClose={onClose} size={"xs"} isOpen={isOpen} preserveScrollBarGap={false}>
-                    <DrawerOverlay />
+                    <DrawerOverlay width="full" h="full" />
                     <DrawerContent className={styles.Drawer}>
                         <Image src="/assets/werbooz_header_logo.svg" alt="logo" className={styles.logo} />
                         <DrawerBody>

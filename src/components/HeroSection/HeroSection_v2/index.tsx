@@ -1,4 +1,3 @@
-
 import React from "react"
 import styles from "./heroSection.module.css"
 import Heading from "@/components/Heading/Heading_v1"
@@ -10,11 +9,10 @@ import BlinkingDots from "@/components/BlinkingDots"
 
 interface Props {
     heading: string
-    description_1: string
-    description_2: string
+    description: string[] | JSX.Element[]
 }
 
-const index = ({ heading, description_1, description_2 }: Props) => {
+const index = ({ heading, description }: Props) => {
     return (
         <>
             <div className={`${styles.HerosectionContainer} d-flex justify-content-center flex-column  align-items-center gap-1-5`}>
@@ -30,8 +28,7 @@ const index = ({ heading, description_1, description_2 }: Props) => {
                     />
                 </div>
                 <div className={styles.test}>
-                    <Description description={description_1} className={styles.description} />
-                    <Description description={description_2} className={styles.description} />
+                    <Description description={description} breakLine={true} className={styles.description} />
                 </div>
             </div>
         </>
