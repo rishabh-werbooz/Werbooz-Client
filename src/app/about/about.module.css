@@ -5,3 +5,43 @@
 .aboutSectionImage{
     translate: 0px -120px;
 }
+
+.storyOuterContainer{
+    position: relative;
+    padding: 8rem 0;
+}
+
+.storyBgImg{
+    position: absolute;
+    left: 0;
+}
+
+.storyInnerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.storyListContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.storyHeading{
+    font-size: var(--font-xxl);
+}
+
+.storyDescription{
+    font-size: var(--font-md);
+}
+
+.Plusicon{
+   font-size: 4rem;
+}
+
+.counterContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
