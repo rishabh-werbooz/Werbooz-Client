@@ -6,21 +6,21 @@ import Image from "@/components/Image"
 import Heading_v1 from "@/components/Heading/Heading_v1"
 
 interface Props {
-    content: {
-        variant: string
-        img: string
-        cardContent: {
-            topHeading: string
-            headingData: { heading: string; color: string }[]
-            heading: string
-            description: string | JSX.Element | string[] | JSX.Element[]
+    content?: {
+        variant?: string
+        img?: string
+        cardContent?: {
+            topHeading?: string
+            headingData?: { heading: string; color: string }[]
+            heading?: string
+            description?: string | JSX.Element | string[] | JSX.Element[]
         }[]
     }
 }
 
 const index = ({ content }: Props) => {
   
-    const { variant, img, cardContent } = content
+    const { variant, img, cardContent }:any = content
     const isReversed = variant === "left" ? false : true
 
     return (
@@ -50,7 +50,7 @@ const index = ({ content }: Props) => {
                     </div>
                 </div>
                 {/*  rest of the cardContent Objects are being used here */}
-                {cardContent.slice(2).map((content, index) =>
+                {cardContent.slice(2).map((content:any, index:number) =>
                     content.heading ? (
                         <div key={index} className={`${styles.projectDetails} ${styles.projectDetails_2} mb-2`}>
                             <Heading_v1

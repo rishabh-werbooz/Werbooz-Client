@@ -9,8 +9,7 @@ const index = () => {
             <div>
                 <HeroSection_v2
                     heading="Portfolio"
-                    description_1="Lorem ipsum dolor sit amet consectetur."
-                    description_2="adipiscing elit interdum ullamcorper sed pharetra sene"
+                    description={["Lorem ipsum dolor sit amet consectetur.", "adipiscing elit interdum ullamcorper sed pharetra sene"]}
                 />
                 <div className="main-inline-Padding mt-2 pt-2 mb-2 pb-2 d-flex flex-column gap-4 ">
                     <Portfolio_v2
