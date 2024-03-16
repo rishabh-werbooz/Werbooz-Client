@@ -3,7 +3,6 @@ import styles from "./home.module.css"
 import IconBox from "@/components/Cards/IconBox/IconBox_v1"
 import Portfolio_v1 from "@/components/Cards/Portfolio/Portfolio_v1"
 import Portfolio_v2 from "@/components/Cards/Portfolio/Portfolio_v2"
-import Testimonial from "@/components/Cards/Testimonial"
 import Blog from "@/components/Cards/Blog/Blog_v1"
 import Heading_v1 from "@/components/Heading/Heading_v1"
 import Heading_v2 from "@/components/Heading/Heading_v2"
@@ -39,6 +38,8 @@ import {
     HeroSectionData_v1,
     IconBox_v2Data,
 } from "@/content/sampleData"
+import ContactForm from "@/components/ContactForm"
+import Testimonial from "@/components/Testimonial"
 
 export default function Home() {
     return (
@@ -149,27 +150,7 @@ export default function Home() {
                     </div>
                 </BackgroundWrapper>
 
-                <BackgroundWrapper backgroundColor="#003274">
-                    <div className={`${styles.testimonialContainer}`}>
-                        <div className={`main-inline-Padding ${styles.testimonialHeading}`}>
-                            <Heading_v1
-                                data={{
-                                    topHeading: "Testimonials",
-                                    heading: "Don't take our word for it",
-                                }}
-                                className="fw-700 font-xxl text-white"
-                            />
-                        </div>
-
-                        <Marquee gradient={false} speed={80} direction="left" pauseOnHover={true}>
-                            {TestimonialData.map((data, index) => (
-                                <div key={index} className={styles.testimonialCard}>
-                                    <Testimonial data={data} />
-                                </div>
-                            ))}
-                        </Marquee>
-                    </div>
-                </BackgroundWrapper>
+                 <Testimonial /> 
 
                 <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding pt-2 pb-2 mt-2 mb-2`}>
@@ -335,9 +316,9 @@ export default function Home() {
                         </div>
                         <ProjectsDevelopment listItemsData={listItemsData} listDetailsData={listDetailsData} />
                     </div>
-                </BackgroundWrapper>
+                </BackgroundWrapper> 
 
-                {/* <BackgroundWrapper backgroundColor="#FFFEFE">
+                <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding pb-2  ${styles.projectDevelopmentSection}`}>
                         <Heading_v2
                             headingData={[
@@ -358,7 +339,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                </BackgroundWrapper> */}
+                </BackgroundWrapper>
 
                 <BackgroundWrapper backgroundColor="#FFFEFE">
                     <div className={`main-inline-Padding`}>
@@ -396,26 +377,7 @@ export default function Home() {
                     </div>
                 </BackgroundWrapper>
 
-                <div className={`border-radius-md ${styles.contactFormSection}`}>
-                    <BlinkingDots />
-                    <div className={`${styles.contactFormInnerSection}`}>
-                        <Contact_v1 />
-                        <div>
-                            <Heading_v1
-                                data={{
-                                    heading: "Contact our Expertise",
-                                }}
-                                className="fw-700 font-xxxl text-white"
-                                variant="center"
-                            />
-                            <Description
-                                description="Initiate your journey by filling the form. Share your project goals and contact details; it's the first step to bring your vision to life."
-                                className="text-white"
-                            />
-                            <DotLottiePlayer src="/assets/lottie/Rocket.lottie" className={`${styles.ContactImg}`} />
-                        </div>
-                    </div>
-                </div>
+                <ContactForm />
 
                 {/* <Portfolio_v2 data={PortfolioDataV2} />
 
@@ -426,9 +388,6 @@ export default function Home() {
                 <NewsletterForm />
                 <ListItems_v1 />
                 <FooterTop /> */}
-                {/* <BackgroundWrapper backgroundColor="#0032740D">
-                    <ProjectsDevelopment listItemsData={listItemsData} listDetailsData={listDetailsData} />
-                </BackgroundWrapper> */}
             </div>
         </>
     )

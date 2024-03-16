@@ -526,6 +526,8 @@ body {
 .text-primary {
     color: var(--royal-blue);
 }
+
+
 .text-secondary {
     color: var(--light-dark);
 }

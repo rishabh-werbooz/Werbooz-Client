@@ -33,7 +33,7 @@ export const IconBoxData = [
         title: "UX/UI Design",
         description: "Lorem ipsum dolor sit amet consec onsectetur. Habitant in eu conse sagittis adipiscing id aliquet conv interdum.",
         bgColor: "#ECECEC",
-    },
+    }
 ]
 
 export const PortfolioDataV1 = [
@@ -47,32 +47,32 @@ export const PortfolioDataV1 = [
         bgImg: "/assets/portfolios/PortfolioImg_4.svg",
         title: "Property Leasing Made Easy",
         subTitle: "UBZ Spaces",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a Page when looking at its layout.",
     },
     {
         bgImg: "/assets/portfolios/PortfolioImg_5.svg",
         title: "Bridging Employers and Job Seekers",
         subTitle: "Develup",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a Page when looking at its layout.",
     },
     {
         bgImg: "/assets/portfolios/PortfolioImg_6.svg",
         title: "Exploring Psychological",
         subTitle: "ProBehave",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a Page when looking at its layout.",
     },
     {
         bgImg: "/assets/portfolios/PortfolioImg_7.svg",
         title: "Craft Your Perfect Weekend",
         subTitle: "Weekendo",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        description: "It is a long established fact that a reader will be distracted by the readable content of a Page when looking at its layout.",
     },
 ]
 
 export const PortfolioDataV2 = {
     bgColor: "#EDF0F9",
     title: "SaaSup Website For Unique Start-Up Brands",
-    description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    description: "It is a long established fact that a reader will be distracted by the readable content of a Page when looking at its layout.",
     btnText: "View Case Study",
     btnLink: "#",
     image: ["/assets/portfolios/PortfolioImg_2.png", "/assets/portfolios/PortfolioImg_3.png"],
@@ -147,7 +147,7 @@ export const BlogData = [
         title: "10 Top tips for making your Saas product sticky",
         date: "November 15, 2022",
         description:
-            "It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum",
+            "It is a long established fact that a reader will be distracted by the readable content of a Page from when looking at it layout. The point of using Lorem Ipsum",
         image: "https://www.techopedia.com/wp-content/uploads/2023/02/web-developer-3.jpg",
         link: "#",
         keywords: ["UX/UI Design", "Web Development"],
@@ -156,7 +156,7 @@ export const BlogData = [
         title: "All you need to know about UX/UI Design & Development",
         date: "June 15, 2022",
         description:
-            "It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum",
+            "It is a long established fact that a reader will be distracted by the readable content of a Page from when looking at it layout. The point of using Lorem Ipsum",
         image: "https://www.keenesystems.com/hubfs/blog-images/ux-ui.jpg#keepProtocol",
         link: "#",
         keywords: ["Figma", "Web Design"],
@@ -165,7 +165,7 @@ export const BlogData = [
         title: "Saas Product Development: A Comprehensive Guide",
         date: "April 15, 2022",
         description:
-            "It is a long established fact that a reader will be distracted by the readable content of a page from when looking at it layout. The point of using Lorem Ipsum",
+            "It is a long established fact that a reader will be distracted by the readable content of a Page from when looking at it layout. The point of using Lorem Ipsum",
         image: "https://cdn.outsource2india.com/featured-images/outsource-saas-development.jpg",
         link: "#",
         keywords: ["SaaS", "Software Development"],

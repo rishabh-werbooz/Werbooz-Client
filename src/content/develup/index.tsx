@@ -55,7 +55,7 @@ const develupData = {
             ],
         },
 
-        img: ['assets/Develup/Picture-12.svg'],
+        img: ["assets/Develup/Picture-12.svg"],
         description:
             "Let's dive into an intriguing story about Develup, this awesome hiring place, teaming up with Werbooz to make hiring and job recruitment’s way better. This story spills the beans on two special dashboards that made a big splash at a job fest that was held in November 2023.",
         ProjectListItems: [
@@ -199,7 +199,7 @@ const develupData = {
                         // heading: "Employee Management System",
                         headingData: [{ heading: "Platform Analytics and Dashboard", color: "#0F172A" }],
                         description:
-                            "The Develup platform offers a comprehensive Dashboard page where employers can access analytics, providing insights into platform activities. This includes details on the total number of jobs, active jobs, scheduled jobs, and upcoming jobs.",
+                            "The Develup platform offers a comprehensive Dashboard Page where employers can access analytics, providing insights into platform activities. This includes details on the total number of jobs, active jobs, scheduled jobs, and upcoming jobs.",
                     },
                     {
                         heading: "Additionally, employers can track various metrics such as :",

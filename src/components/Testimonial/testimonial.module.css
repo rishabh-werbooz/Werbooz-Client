@@ -1,0 +1,12 @@
+.testimonialContainer {
+    padding: 6rem 0;
+}
+
+.testimonialCard {
+    margin: 0 var(--padding-sm);
+}
+
+.testimonialHeading {
+    color: var(--white) !important;
+    margin-bottom: var(--font-3_5xl);
+}

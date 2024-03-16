@@ -7,16 +7,13 @@ const index = () => {
     return (
         <>
             <div>
-                <HeroSection_v2
-                    heading="Portfolio"
-                    description={["Lorem ipsum dolor sit amet consectetur.", "adipiscing elit interdum ullamcorper sed pharetra sene"]}
-                />
+                <HeroSection_v2 heading="Portfolio" description={["Lorem ipsum dolor sit amet consectetur.", "adipiscing elit interdum ullamcorper sed pharetra sene"]} />
                 <div className="main-inline-Padding mt-2 pt-2 mb-2 pb-2 d-flex flex-column gap-4 ">
                     <Portfolio_v2
                         data={{
                             bgColor: "#F5F5F5",
                             title: "Re-Design For The App Made Easy",
-                            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                            description: "It is a long established fact that a reader will be distracted by the readable content of a Page when looking at its layout.",
                             btnText: "Read Case Study",
                             btnLink: "/",
                             image: "/assets/portfolios/bgImage_1.svg",
@@ -27,7 +24,7 @@ const index = () => {
                         data={{
                             bgColor: "#F5F5F5",
                             title: "SaaSup Website For Unique Start Up Brands",
-                            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                            description: "It is a long established fact that a reader will be distracted by the readable content of a Page when looking at its layout.",
                             btnText: "Read Case Study",
                             btnLink: "/",
                             image: "/assets/portfolios/bgImage_2.svg",
@@ -49,7 +46,7 @@ const index = () => {
                         data={{
                             bgColor: "#F5F5F5",
                             title: "AI vision technology to improve security",
-                            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                            description: "It is a long established fact that a reader will be distracted by the readable content of a Page when looking at its layout.",
                             btnText: "Read Case Study",
                             btnLink: "/",
                             image: "/assets/portfolios/bgImage_4.svg",
