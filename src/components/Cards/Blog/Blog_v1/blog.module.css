@@ -1,5 +1,5 @@
 .BlogImg {
-    margin: var(--padding-md);
+    /* padding: var(--padding-sm); */
     margin-bottom: 0rem;
     border-radius: 2rem;
     cursor: pointer;
@@ -45,6 +45,7 @@
 }
 
 .Blog_Card {
+    padding: var(--padding-sm);
     border-radius: var(--border-radius-md);
     background: rgba(0, 50, 116, 0.03);
     height: 100%;
@@ -84,8 +85,8 @@
     display: inline-block;
     position: relative;
     width: fit-content;
-     margin-left: var(--padding-md);
-     margin-bottom: var(--padding-sm);
+     /* margin-left: var(--padding-md);
+     margin-bottom: var(--padding-sm); */
 }
 
 .blogTitle {
@@ -102,11 +103,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
 
 .BlogContent {
-    padding: 0 var(--padding-md);
+    /* padding: 0 var(--padding-md); */
     padding-top: 1rem;
 }

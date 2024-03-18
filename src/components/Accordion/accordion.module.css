@@ -18,4 +18,5 @@
 
 .description{
     text-align: left !important;
+    font-size: var(--font-md) !important;
 }

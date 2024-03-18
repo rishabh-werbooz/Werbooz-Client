@@ -11,9 +11,11 @@ interface DataProps {
     description: string
     bgColor: string
     className?: string
+    headingClasses?: string
+    descriptionClasses?: string
 }
 
-const index = ({ Icon, title, description, bgColor, className }: DataProps) => {
+const index = ({ Icon, title, description, bgColor, className, headingClasses = "",descriptionClasses="" }: DataProps) => {
     const IconBox = classNames(styles.iconBoxInner, className)
 
     return (
@@ -27,9 +29,9 @@ const index = ({ Icon, title, description, bgColor, className }: DataProps) => {
                     data={{
                         heading: title,
                     }}
-                    className={`mt-2 font-xl fw-700`}
+                    className={`mt-05 font-xl fw-700 ${headingClasses}`}
                 />
-                <Description description={description} className={`mt-1 fw-400 font-sm`} />
+                <Description description={description} className={`mt-05 fw-400 font-sm ${descriptionClasses}`} />
             </div>
         </>
     )

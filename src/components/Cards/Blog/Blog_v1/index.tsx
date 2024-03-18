@@ -16,13 +16,9 @@ interface DataProps {
 }
 
 const index = ({ data }: { data: DataProps }) => {
-    
-   
     return (
         <>
-            <motion.div className={`${styles.Blog_Card} d-flex justify-content-between flex-column `} 
-           
-            >
+            <motion.div className={`${styles.Blog_Card} d-flex justify-content-between flex-column `}>
                 <div>
                     <motion.div className={`${styles.BlogImg} `}>
                         <Image src={data.image} alt="Blog_img" className={styles.img} />

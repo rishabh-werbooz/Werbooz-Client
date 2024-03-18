@@ -1,0 +1,33 @@
+.contactFormSection {
+    position: relative;
+    margin: 0 var(--body-inline-space) var(--body-inline-space);
+    background: linear-gradient(180deg, #0e002d 0%, #003274 137.72%);
+}
+
+.contactFormInnerSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    text-align: center;
+    padding: var(--padding-xxxl);
+}
+
+.ContactImg {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1250px) {
+    .contactFormInnerSection {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        justify-content: center;
+        padding: var(--padding-xl) var(--padding-sm);
+    }
+
+    .ContactImg {
+        display: none;
+    }
+}

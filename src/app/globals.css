@@ -46,6 +46,7 @@
     --green: #4dba87; /* Green */
     --slate-gray: #3e424a; /* Slate Gray */
     --dark-purple: #181433; /* Dark Purple */
+    --light-dark:#323232;
 
     /* Miscellaneous */
     --off-white: #e5e5ea; /* Off White */
@@ -526,6 +527,10 @@ body {
     color: var(--royal-blue);
 }
 
+
+.text-secondary {
+    color: var(--light-dark);
+}
 .text-italic {
     font-style: italic;
 }
